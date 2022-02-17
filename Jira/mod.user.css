@@ -1,0 +1,92 @@
+/* ==UserStyle==
+@name           Jira Mod
+@description    Userstyle for Jira
+@version        0.0.4
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/master/Jira/mod.user.css
+@preprocessor   uso
+
+@advanced range stripe-size "Card Stripe Size"         [ 7,  2, 32, 1, 'px']
+@advanced range avatar-size "Avatar Size"              [32, 24, 48, 8, 'px']
+@advanced range issue-round "Issue Roundness Size"     [ 5,  0, 10, 1, 'px']
+@advanced range issue-h-pad "Issue Horizontal Padding" [ 1,  1, 10, 1, 'px']
+@advanced range issue-v-pad "Issue Vertical Padding"   [ 1,  1, 10, 1, 'px']
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://jira.")
+{
+	.ghx-avatar-img	{
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		height:    /*[[avatar-size]]*/;
+		width:     /*[[avatar-size]]*/;
+		min-width: /*[[avatar-size]]*/;
+	}
+	.ghx-avatar-img.ghx-auto-avatar	{
+		font-size: calc( /*[[avatar-size]]*/ / 4 * 3 );
+		line-height: /*[[avatar-size]]*/;
+	}
+
+	.ghx-issue	{
+		border-radius: /*[[issue-round]]*/;
+		margin: 5px;
+		padding: 
+			calc( /*[[issue-round]]*/ + /*[[issue-v-pad]]*/ )
+			calc( /*[[issue-round]]*/ + /*[[issue-h-pad]]*/ )
+			calc( /*[[issue-round]]*/ + /*[[issue-v-pad]]*/ )
+			calc( /*[[issue-round]]*/ + /*[[issue-h-pad]]*/ + /*[[stripe-size]]*/ )
+		;
+	}
+	.ghx-issue .ghx-issue-content	{	min-height: calc( /*[[avatar-size]]*/ + 32px + 2 * 4px );	}
+	.ghx-issue .ghx-card-footer	{
+		position: absolute;
+		top:   calc( /*[[issue-round]]*/ + /*[[issue-v-pad]]*/ );
+		right: calc( /*[[issue-round]]*/ + /*[[issue-h-pad]]*/ );
+		height: calc( /*[[avatar-size]]*/ + 32px + 2 * 4px );
+		margin: 0;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.ghx-issue .ghx-card-footer div:not(:last-child)	{
+		margin-right:  0px;
+		margin-bottom: 4px;
+	}
+	.ghx-issue:not(.ghx-avatar-not-empty) .ghx-card-footer .ghx-avatar	{
+		margin-right:  0px;
+		margin-bottom: 0px;
+	}
+	.ghx-issue .ghx-avatar	{	position: unset;	}
+	.ghx-issue.ghx-has-avatar .ghx-issue-fields,
+	.ghx-issue.ghx-has-corner .ghx-issue-fields,
+	.ghx-issue.ghx-has-avatar .ghx-highlighted-fields,
+	.ghx-issue.ghx-has-corner .ghx-highlighted-fields,
+	.ghx-issue.ghx-has-avatar .ghx-extra-fields,
+	.ghx-issue.ghx-has-corner .ghx-extra-fields
+	{	padding-right: calc( /*[[avatar-size]]*/ + /*[[issue-h-pad]]*/ );	}
+
+	.ghx-issue-compact {	border-radius: /*[[issue-round]]*/;	}
+	.ghx-issue-compact .ghx-issue-content	{
+		padding-left: /*[[stripe-size]]*/;
+		padding-right: /*[[issue-round]]*/;
+	}
+	.ghx-issue-compact .ghx-plan-extra-fields.ghx-plan-extra-fields.ghx-row	{	margin-left: 63px;	}
+	.ghx-issue-compact .ghx-plan-extra-fields.ghx-plan-extra-fields.ghx-row .ghx-extra-field-seperator	{
+		color: unset;
+		padding: 0 16px;
+	}
+
+	.ghx-grabber	{
+		width: /*[[stripe-size]]*/;
+		border-top-left-radius:    /*[[issue-round]]*/;
+		border-bottom-left-radius: /*[[issue-round]]*/;
+	}
+
+	#ghx-backlog .ghx-parent-group	{	border-radius: /*[[issue-round]]*/;	}
+
+	#ghx-backlog .ghx-parent-group .ghx-subtask-group .ghx-subtask {	margin-left: 24px;	}
+}
