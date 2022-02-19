@@ -1,0 +1,143 @@
+/* ==UserStyle==
+@name           LinkedIn Mod
+@description    Userstyle for LinkedIn
+@version        0.0.8
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/master/linkedin.com/mod.user.css
+@preprocessor   uso
+
+@advanced range icon-roundness "Icon Roundness (%)"               [   0,   0,  50, 5, '%']
+@advanced range job-card-width "Job Card Width (px)"              [ 252, 100, 300, 2, 'px']
+@advanced range job-card-hm    "Job Card Horizontal Spacing (px)" [  12,   2,  16, 2, 'px']
+@advanced range job-card-vm    "Job Card Vertical Spacing (px)"   [  12,   2,  16, 2, 'px']
+==/UserStyle== */
+
+@-moz-document
+	domain("www.linkedin.com")
+{
+/*** Feed item expansion ***/
+	.feed-shared-inline-show-more-text	{	max-height: unset;	}
+	.feed-shared-inline-show-more-text .see-more	{	display: none;	}
+
+/*** Icons ***/
+	.nav-item__profile-member-photo,
+	.EntityPhoto-circle-1,
+	.EntityPhoto-circle-2,
+	.EntityPhoto-circle-3,
+	.EntityPhoto-circle-4,
+	.EntityPhoto-circle-5,
+	.EntityPhoto-circle-6,
+	.EntityPhoto-circle-7,
+	.EntityPhoto-circle-8,
+	.EntityPhoto-circle-1-ghost-person,
+	.EntityPhoto-circle-2-ghost-person,
+	.EntityPhoto-circle-3-ghost-person,
+	.EntityPhoto-circle-4-ghost-person,
+	.EntityPhoto-circle-5-ghost-person,
+	.EntityPhoto-circle-6-ghost-person,
+	.EntityLockup-circle-3-ghost-person > figure i,
+	.EntityLockup-circle-3-ghost-person > figure img
+	{	border-radius: /*[[icon-roundness]]*/;	}
+
+/*** Messaging Bubble ***/
+	.msg-overlay-list-bubble .msg-facepile-grid.msg-facepile-grid--no-facepile .msg-facepile-grid__img,
+	                                           .msg-facepile-grid--no-facepile .msg-facepile-grid__img,
+	.msg-overlay-list-bubble .msg-facepile-grid.msg-facepile-grid--group-size-2 .msg-facepile-grid__img,
+	                                           .msg-facepile-grid--group-size-2 .msg-facepile-grid__img,
+	                                                                           .msg-facepile-grid__img
+	{	border-radius: /*[[icon-roundness]]*/;	}
+
+/*** Upsell link removal ***/
+	.premium-upsell-link	{	display: none;	}
+}
+@-moz-document
+	url-prefix("https://www.linkedin.com/in/")
+{
+/*** Icons ***/
+	.pv-top-card-v2-section__photo-wrapper,
+	.pv-top-card-section__photo,
+	.profile-photo-edit,
+	.profile-photo-edit__preview
+	{	border-radius: /*[[icon-roundness]]*/;	}
+}
+@-moz-document
+	url-prefix("https://www.linkedin.com/feed")
+{
+}
+@-moz-document
+	url-prefix("https://www.linkedin.com/mynetwork/")
+{
+/*** Icons ***/
+	.mn-discovery-person-card__image-link--with-coverphoto	{	color: inherit;	}
+
+	.mn-discovery-person-card__image--with-coverphoto,
+	.mn-discovery-person-card__image-ghost-1
+	{
+		border-width: 2px;
+		border-color: currentColor;
+		border-radius: /*[[icon-roundness]]*/;
+	}
+}
+@-moz-document
+	url-prefix("https://www.linkedin.com/jobs/")
+{
+	.jobs-boxes	{
+		max-width: 100%;
+		margin: 1em;
+	}
+
+	.jobs-search-two-pane__wrapper .neptune-grid	{	width: unset;	}
+	.jobs-search-two-pane__wrapper--two-pane .jobs-search-two-pane__results--responsive	{	width: 50%;	}
+	.job-card-search	{	padding: 0.5em;	}
+
+	.job-card--carousel-item.job-card	{	    width: /*[[job-card-width]]*/;	}
+	#careers .jobs-jymbii__list-item,
+	.jobs-similar-jobs__list-item
+	{	max-width: /*[[job-card-width]]*/;	}
+
+	.job-card--tile.peek-carousel__card-item,
+	.job-card--tile
+	{
+		margin-left:  /*[[job-card-hm]]*/;
+		margin-right: /*[[job-card-hm]]*/;
+	}
+	.job-card--tile	{
+		margin-top:    /*[[job-card-vm]]*/;
+		margin-bottom: /*[[job-card-vm]]*/;
+	}
+
+	.jobs-upsell,
+	#careers .jobs-app-download-promo-card-wrapper
+	{	display: none;	}
+
+/*** Job Description ***/
+	.jobs-description--is-truncated .jobs-description__content--condensed,
+	.jobs-description--is-truncated .jobs-description__content,
+	.jobs-company--is-truncated .jobs-company__description
+	{
+		height: unset;
+		max-height: unset;
+		overflow: visible;
+	}
+	.jobs-description--is-truncated .jobs-description__container	{	padding-bottom: 16px;	}
+
+	.jobs-description--is-truncated .jobs-description__container::after,
+	.jobs-box--with-cta .cta-wrap,
+	.jobs-box--with-cta-large .cta-wrap
+	{	display: none;	}
+}
+@-moz-document
+	url-prefix("https://www.linkedin.com/messaging/")
+{
+}
+@-moz-document
+	url-prefix("https://www.linkedin.com/notifications/")
+{
+/*** Icons ***/
+	.ivm-image-view-model__circular-img
+	{	border-radius: /*[[icon-roundness]]*/;	}
+}

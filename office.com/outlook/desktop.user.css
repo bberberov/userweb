@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name           outlook.office.com Desktop
+@description    Userstyle for outlook.office.com
+@version        0.0.3
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/master/office.com/outlook/desktop.user.css
+@preprocessor   uso
+
+@advanced range folder-height "Folder Height"          [ 30, 20, 50, 1, 'px']
+@advanced range msg-list-icon "Message List Icon Size" [ 48, 24, 64, 4, 'px']
+==/UserStyle== */
+
+@-moz-document
+	domain("outlook.office.com")
+{
+	div[role="tree"] div[role="treeitem"]	{
+		height: /*[[folder-height]]*/;
+	}
+
+	div[aria-label="Message list"] .threeColConversationViewSenderImageOn,
+	div[aria-label="Message list"] .ms-Persona-imageArea,
+	div[aria-label="Message list"] .ms-Image.ms-Persona-image
+	{
+		height: /*[[msg-list-icon]]*/ !important;
+		width:  /*[[msg-list-icon]]*/ !important;
+	}
+	div[aria-label="Message list"] .ms-Persona-coin .ms-Persona-initials,
+	div[aria-label="Message list"] .ms-Persona-coin .ms-Persona-initials > i
+	{
+		font-size: calc( /*[[msg-list-icon]]*/ / 2 - 2px );
+		height:      /*[[msg-list-icon]]*/;
+		line-height: /*[[msg-list-icon]]*/;
+	}
+	div[aria-label="Message list"] .ms-Persona-coin + .ms-Check,
+	div[aria-label="Message list"] .ms-Persona-coin + .ms-Check > .ms-Check-circle,
+	div[aria-label="Message list"] .ms-Persona-coin + .ms-Check > .ms-Check-check
+	{
+		font-size: /*[[msg-list-icon]]*/;
+		height:    /*[[msg-list-icon]]*/;
+		width:     /*[[msg-list-icon]]*/;
+	}
+}
