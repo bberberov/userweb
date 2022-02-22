@@ -1,0 +1,58 @@
+/* ==UserStyle==
+@name           Jira Desktop
+@description    Userstyle for Jira
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/master/Jira/desktop.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://jira.")
+{
+	/* Boards View - Headers */
+	#ghx-header	{	padding: 5px 20px;	}
+
+	span.subnav-page-header,
+	span.subnav-container
+	{	display: inline;	}
+
+	span.subnav-page-header	{
+		font-size: unset;
+		padding-bottom: unset;
+	}
+
+	.subnavigator-title	{	float: right;	}
+
+	/* Boards View - Quick Filters */
+	.ghx-quick-content.aui-expander-content	{	margin-bottom: 0;	}
+
+	.ghx-controls-filters dt,
+	.ghx-controls-filters dd
+	{	margin: 0 0 5px 0;	}
+
+	.ghx-controls-filters dd .aui-button,
+	.ghx-controls-filters dd.ghx-quickfilter-trigger > a
+	{
+		height: unset;
+		margin: 0;
+		padding: 5px 0.75em;
+	}
+
+	/* Boards View - Columns */
+	.ghx-rapid-views #gh #ghx-work #ghx-pool-column #ghx-column-headers .ghx-column	{	padding-top: 5px;	}
+	.ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-swimlane .ghx-swimlane-header	{	top: unset;	}
+
+	.ghx-swimlane-header .ghx-heading	{	margin: 5px 0;	}
+
+	.ghx-column-headers .ghx-column	{	padding: 5px 0px;	}
+
+	.ghx-column-headers .ghx-column .ghx-column-header-content .ghx-column-header-left
+	{	justify-content: space-between;	}
+
+	.ghx-column-headers .ghx-release	{	display: none;	}
+}
