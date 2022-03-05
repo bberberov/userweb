@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.0.6
+@version        0.0.7
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -21,7 +21,6 @@
 @advanced color quote-color    "Quote color"             #6cf
 @advanced color red-color      "Red color"               #f22
 @advanced color green-color    "Green color"             #0d0
-@advanced color logo-bg-color  "Logo background color"   #ccb
 ==/UserStyle== */
 
 @-moz-document
@@ -48,6 +47,7 @@
 
 	body > table:first-child img[title^="DistroWatch"]	{
 		background-color: #f6edc8 !important;
+		filter: brightness(81.25%);
 	}
 
 	span	{	color: /*[[green-color]]*/;	}
@@ -124,10 +124,34 @@
 		border-color: /*[[border-color]]*/;
 	}
 
-	td.NewsLogo > :first-child > img	{
+	/* Logos */
+	td.News     > :first-child > img,
+	td.NewsLogo > :first-child > img
+	{
 		padding: 1em;
 		border-radius: 0.5em;
-		background-color: /*[[logo-bg-color]]*/;
+		background-color: #f6edc8;
+		filter: brightness(81.25%);
+	}
+
+	/* Good logos */
+	td.News     > :first-child > img[title="Fedora"],
+	td.NewsLogo > :first-child > img[title="Fedora"],
+	td.News     > :first-child > img[title="openSUSE"],
+	td.NewsLogo > :first-child > img[title="openSUSE"],
+	td.News     > :first-child > img[title="UBports"],
+	td.NewsLogo > :first-child > img[title="UBports"]
+	{
+		background-color: transparent;
+		filter: unset;
+	}
+
+	/* Dark logos */
+	td.News     > :first-child > img[title="pfSense"],
+	td.NewsLogo > :first-child > img[title="pfSense"]
+	{
+		background-color: transparent;
+		filter: invert(100%) brightness(81.25%);
 	}
 
 	td.List	{
@@ -225,10 +249,28 @@
 		border-color: /*[[border-color]]*/;
 	}
 
+	/* Logos */
 	td.TablesTitle > img	{
 		padding: 1em;
 		border-radius: 0.5em;
-		background-color: /*[[logo-bg-color]]*/;
+		background-color: #f6edc8;
+		filter: brightness(81.25%);
+	}
+
+	/* Good logos */
+	td.TablesTitle > img[title="Fedora"],
+	td.TablesTitle > img[title="openSUSE"],
+	td.TablesTitle > img[title="UBports"]
+	{
+		background-color: transparent;
+		filter: unset;
+	}
+
+	/* Dark logos */
+	td.TablesTitle > img[title="pfSense"]
+	{
+		background-color: transparent;
+		filter: invert(100%) brightness(81.25%);
 	}
 
 	td.Current	{	color: /*[[green-color]]*/;	}
@@ -301,6 +343,39 @@
 	td.rStory2,
 	.Background
 	{	background-color: /*[[card-bg-color]]*/;	}
+
+	/* Logos */
+	img[align="left"]	{
+		padding: 0.5em;
+		border-radius: 0.25em;
+		background-color: #f6edc8;
+		filter: brightness(81.25%);
+	}
+
+	/* Good logos */
+	img[align="left"][title="AlmaLinux OS"],
+	img[align="left"][title="Fedora"],
+	img[align="left"][title="Linux"],
+	img[align="left"][title="openSUSE"],
+	img[align="left"][title="UBports"],
+	img[align="left"][title="Zorin OS"]
+	{
+		background-color: transparent;
+		filter: unset;
+	}
+
+	/* Dark logos */
+	img[align="left"][title="pfSense"]
+	{
+		background-color: transparent;
+		filter: invert(100%) brightness(81.25%);
+	}
+}
+
+@-moz-document
+	url-prefix("https://distrowatch.com/weekly.php")
+{
+	blockquote	{	background-color: /*[[page-bg-color]]*/;	}
 }
 
 @-moz-document
