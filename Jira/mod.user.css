@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jira Mod
 @description    Userstyle for Jira
-@version        0.0.4
+@version        0.0.5
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -20,6 +20,7 @@
 @-moz-document
 	url-prefix("https://jira.")
 {
+	/* Avatars */
 	.ghx-avatar-img	{
 		-webkit-border-radius: 0;
 		border-radius: 0;
@@ -32,6 +33,9 @@
 		line-height: /*[[avatar-size]]*/;
 	}
 
+	.aui-avatar-inner	{	border-radius: 0;	}
+
+	/* Issues */
 	.ghx-issue	{
 		border-radius: /*[[issue-round]]*/;
 		margin: 5px;
