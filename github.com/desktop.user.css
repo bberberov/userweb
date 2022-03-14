@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.0.14
+@version        0.0.15
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
 @homepageURL    https://github.com/bberberov/userweb
 @supportURL     https://github.com/bberberov/userweb/issues
-@updateURL      https://raw.githubusercontent.com/bberberov/userweb/master/github.com/desktop.user.css
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/github.com/desktop.user.css
 @preprocessor   uso
 
 @advanced range files-width "File List – Width" [60, 30, 70, 5, '%']

@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           outlook.office.com Desktop
 @description    Userstyle for outlook.office.com
-@version        0.0.3
+@version        0.0.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
 @homepageURL    https://github.com/bberberov/userweb
 @supportURL     https://github.com/bberberov/userweb/issues
-@updateURL      https://raw.githubusercontent.com/bberberov/userweb/master/office.com/outlook/desktop.user.css
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/office.com/outlook/desktop.user.css
 @preprocessor   uso
 
 @advanced range folder-height "Folder Height"          [ 30, 20, 50, 1, 'px']

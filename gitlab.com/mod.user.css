@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           GitLab Mod
 @description    Userstyle for GitLab
-@version        0.0.5
+@version        0.0.6
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
 @homepageURL    https://github.com/bberberov/userweb
 @supportURL     https://github.com/bberberov/userweb/issues
-@updateURL      https://raw.githubusercontent.com/bberberov/userweb/master/gitlab.com/mod.user.css
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/gitlab.com/mod.user.css
 @preprocessor   uso
 
 @advanced range files-vpad    "File List – Vertical Padding"   [ 10, 0, 16, 1, 'px']

@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Twitter Mod
 @description    Userstyle for Twitter
-@version        0.0.4
+@version        0.0.5
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
 @homepageURL    https://github.com/bberberov/userweb
 @supportURL     https://github.com/bberberov/userweb/issues
-@updateURL      https://raw.githubusercontent.com/bberberov/userweb/master/twitter.com/mod.user.css
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/twitter.com/mod.user.css
 @preprocessor   uso
 
 @advanced range icon-roundness     "Icon Roundness (%)"      [ 0, 0, 50,5, '%']
