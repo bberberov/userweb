@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.0.8
+@version        0.0.9
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -139,6 +139,8 @@
 	td.NewsLogo > :first-child > img[title="Fedora"],
 	td.News     > :first-child > img[title="openSUSE"],
 	td.NewsLogo > :first-child > img[title="openSUSE"],
+	td.News     > :first-child > img[title="Parrot"],
+	td.NewsLogo > :first-child > img[title="Parrot"],
 	td.News     > :first-child > img[title="UBports"],
 	td.NewsLogo > :first-child > img[title="UBports"]
 	{
@@ -260,6 +262,7 @@
 	/* Good logos */
 	td.TablesTitle > img[title="Fedora"],
 	td.TablesTitle > img[title="openSUSE"],
+	td.TablesTitle > img[title="Parrot"],
 	td.TablesTitle > img[title="UBports"]
 	{
 		background-color: transparent;
@@ -357,6 +360,7 @@
 	img[align="left"][title="Fedora"],
 	img[align="left"][title="Linux"],
 	img[align="left"][title="openSUSE"],
+	img[align="left"][title="Parrot"],
 	img[align="left"][title="UBports"],
 	img[align="left"][title="Zorin OS"]
 	{
