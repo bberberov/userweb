@@ -1,0 +1,48 @@
+/* ==UserStyle==
+@name           DuckDuckGo HTML Mod
+@description    Userstyle for DuckDuckGo HTML
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/duckduckgo.com/html/mod.user.css
+@preprocessor   uso
+
+@advanced range font-size "Font Size" [11,  6, 24, 1, 'pt']
+@advanced range max-width "Width"     [40, 30, 60, 1, 'em']
+==/UserStyle== */
+
+@-moz-document
+	domain("html.duckduckgo.com")
+{
+	html	{	font-size: /*[[font-size]]*/;	}
+
+	.header.header--html {
+		padding-left:  1em;
+		padding-right: 1em;
+	}
+	.header__logo-wrap	{
+		position: unset;
+		width: unset;
+	}
+	.header__form	{
+		float: none;
+		width: unset;
+		max-width: /*[[max-width]]*/;
+		margin: auto;
+		padding-left: unset;
+	}
+	.search--header	{
+		width: unset;
+	}
+
+	.serp__results	{
+		max-width: /*[[max-width]]*/;
+		margin: auto;
+		padding-left:  1em !important;
+		padding-right: 1em;
+	}
+	.results {	padding: 0;	}
+}
