@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.0
+@version        0.1.1
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -139,10 +139,16 @@
 	td.NewsLogo > :first-child > img[title="Fedora"],
 	td.News     > :first-child > img[title="Garuda Linux"],
 	td.NewsLogo > :first-child > img[title="Garuda Linux"],
+	td.News     > :first-child > img[title="Kaisen Linux"],
+	td.NewsLogo > :first-child > img[title="Kaisen Linux"],
+	td.News     > :first-child > img[title="OpenMediaVault"],
+	td.NewsLogo > :first-child > img[title="OpenMediaVault"],
 	td.News     > :first-child > img[title="openSUSE"],
 	td.NewsLogo > :first-child > img[title="openSUSE"],
 	td.News     > :first-child > img[title="Parrot"],
 	td.NewsLogo > :first-child > img[title="Parrot"],
+	td.News     > :first-child > img[title="TrueNAS"],
+	td.NewsLogo > :first-child > img[title="TrueNAS"],
 	td.News     > :first-child > img[title="UBports"],
 	td.NewsLogo > :first-child > img[title="UBports"]
 	{
@@ -264,8 +270,11 @@
 	/* Good logos */
 	td.TablesTitle > img[title="Fedora"],
 	td.TablesTitle > img[title="Garuda Linux"],
+	td.TablesTitle > img[title="Kaisen Linux"],
+	td.TablesTitle > img[title="OpenMediaVault"],
 	td.TablesTitle > img[title="openSUSE"],
 	td.TablesTitle > img[title="Parrot"],
+	td.TablesTitle > img[title="TrueNAS"],
 	td.TablesTitle > img[title="UBports"]
 	{
 		background-color: transparent;
@@ -359,18 +368,28 @@
 	}
 
 	/* Good logos */
-	img[align="left"][title="AlmaLinux OS"],
 	img[align="left"][title="Fedora"],
 	img[align="left"][title="Garuda Linux"],
+	img[align="left"][title="Kaisen Linux"],
 	img[align="left"][title="Linux"],
+	img[align="left"][title="OpenMediaVault"],
 	img[align="left"][title="openSUSE"],
 	img[align="left"][title="Parrot"],
+	img[align="left"][title="TrueNAS"],
 	img[align="left"][title="UBports"],
 	img[align="left"][title="Zorin OS"]
 	{
 		background-color: transparent;
 		filter: unset;
 	}
+	/* Good logos - small only */
+	img[align="left"][hspace="5"][title="AlmaLinux OS"],
+	img[align="left"][hspace="5"][title="EndeavourOS"]
+	{
+		background-color: transparent;
+		filter: unset;
+	}
+
 
 	/* Dark logos */
 	img[align="left"][title="pfSense"]
