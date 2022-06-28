@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Mod
 @description    Userstyle for DistroWatch
-@version        0.0.7
+@version        0.0.8
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -46,7 +46,10 @@
 
 	td.News     > :first-child > img,
 	td.NewsLogo > :first-child > img
-	{	margin: 0.5em 0.5em 0em 0.5em;	}
+	{
+		display: inline-block;
+		margin: 0.5em 0.5em 0em 0.5em;
+	}
 
 	td.News     img[width="150"],
 	td.NewsLogo img[width="150"]
