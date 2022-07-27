@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitLab Mod
 @description    Userstyle for GitLab
-@version        0.0.8
+@version        0.0.9
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -10,6 +10,7 @@
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/gitlab.com/mod.user.css
 @preprocessor   uso
 
+@advanced range block-vpad    "Blocks – Vertical Padding"      [ 16, 0, 16, 1, 'px']
 @advanced range files-vpad    "File List – Vertical Padding"   [ 10, 0, 16, 1, 'px']
 @advanced range files-hpad    "File List – Horizontal Padding" [ 16, 0, 16, 1, 'px']
 @advanced range blob-tab-size "Blob View – Tab Size"           [  4, 2,  8, 1, '']
@@ -22,8 +23,19 @@
 {
 /*** File View ***/
 
-	.tree-holder .tree-table tr th,
-	.tree-holder .tree-table tr td
+	/* application-<ID>.css */
+	.tree-holder .nav-block   	{	margin: /*[[block-vpad]]*/ 0;	}
+	.info-well                	{	margin-bottom: /*[[block-vpad]]*/;	}
+	.file-holder.readme-holder	{	margin: /*[[block-vpad]]*/ 0;	}
+
+	.project-buttons          	{	margin-bottom: /*[[block-vpad]]*/;	}
+
+	.nav	{	justify-content: space-between;	}
+
+	.repository-languages-bar	{	height: 1.2em;	}
+
+	.tree-content-holder table.tree-table tr th,
+	.tree-content-holder table.tree-table tr td
 	{	padding: /*[[files-vpad]]*/ /*[[files-hpad]]*/;	}
 
 /*** Blob View ***/
