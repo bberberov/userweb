@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name           Stack Exchange No Script
+@description    No JavaScript userstyle for Stack Exchange and related sites
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/StackExchange/noscript.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	domain("askubuntu.com"),
+	domain("mathoverflow.net"),
+	domain("serverfault.com"),
+	domain("stackapps.com"),
+	domain("stackexchange.com"),
+	domain("stackoverflow.com"),
+	domain("superuser.com")
+{
+	body,
+	.s-topbar
+	{	margin-top: 0;	}
+
+	.js-consent-banner,
+	.js-dismissable-hero
+	{	display: none;	}
+}
