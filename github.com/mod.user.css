@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Mod
 @description    Userstyle for GitHub
-@version        0.0.16
+@version        0.0.17
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -21,11 +21,25 @@
 @-moz-document
 	domain("github.com")
 {
-	/* skeleton-loading.scss */
+	/* global-<ID>.css */
 	.Skeleton	{
-		background-image: rgba(0, 0, 0, 0.1);
-		animation: none;
+		animation-duration: 4s;
+		animation-timing-function: steps(8, start);
 	}
+
+	/* primer-<ID>.css */
+	.anim-rotate	{
+		animation-duration: 2s;
+		animation-timing-function: steps(4, start);
+	}
+
+	/* global-<ID>.css */
+	.avatar-user	{	border-radius: 0 !important;	}
+
+	/* primer-<ID>.css */
+	.avatar,
+	.avatar.circle
+	{	border-radius: 0;	}
 
 /*** Blob View ***/
 
@@ -48,7 +62,6 @@
 	.blob-num,
 	.blob-code-inner
 	{	font-size: /*[[blob-font-size]]*/;	}
-
 }
 
 @-moz-document
