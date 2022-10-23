@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.1
+@version        0.1.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -139,14 +139,20 @@
 	td.NewsLogo > :first-child > img[title="Fedora"],
 	td.News     > :first-child > img[title="Garuda Linux"],
 	td.NewsLogo > :first-child > img[title="Garuda Linux"],
+	td.News     > :first-child > img[title="GeckoLinux"],
+	td.NewsLogo > :first-child > img[title="GeckoLinux"],
 	td.News     > :first-child > img[title="Kaisen Linux"],
 	td.NewsLogo > :first-child > img[title="Kaisen Linux"],
+	td.News     > :first-child > img[title="Mabox Linux"],
+	td.NewsLogo > :first-child > img[title="Mabox Linux"],
 	td.News     > :first-child > img[title="OpenMediaVault"],
 	td.NewsLogo > :first-child > img[title="OpenMediaVault"],
 	td.News     > :first-child > img[title="openSUSE"],
 	td.NewsLogo > :first-child > img[title="openSUSE"],
 	td.News     > :first-child > img[title="Parrot"],
 	td.NewsLogo > :first-child > img[title="Parrot"],
+	td.News     > :first-child > img[title="Redcore Linux"],
+	td.NewsLogo > :first-child > img[title="Redcore Linux"],
 	td.News     > :first-child > img[title="TrueNAS"],
 	td.NewsLogo > :first-child > img[title="TrueNAS"],
 	td.News     > :first-child > img[title="UBports"],
@@ -158,7 +164,11 @@
 
 	/* Dark logos */
 	td.News     > :first-child > img[title="pfSense"],
-	td.NewsLogo > :first-child > img[title="pfSense"]
+	td.NewsLogo > :first-child > img[title="pfSense"],
+	td.News     > :first-child > img[title="ravynOS"],
+	td.NewsLogo > :first-child > img[title="ravynOS"],
+	td.News     > :first-child > img[title="YunoHost"],
+	td.NewsLogo > :first-child > img[title="YunoHost"]
 	{
 		background-color: transparent;
 		filter: invert(100%) brightness(81.25%);
@@ -271,9 +281,11 @@
 	td.TablesTitle > img[title="Fedora"],
 	td.TablesTitle > img[title="Garuda Linux"],
 	td.TablesTitle > img[title="Kaisen Linux"],
+	td.TablesTitle > img[title="KDE"],
 	td.TablesTitle > img[title="OpenMediaVault"],
 	td.TablesTitle > img[title="openSUSE"],
 	td.TablesTitle > img[title="Parrot"],
+	td.TablesTitle > img[title="Redcore Linux"],
 	td.TablesTitle > img[title="TrueNAS"],
 	td.TablesTitle > img[title="UBports"]
 	{
@@ -282,7 +294,8 @@
 	}
 
 	/* Dark logos */
-	td.TablesTitle > img[title="pfSense"]
+	td.TablesTitle > img[title="pfSense"],
+	td.TablesTitle > img[title="ravynOS"]
 	{
 		background-color: transparent;
 		filter: invert(100%) brightness(81.25%);
@@ -375,6 +388,7 @@
 	img[align="left"][title="OpenMediaVault"],
 	img[align="left"][title="openSUSE"],
 	img[align="left"][title="Parrot"],
+	img[align="left"][title="Redcore Linux"],
 	img[align="left"][title="TrueNAS"],
 	img[align="left"][title="UBports"],
 	img[align="left"][title="Zorin OS"]
@@ -382,17 +396,19 @@
 		background-color: transparent;
 		filter: unset;
 	}
+
 	/* Good logos - small only */
 	img[align="left"][hspace="5"][title="AlmaLinux OS"],
-	img[align="left"][hspace="5"][title="EndeavourOS"]
+	img[align="left"][hspace="5"][title="EndeavourOS"],
+	img[align="left"][hspace="5"][title="Linux Mint"]
 	{
 		background-color: transparent;
 		filter: unset;
 	}
 
-
 	/* Dark logos */
-	img[align="left"][title="pfSense"]
+	img[align="left"][title="pfSense"],
+	img[align="left"][title="ravynOS"]
 	{
 		background-color: transparent;
 		filter: invert(100%) brightness(81.25%);
