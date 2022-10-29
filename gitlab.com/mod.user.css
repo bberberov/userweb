@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitLab Mod
 @description    Userstyle for GitLab
-@version        0.0.10
+@version        0.0.11
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -10,9 +10,6 @@
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/gitlab.com/mod.user.css
 @preprocessor   uso
 
-@advanced range block-vpad    "Blocks – Vertical Padding"      [ 16, 0, 16, 1, 'px']
-@advanced range files-vpad    "File List – Vertical Padding"   [ 10, 0, 16, 1, 'px']
-@advanced range files-hpad    "File List – Horizontal Padding" [ 16, 0, 16, 1, 'px']
 @advanced range blob-tab-size "Blob View – Tab Size"           [  4, 2,  8, 1, '']
 ==/UserStyle== */
 
@@ -26,66 +23,7 @@
 	.gl-avatar-circle
 	{	border-radius: unset;	}
 
-/*** Profile View ***/
-
-	/* profile-<ID>.css */
-	.user-profile .profile-header	{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 8px;
-	}
-
-	/* profile-<ID>.css */
-	.user-profile .profile-header .avatar-holder	{
-		margin: 0px;
-		width: unset;
-	}
-
-	.user-profile .profile-header .user-info	{
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		gap: 2px;
-	}
-
-	.user-profile .profile-header .user-info *	{
-		margin: 0 !important;
-	}
-
-	/* application-<ID>.css */
-	.nav-links li:not(.md-header-toolbar) a,
-	.nav-links li:not(.md-header-toolbar) button
-	{
-		margin: 0em 0.5em;
-		padding: 0.5rem 0.25rem;
-	}
-
-	/* profile-<ID>.css */
-	.profile-user-bio	{
-		margin: unset;
-		max-width: 22em;
-	}
-
-	/* application-<ID>.css */
-	.event-item	{	padding: 8px 0 8px 56px;	}
-
-	/* application-<ID>.css */
-	ul.content-list > li	{	padding: 4px 0 !important;	}
-
-	/* application-<ID>.css */
-	.projects-list .project-row,
-	.projects-list.compact .project-row
-	{	padding: 8px 0;	}
-
 /*** File View ***/
-
-	/* application-<ID>.css */
-	.tree-holder .nav-block   	{	margin: /*[[block-vpad]]*/ 0;	}
-	.info-well                	{	margin-bottom: /*[[block-vpad]]*/;	}
-	.file-holder.readme-holder	{	margin: /*[[block-vpad]]*/ 0;	}
-
-	.project-buttons          	{	margin-bottom: /*[[block-vpad]]*/;	}
 
 	.project-home-panel .nav,
 	.project-show-files .nav
@@ -93,10 +31,6 @@
 
 	/* application-<ID>.css */
 	.repository-languages-bar	{	height: 1.2em;	}
-
-	.tree-content-holder table.tree-table tr th,
-	.tree-content-holder table.tree-table tr td
-	{	padding: /*[[files-vpad]]*/ /*[[files-hpad]]*/;	}
 
 /*** Blob View ***/
 
