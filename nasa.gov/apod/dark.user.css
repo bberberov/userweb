@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           Astronomy Picture of the Day Dark
+@description    Userstyle for Astronomy Picture of the Day
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/nasa.gov/apod/dark.user.css
+@preprocessor   uso
+
+@advanced color page-bg-color "Page background color" #222
+@advanced color page-fg-color "Page foreground color" #eed
+@advanced color link-color    "Link color"            #69f
+==/UserStyle== */
+
+@-moz-document
+	url("https://apod.nasa.gov/apod/"),
+	regexp("https://apod.nasa.gov/apod/ap[0-9]+.html")
+{
+	body	{
+		background: /*[[page-bg-color]]*/;
+		color: /*[[page-fg-color]]*/;
+	}
+
+	a	{	color: /*[[link-color]]*/;	}
+}
