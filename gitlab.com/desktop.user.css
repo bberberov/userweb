@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitLab Desktop
 @description    Userstyle for GitLab
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -21,9 +21,7 @@
 	domain("salsa.debian.org")
 {
 	/* application-<ID>.css */
-	.navbar-gitlab,
-	.navbar-gitlab .header-content
-	{	min-height: unset;	}
+	.logged-out-marketing-header	{	--header-height: 40px;	}
 
 /*** Profile View ***/
 
