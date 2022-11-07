@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Mod
 @description    Userstyle for GitHub
-@version        0.0.17
+@version        0.0.18
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -10,11 +10,9 @@
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/github.com/mod.user.css
 @preprocessor   uso
 
-@advanced range files-vpad     "File List – Vertical Padding"   [   6,   0,  16,   1, 'px']
-@advanced range files-hpad     "File List – Horizontal Padding" [   3,   0,  16,   1, 'px']
-@advanced range blob-tab-size  "Blob View – Tab Size"           [   4,   2,   8,   1, ''  ]
-@advanced range blob-line-h    "Blob View – Line Height"        [ 1.6, 1.0,   3, 0.1, ''  ]
-@advanced range blob-font-size "Blob View – Font Size"          [   9,   6,  24,   1, 'pt']
+@advanced range blob-tab-size  "Blob View – Tab Size"    [   4,   2,   8,   1, ''  ]
+@advanced range blob-line-h    "Blob View – Line Height" [ 1.6, 1.0,   3, 0.1, ''  ]
+@advanced range blob-font-size "Blob View – Font Size"   [   9,   6,  24,   1, 'pt']
 
 ==/UserStyle== */
 
@@ -37,9 +35,9 @@
 	.avatar-user	{	border-radius: 0 !important;	}
 
 	/* primer-<ID>.css */
-	.avatar,
-	.avatar.circle
-	{	border-radius: 0;	}
+	.avatar	{	border-radius: 0;	}
+
+	.avatar.circle	{	border-radius: 0 !important;	}
 
 /*** Blob View ***/
 
@@ -123,12 +121,20 @@
 
 /*** File View ***/
 
-	/* github-<ID>.css */
-	table.files tr.up-tree,
-	table.files td
-	{	border: none;	}
+	div.file-navigation + div .Box-row	{
+		margin-top: 0px;
+		border-top-style: none;
+	}
 
-	table.files td {	padding: /*[[files-vpad]]*/ /*[[files-hpad]]*/;	}
+	.Layout-sidebar .BorderGrid-row:last-child .d-inline	{	display: block !important;	}
+	.Layout-sidebar .BorderGrid-row:last-child .d-inline > a	{
+		display: flex !important;
+		margin-right: 0 !important;
+	}
+	.Layout-sidebar .BorderGrid-row:last-child .d-inline > a > :last-child	{
+		flex-grow: 1;
+		text-align: right;
+	}
 }
 
 @-moz-document
