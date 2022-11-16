@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Mod
 @description    Userstyle for GitHub
-@version        0.0.18
+@version        0.0.19
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -63,7 +63,7 @@
 }
 
 @-moz-document
-	url-prefix("https://github.com")
+	url-prefix("https://github.com/")
 {
 /*** Signup banner removal ***/
 
@@ -138,7 +138,7 @@
 }
 
 @-moz-document
-	url-prefix("https://gist.github.com")
+	url-prefix("https://gist.github.com/")
 {
 /*** Banner removal ***/
 
