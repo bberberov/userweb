@@ -1,7 +1,13 @@
+// Copyright © 2022, 2023 Boian Berberov
+// Licensed under the EUPL-1.2 only.
+//
+// License text: https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
+// SPDX-License-Identifier: EUPL-1.2
+//
 // ==UserScript==
 // @name         StackExchange Dark
 // @description  Userscript for StackExchange
-// @version      0.0.1
+// @version      0.0.2
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -20,4 +26,5 @@
 // @run-at       document-end
 // ==/UserScript==
 
+document.body.classList.remove("unified-theme");
 document.body.classList.add("theme-dark");
