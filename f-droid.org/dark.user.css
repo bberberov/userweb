@@ -1,0 +1,357 @@
+/* ==UserStyle==
+@name           F-Droid Dark
+@description    Userstyle for F-Droid (semi-automated)
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/f-droid.org/dark.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://f-droid.org/"),
+	url-prefix("https://search.f-droid.org/")
+{
+	/* Semi-auto */
+	body {
+		color: #eed; /* Dark */
+	}
+	h1 {
+		color: #bba; /* Dark */
+	}
+	h2 {
+		color: #bba; /* Dark */
+	}
+	h3 {
+		color: #eed; /* Dark */
+	}
+	h4 {
+		color: #eed; /* Dark */
+	}
+	h5 {
+		color: #eed; /* Dark */
+	}
+	h6 {
+		color: #eed; /* Dark */
+	}
+	a {
+		color: #1976d2;
+	}
+	a:visited {
+		color: #11508e;
+	}
+
+	/** Remove default list styles from UL elements. */
+	.site-header, .main-content {
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+	}
+
+	/**
+	* Browsing
+	*/
+	.package-header, .package-header:visited {
+		color: #eed; /* Dark */
+	}
+	.package-header .package-license, .package-header:visited .package-license {
+		color: #bba; /* Dark */
+	}
+
+	/**
+	* List of packages for sidebar. Show a more condensed view than the full list of packages.
+	*/
+	.sidebar-widget .package-header .package-summary, .sidebar-widget .package-header .package-license {
+		color: #bba; /* Dark */
+	}
+	.browse-navigation .nav {
+		color: #eed; /* Dark */
+	}
+	.browse-navigation .nav.disabled {
+		color: #bbb;
+	}
+	.browse-navigation .nav.active .label {
+		background-color: #edf5fd;
+	}
+	.browse-navigation .nav a {
+		color: #eed; /* Dark */
+	}
+	.browse-navigation .nav a:hover {
+		background-color: #4e9cea;
+	}
+
+	body {
+		background-color: #222; /* Dark */
+	}
+
+	/**
+	* Header
+	*/
+	.site-header {
+		background-color: #111; /* Dark */
+	}
+
+	.site-nav {
+		background-color: #1976d2;
+	}
+	.site-nav .page-link {
+		background-color: #1976d2;
+		color: #fff !important;
+	}
+	.site-nav .page-link:hover {
+		background-color: #378fe7;
+	}
+	.site-nav .page-link:active {
+		background-color: #64a9ed;
+	}
+
+	.material-button {
+		background-color: #1976d2;
+		color: #fff !important;
+	}
+	.material-button:hover {
+		background-color: #378fe7;
+	}
+	.material-button:active {
+		background-color: #64a9ed;
+	}
+
+	/**
+	* Content
+	*/
+	.main-content {
+		background-color: #111; /* Dark */
+	}
+	.sidebar-widget .post-list li .post-meta {
+		color: #bba; /* Dark */
+	}
+
+	/**
+	* Package
+	*/
+	.package .package-whats-new {
+		background-color: #333; /* Dark */
+	}
+	.package .package-version {
+		background-color: #333; /* Dark */
+	}
+	.package .package-version .suggested-badge {
+		color: #1976d2;
+	}
+	.package .package-version-anti-features-list .anti-feature-link {
+		color: #000;
+	}
+	.package .package-version-anti-features-list .anti-feature-link .anti-feature-text {
+		color: #aa9; /* Dark */
+	}
+	.package .package-nativecode {
+		color: #bba; /* Dark */
+	}
+	.package .package-version-permissions-list .permission:before {
+		background-color: #aa9; /* Dark */
+	}
+	.package .package-version-permissions-list .permission .permission-description {
+		color: #aa9; /* Dark */
+	}
+
+	/**
+	* Search results
+	*/
+	.sidebar-widget div.awesomplete li:hover, .sidebar-widget div.awesomplete li[aria-selected='true'] {
+		background-color: #1976d2 !important;
+	}
+	.sidebar-widget div.awesomplete li:hover .package-header .package-name, .sidebar-widget div.awesomplete li:hover .package-header .package-desc .package-summary, .sidebar-widget div.awesomplete li[aria-selected='true'] .package-header .package-name, .sidebar-widget div.awesomplete li[aria-selected='true'] .package-header .package-desc .package-summary {
+		color: white;
+	}
+
+	/**
+	* Tutorials
+	*/
+	.tutorial h2 {
+		color: #0066cc;
+	}
+	.tutorial h4 {
+		/*font-family: HelveticaNeue-Medium, serif;*/
+		color: #bba; /* Dark */
+	}
+	.tutorial .tutorial-paginator {
+		background-color: #f9f9f9;
+	}
+	.tutorial .tutorial-paginator a {
+		color: black;
+	}
+
+	/**
+	* Syntax highlighting styles
+	*/
+	/* Inline code styles */
+	code.highlighter-rouge {
+		background-color: #333; /* Dark */
+	}
+
+	/* Blocks of code */
+	pre.highlight {
+		background-color: #333; /* Dark */
+	}
+	pre.highlight .c {
+		color: #998;
+	}
+	pre.highlight .err {
+		color: #a61717;
+		background-color: #e3d2d2;
+	}
+	pre.highlight .cm {
+		color: #998;
+	}
+	pre.highlight .cp {
+		color: #999;
+	}
+	pre.highlight .c1 {
+		color: #998;
+	}
+	pre.highlight .cs {
+		color: #999;
+	}
+	pre.highlight .gd {
+		color: #000;
+		background-color: #fdd;
+	}
+	pre.highlight .gd .x {
+		color: #000;
+		background-color: #faa;
+	}
+	pre.highlight .gr {
+		color: #a00;
+	}
+	pre.highlight .gh {
+		color: #999;
+	}
+	pre.highlight .gi {
+		color: #000;
+		background-color: #dfd;
+	}
+	pre.highlight .gi .x {
+		color: #000;
+		background-color: #afa;
+	}
+	pre.highlight .go {
+		color: #888;
+	}
+	pre.highlight .gp {
+		color: #555;
+	}
+	pre.highlight .gu {
+		color: #aaa;
+	}
+	pre.highlight .gt {
+		color: #a00;
+	}
+	pre.highlight .kt {
+		color: #458;
+	}
+	pre.highlight .m {
+		color: #099;
+	}
+	pre.highlight .s {
+		color: #d14;
+	}
+	pre.highlight .na {
+		color: #008080;
+	}
+	pre.highlight .nb {
+		color: #0086b3;
+	}
+	pre.highlight .nc {
+		color: #458;
+	}
+	pre.highlight .no {
+		color: #008080;
+	}
+	pre.highlight .ni {
+		color: #800080;
+	}
+	pre.highlight .ne {
+		color: #900;
+	}
+	pre.highlight .nf {
+		color: #900;
+	}
+	pre.highlight .nn {
+		color: #555;
+	}
+	pre.highlight .nt {
+		color: #000080;
+	}
+	pre.highlight .nv {
+		color: #008080;
+	}
+	pre.highlight .w {
+		color: #bbb;
+	}
+	pre.highlight .mf {
+		color: #099;
+	}
+	pre.highlight .mh {
+		color: #099;
+	}
+	pre.highlight .mi {
+		color: #099;
+	}
+	pre.highlight .mo {
+		color: #099;
+	}
+	pre.highlight .sb {
+		color: #d14;
+	}
+	pre.highlight .sc {
+		color: #d14;
+	}
+	pre.highlight .sd {
+		color: #d14;
+	}
+	pre.highlight .s2 {
+		color: #d14;
+	}
+	pre.highlight .se {
+		color: #d14;
+	}
+	pre.highlight .sh {
+		color: #d14;
+	}
+	pre.highlight .si {
+		color: #d14;
+	}
+	pre.highlight .sx {
+		color: #d14;
+	}
+	pre.highlight .sr {
+		color: #009926;
+	}
+	pre.highlight .s1 {
+		color: #d14;
+	}
+	pre.highlight .ss {
+		color: #990073;
+	}
+	pre.highlight .bp {
+		color: #999;
+	}
+	pre.highlight .vc {
+		color: #008080;
+	}
+	pre.highlight .vg {
+		color: #008080;
+	}
+	pre.highlight .vi {
+		color: #008080;
+	}
+	pre.highlight .il {
+		color: #099;
+	}
+
+	/* Custom */
+	input[type="search"]	{
+		filter: invert(75%);
+	}
+}
