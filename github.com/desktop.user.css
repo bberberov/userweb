@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.0.17
+@version        0.0.18
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -134,12 +134,12 @@
 			flex-direction: column;
 			flex-wrap: wrap;
 		}
-		.repository-content > div .Layout > .Layout-main > .Box.Box-body,
-		.repository-content > div div[data-test-selector="subdirectory-container"] > .Box.Box-body
-		{	padding: 5px 16px;	}
 
 		.repository-content > div .Layout > .Layout-sidebar	{	grid-column: 1 / 2;	}
 		.repository-content > div .Layout > .Layout-sidebar h2	{	display: none;	}
+
+		.repository-content .Details > div > .Box-row > div:last-child
+		{	width: 14em !important;	}
 
 		.repository-content > div[class=""],
 		.repository-content > #repo-meta-edit,
