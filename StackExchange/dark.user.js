@@ -7,7 +7,7 @@
 // ==UserScript==
 // @name         StackExchange Dark
 // @description  Userscript for StackExchange
-// @version      0.0.2
+// @version      0.0.3
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -28,3 +28,11 @@
 
 document.body.classList.remove("unified-theme");
 document.body.classList.add("theme-dark");
+
+if (
+	   document.documentURI.startsWith("https://unix.stackexchange.com/")
+	|| document.documentURI.startsWith("https://askubuntu.com/")
+)
+{
+	document.body.style.backgroundImage = "none";
+}
