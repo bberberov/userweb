@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jira Desktop
 @description    Userstyle for Jira
-@version        0.0.2
+@version        0.0.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -40,7 +40,7 @@
 	{
 		height: unset;
 		margin: 0;
-		padding: 5px 0.75em;
+		padding: 0.25em 0.75em;
 	}
 
 	/* Boards View - Columns */

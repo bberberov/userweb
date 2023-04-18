@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jira Mod
 @description    Userstyle for Jira
-@version        0.0.6
+@version        0.0.7
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -47,11 +47,18 @@
 		;
 	}
 	.ghx-issue .ghx-issue-content	{	min-height: calc( /*[[avatar-size]]*/ + 32px + 2 * 4px );	}
+
+	.ghx-issue .ghx-extra-fields {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 0em 1em;
+	}
+
 	.ghx-issue .ghx-card-footer	{
 		position: absolute;
 		top:   calc( /*[[issue-round]]*/ + /*[[issue-v-pad]]*/ );
 		right: calc( /*[[issue-round]]*/ + /*[[issue-h-pad]]*/ );
-		height: calc( /*[[avatar-size]]*/ + 32px + 2 * 4px );
 		margin: 0;
 		flex-direction: column;
 		align-items: flex-end;
