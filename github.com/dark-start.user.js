@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         GitHub Dark - Deprecated
-// @description  Userscript for GitHub
-// @version      0.0.3
+// @name         GitHub Dark - At start
+// @description  Sets the dark mode on GitHub sites, at start of page load
+// @version      0.0.4
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
