@@ -7,7 +7,7 @@
 // ==UserScript==
 // @name         StackExchange Dark
 // @description  Userscript for StackExchange
-// @version      0.0.3
+// @version      0.0.4
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -26,13 +26,14 @@
 // @run-at       document-end
 // ==/UserScript==
 
-document.body.classList.remove("unified-theme");
-document.body.classList.add("theme-dark");
+document.body.classList.remove('unified-theme');
+document.body.classList.add('theme-dark');
 
 if (
-	   document.documentURI.startsWith("https://unix.stackexchange.com/")
-	|| document.documentURI.startsWith("https://askubuntu.com/")
+	   document.documentURI.startsWith('https://codereview.stackexchange.com/')
+	|| document.documentURI.startsWith('https://unix.stackexchange.com/')
+	|| document.documentURI.startsWith('https://askubuntu.com/')
 )
 {
-	document.body.style.backgroundImage = "none";
+	document.body.style.backgroundImage = 'none';
 }
