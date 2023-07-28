@@ -1,0 +1,48 @@
+/* ==UserStyle==
+@name           TIOBE Index Mod
+@description    Userstyle for the TIOBE Index
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/tiobe.com/www/mod.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	url("https://www.tiobe.com/tiobe-index/")
+{
+	body > header	{	position: static;	}
+	body > header .header-inner .navigation li	{	margin-right: unset;	}
+
+	.website-content	{	margin-top: 0rem;	}
+
+	.container	{	max-width: 60em;	}
+
+	p,
+	span,
+	a,
+	li,
+	.look-p
+	{	line-height: 1.4;	}
+
+	p	{	margin-bottom: 1em;	}
+
+	.tiobe-index .content table {
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
+	}
+	.tiobe-index .content table thead tr th,
+	.tiobe-index .content table tbody tr th,
+	.tiobe-index .content table thead tr td,
+	.tiobe-index .content table tbody tr td
+	{	padding: 0.5em 1em;	}
+	.tiobe-index .content table thead tr td.td-top20,
+	.tiobe-index .content table tbody tr td.td-top20
+	{	padding: 0em 0em 0em 1em;	}
+
+	#container	{	display: none;	}
+}
