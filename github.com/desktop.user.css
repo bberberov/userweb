@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.0.19
+@version        0.0.20
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -85,6 +85,10 @@
 	url-prefix("https://github.com/")
 {
 	@media screen	{
+
+/*** FIXME: Issues in original stylesheets ***/
+		/* BUG: Causes unnecesary overflow and scroll */
+		.markdown-body .anchor {	position: unset;	}
 
 /*** Main elements on page ***/
 
