@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitLab Mod
 @description    Userstyle for GitLab
-@version        0.0.11
+@version        0.0.12
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -15,7 +15,9 @@
 
 @-moz-document
 	url-prefix("https://gitlab."),
+	domain("framagit.org"),
 	domain("invent.kde.org"),
+	domain("ohwr.org"),
 	domain("salsa.debian.org")
 {
 	/* application-<ID>.css */
