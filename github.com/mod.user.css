@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Mod
 @description    Userstyle for GitHub
-@version        0.0.20
+@version        0.0.21
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -30,6 +30,9 @@
 		animation-duration: 2s;
 		animation-timing-function: steps(4, start);
 	}
+
+	/* element */
+	#insights-tab	{	visibility: visible;	}
 
 	/* global-<ID>.css */
 	.avatar-user	{	border-radius: 0 !important;	}
