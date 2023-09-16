@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LinkedIn Mod
 @description    Userstyle for LinkedIn
-@version        0.0.9
+@version        0.0.10
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -24,32 +24,9 @@
 	.feed-shared-inline-show-more-text .see-more	{	display: none;	}
 
 /*** Icons ***/
-	.nav-item__profile-member-photo,
-	.EntityPhoto-circle-1,
-	.EntityPhoto-circle-2,
-	.EntityPhoto-circle-3,
-	.EntityPhoto-circle-4,
-	.EntityPhoto-circle-5,
-	.EntityPhoto-circle-6,
-	.EntityPhoto-circle-7,
-	.EntityPhoto-circle-8,
-	.EntityPhoto-circle-1-ghost-person,
-	.EntityPhoto-circle-2-ghost-person,
-	.EntityPhoto-circle-3-ghost-person,
-	.EntityPhoto-circle-4-ghost-person,
-	.EntityPhoto-circle-5-ghost-person,
-	.EntityPhoto-circle-6-ghost-person,
-	.EntityLockup-circle-3-ghost-person > figure i,
-	.EntityLockup-circle-3-ghost-person > figure img
-	{	border-radius: /*[[icon-roundness]]*/;	}
-
-/*** Messaging Bubble ***/
-	.msg-overlay-list-bubble .msg-facepile-grid.msg-facepile-grid--no-facepile .msg-facepile-grid__img,
-	                                           .msg-facepile-grid--no-facepile .msg-facepile-grid__img,
-	.msg-overlay-list-bubble .msg-facepile-grid.msg-facepile-grid--group-size-2 .msg-facepile-grid__img,
-	                                           .msg-facepile-grid--group-size-2 .msg-facepile-grid__img,
-	                                                                           .msg-facepile-grid__img
-	{	border-radius: /*[[icon-roundness]]*/;	}
+.global-nav__me-photo,
+[class*="EntityPhoto-circle"]
+	{	border-radius: /*[[icon-roundness]]*/ !important;	}
 
 /*** Upsell link removal ***/
 	.premium-upsell-link	{	display: none;	}
@@ -67,6 +44,7 @@
 @-moz-document
 	url-prefix("https://www.linkedin.com/feed")
 {
+	.feed-shared-celebration-image	{	display: none;	}
 }
 @-moz-document
 	url-prefix("https://www.linkedin.com/mynetwork/")
