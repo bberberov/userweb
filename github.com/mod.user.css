@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Mod
 @description    Userstyle for GitHub
-@version        0.0.22
+@version        0.0.23
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -32,7 +32,10 @@
 	}
 
 	/* element */
-	#insights-tab	{	visibility: visible !important;	}
+	#wiki-tab,
+	#security-tab,
+	#insights-tab
+	{	visibility: visible !important;	}
 
 	/* global-<ID>.css */
 	.avatar-user	{	border-radius: 0 !important;	}
