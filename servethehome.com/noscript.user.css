@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           ServeTheHome No Script
+@description    No JavaScript userstyle for ServeTheHome
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/servethehome.com/noscript.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://www.servethehome.com/")
+{
+	/* td_legacy_main.css */
+	body.td-animation-stack-type0 .td-animation-stack .entry-thumb,
+	body.td-animation-stack-type0 .post img:not(.woocommerce-product-gallery img):not(.rs-pzimg),
+	body.td-animation-stack-type0 .td-animation-stack .td-lazy-img
+	{	opacity: unset;	}
+}
