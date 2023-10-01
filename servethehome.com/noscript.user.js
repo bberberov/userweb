@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ServeTheHome No Script
 // @description  No JavaScript userscript for ServeTheHome
-// @version      0.0.1
+// @version      0.0.2
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -14,7 +14,7 @@
 // @run-at       document-end
 // ==/UserScript==
 
-const elements = document.getElementsByClassName('td-thumb-css') );
+const elements = document.getElementsByClassName('td-thumb-css');
 
 for (const element of elements)
 {
