@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name           GitLab No Login
+@description    Userstyle for GitLab
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/gitlab.com/nologin.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://gitlab."),
+	domain("framagit.org"),
+	domain("invent.kde.org"),
+	domain("ohwr.org"),
+	domain("salsa.debian.org")
+{
+	body.ui-light-gray,
+	body.ui-indigo,
+	.ui-light-gray .top-bar-fixed,
+	.ui-indigo     .top-bar-fixed
+	{	background-color: #feb;	}
+
+	.ui-light-gray .super-sidebar,
+	.ui-indigo     .super-sidebar,
+	.ui-light-gray .cover-block,
+	.ui-indigo     .cover-block,
+	.ui-light-gray .file-holder,
+	.ui-indigo     .file-holder,
+	.ui-light-gray .nav-sidebar,
+	.ui-indigo     .nav-sidebar,
+	.ui-light-gray .toggle-sidebar-button, .close-nav-button,
+	.ui-indigo     .toggle-sidebar-button, .close-nav-button
+	{	background-color: #eda;	}
+
+	.ui-light-gray .user-contrib-cell[data-level="0"],
+	.ui-indigo     .user-contrib-cell[data-level="0"]
+	{	fill: #fea;	}
+	.ui-light-gray .user-contrib-cell[data-level="1"],
+	.ui-indigo     .user-contrib-cell[data-level="1"]
+	{	fill: #fc8;	}
+	.ui-light-gray .user-contrib-cell[data-level="2"],
+	.ui-indigo     .user-contrib-cell[data-level="2"]
+	{	fill: #fa6;	}
+	.ui-light-gray .user-contrib-cell[data-level="3"],
+	.ui-indigo     .user-contrib-cell[data-level="3"]
+	{	fill: #f94;	}
+	.ui-light-gray .user-contrib-cell[data-level="4"],
+	.ui-indigo     .user-contrib-cell[data-level="4"]
+	{	fill: #f72;	}
+}
