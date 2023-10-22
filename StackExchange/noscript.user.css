@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stack Exchange No Script
 @description    No JavaScript userstyle for Stack Exchange and related sites
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -23,6 +23,14 @@
 	body,
 	.s-topbar
 	{	margin-top: 0;	}
+
+	body	{
+		background-color: unset;
+		background-position: unset;
+		background-repeat: unset;
+		background-size: unset;
+		background-attachment: unset;
+	}
 
 	.js-consent-banner,
 	.js-dismissable-hero
