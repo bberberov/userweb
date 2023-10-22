@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           Add-ons for Firefox Dark
+@description    Userstyle for Add-ons for Firefox
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/mozilla.org/addons/dark.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	domain("addons.mozilla.org")
+{
+	.Page-content,
+	.LandingPage-header
+	{	background: unset;	}
+
+	.LandingPage-header *,
+	.SecondaryHero-message h2
+	{	color: #bbb;	}
+
+	.SecondaryHero-module,
+	.Card-header,
+	.Card-contents,
+	.Card-footer,
+	.AddonsCard--horizontal .Card-contents,
+	.AddonsByAuthorsCard.AddonsCard--horizontal .Card-contents .AddonsCard-list,
+	.CardList ul > li
+	{	background-color: #eda;	}
+}
