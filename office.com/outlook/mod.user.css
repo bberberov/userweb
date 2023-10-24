@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           outlook.office.com Mod
 @description    Userstyle for outlook.office.com
-@version        0.0.4
+@version        0.0.5
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -14,15 +14,5 @@
 @-moz-document
 	domain("outlook.office.com")
 {
-	.ms-Image.ms-Persona-image,
-	.ms-Persona-initials	{
-		border-radius: unset;
-	}
-
-	.ms-Persona-coin.ms-Persona--size28 .ms-Persona-initials,
-	.ms-Persona-coin.ms-Persona--size28 .ms-Persona-initials > i
-	{	font-size: 12px;	}
-	.ms-Persona-coin.ms-Persona--size40 .ms-Persona-initials,
-	.ms-Persona-coin.ms-Persona--size40 .ms-Persona-initials > i
-	{	font-size: 18px;	}
+	.fui-Avatar	{	border-radius: unset;	}
 }
