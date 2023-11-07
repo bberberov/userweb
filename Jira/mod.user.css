@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jira Mod
 @description    Userstyle for Jira
-@version        0.0.7
+@version        0.0.8
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -10,11 +10,19 @@
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/Jira/mod.user.css
 @preprocessor   uso
 
-@advanced range stripe-size "Card Stripe Size"         [ 7,  2, 32, 1, 'px']
-@advanced range avatar-size "Avatar Size"              [32, 24, 48, 8, 'px']
-@advanced range issue-round "Issue Roundness Size"     [ 5,  0, 10, 1, 'px']
-@advanced range issue-h-pad "Issue Horizontal Padding" [ 1,  1, 10, 1, 'px']
-@advanced range issue-v-pad "Issue Vertical Padding"   [ 1,  1, 10, 1, 'px']
+@advanced range  stripe-size "Card Stripe Size"         [ 7,  2, 32, 1, 'px']
+@advanced range  avatar-size "Avatar Size"              [32, 24, 48, 8, 'px']
+@advanced range  issue-round "Issue Roundness Size"     [ 5,  0, 10, 1, 'px']
+@advanced range  issue-h-pad "Issue Horizontal Padding" [ 1,  1, 10, 1, 'px']
+@advanced range  issue-v-pad "Issue Vertical Padding"   [ 1,  1, 10, 1, 'px']
+@advanced select issue-link  "Issue Link"               {
+                                                          "Normal"  : "normal",
+                                                          "Bold*"   : "bold"
+                                                        }
+@advanced select issue-title "Issue Title"              {
+                                                          "Normal*" : "normal",
+                                                          "Bold"    : "bold"
+                                                        }
 ==/UserStyle== */
 
 @-moz-document
@@ -79,6 +87,13 @@
 	.ghx-issue.ghx-has-avatar .ghx-extra-fields,
 	.ghx-issue.ghx-has-corner .ghx-extra-fields
 	{	padding-right: calc( /*[[avatar-size]]*/ + /*[[issue-h-pad]]*/ );	}
+
+	.ghx-issue .ghx-key-link	{
+		color: #0052cc;
+		font-weight: /*[[issue-link]]*/;
+	}
+
+	.ghx-issue-fields .ghx-summary .ghx-inner	{	font-weight: /*[[issue-title]]*/;	}
 
 	.ghx-issue-compact {	border-radius: /*[[issue-round]]*/;	}
 	.ghx-issue-compact .ghx-issue-content	{
