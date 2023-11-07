@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jira Desktop
 @description    Userstyle for Jira
-@version        0.0.3
+@version        0.0.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -28,19 +28,21 @@
 
 	.subnavigator-title	{	float: right;	}
 
+	#ghx-modes-tools	{	padding-bottom: 0;	}
+
 	/* Boards View - Quick Filters */
 	.ghx-quick-content.aui-expander-content	{	margin-bottom: 0;	}
 
 	.ghx-controls-filters dt,
 	.ghx-controls-filters dd
-	{	margin: 0 0 5px 0;	}
+	{	margin: 0 0.125em 0.125em 0.125em;	}
 
 	.ghx-controls-filters dd .aui-button,
 	.ghx-controls-filters dd.ghx-quickfilter-trigger > a
 	{
 		height: unset;
 		margin: 0;
-		padding: 0.25em 0.75em;
+		padding: 0.25em 0.5em;
 	}
 
 	/* Boards View - Columns */
