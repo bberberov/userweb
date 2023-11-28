@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.0.20
+@version        0.0.21
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -69,15 +69,13 @@
 
 		/*----------------------------------------*/
 
-		.footer div	{
+		footer.footer	{
 			margin: 0px !important;
-			padding: 0 !important;
+			padding: 0px !important;
 		}
-		.footer div:first-of-type	{
-			font-size: 16px !important;
-			justify-content: space-around;
+		footer.footer div	{
+			justify-content: space-around !important;
 		}
-		.footer > div:first-of-type > div	{	width: unset !important;	}
 	}
 }
 
