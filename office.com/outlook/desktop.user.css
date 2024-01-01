@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           outlook.office.com Desktop
 @description    Userstyle for outlook.office.com
-@version        0.0.6
+@version        0.0.7
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -17,9 +17,8 @@
 @-moz-document
 	domain("outlook.office.com")
 {
-	div[role="tree"] div[role="treeitem"]	{
-		height: /*[[folder-height]]*/;
-	}
+	div[role="tree"] div[role="treeitem"]
+	{	height: /*[[folder-height]]*/ !important;	}
 
 	.personaMarginThreeColumn,
 	.fui-Avatar
