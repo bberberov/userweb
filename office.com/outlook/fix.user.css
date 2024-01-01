@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           outlook.office.com Fixes
 @description    Userstyle for outlook.office.com
-@version        0.0.8
+@version        0.0.9
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -15,7 +15,15 @@
 	domain("outlook.office.com")
 {
 	.customScrollBar	{
-		scrollbar-color: unset !important;
-		scrollbar-width: unset !important;
+		scrollbar-color: unset;
+		scrollbar-width: unset;
+	}
+}
+@-moz-document
+	url-prefix("https://outlook.office.com/calendar/")
+{
+	.AMOVa  {
+		scrollbar-color: unset;
+		scrollbar-width: unset;
 	}
 }
