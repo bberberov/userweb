@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.0.21
+@version        0.0.22
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -96,10 +96,15 @@
 		/* global-<ID>.css */
 		.Header-old	{	padding: 0em !important;	}
 
-		.application-main	{
-			height: calc( 100vh - 26px - 40px );
-			overflow-y: auto;
+		/* global-<ID>.css */
+		.AppHeader .AppHeader-globalBar	{
+			padding: 0em var(--base-size-16, 16px) !important;
+			padding-bottom: 0em !important;
 		}
+
+		.application-main	{	overflow-y: auto;	}
+		body.logged-out .application-main	{	height: calc( 100vh - 26px - 40px );	}
+		body.logged-in  .application-main	{	height: calc( 100vh - 26px - 80px );	}
 
 /*** #repository-container-header ***/
 
