@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Mod
 @description    Userstyle for DistroWatch
-@version        0.0.8
+@version        0.0.9
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -102,8 +102,9 @@
 		font-size: /*[[pkg-font-size]]*/;
 	}
 
-	td.TablesTitle > img	{
-		margin: 1em 2em;
-		float: right;
-	}
+	td.TablesTitle > img	{	margin: 2em 3em 1em 3em;	}
+
+	td.TablesTitle > h1,
+	td.TablesTitle > h2
+	{	text-align: unset;	}
 }
