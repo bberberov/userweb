@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DocBook Mod
 @description    Userstyle for DocBook sites
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -21,13 +21,13 @@
 	url-prefix("https://cygwin.com/cygwin-ug-net/")
 {
 	code.filename,
-	code.loteral,
+	code.literal,
 	pre.screen
 	{	font-family: monospace, monospace;	}
 
 	@media screen	{
 		body	{
-			max-width: /*[[page-w]]*/
+			max-width: /*[[page-w]]*/;
 			margin: auto;
 			padding: 1em 2em;
 		}
