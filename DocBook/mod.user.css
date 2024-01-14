@@ -1,0 +1,40 @@
+/* ==UserStyle==
+@name           DocBook Mod
+@description    Userstyle for DocBook sites
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/DocBook/mod.user.css
+@preprocessor   uso
+
+@advanced range page-w "Page Width" [ 40, 20, 80, 1, 'em' ]
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://www.linuxfromscratch.org/lfs/view/stable/"),
+	url-prefix("https://www.linuxfromscratch.org/blfs/view/stable/"),
+	url-prefix("https://www.linuxfromscratch.org/lfs/view/development/"),
+	url-prefix("https://www.linuxfromscratch.org/blfs/view/development/"),
+	url-prefix("https://cygwin.com/cygwin-ug-net/")
+{
+	code.filename,
+	code.loteral,
+	pre.screen
+	{	font-family: monospace, monospace;	}
+
+	@media screen	{
+		body	{
+			max-width: /*[[page-w]]*/
+			margin: auto;
+			padding: 1em 2em;
+		}
+	}
+	@media print	{
+		.navheader,
+		.navfooter
+		{	display: none;	}
+	}
+}
