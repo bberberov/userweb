@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.5
+@version        0.1.6
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -127,7 +127,7 @@
 	/* Logos */
 	td.News     > :first-child > img,
 	td.NewsLogo > :first-child > img,
-	td.News1                     img
+	td.News1    > center         img
 	{
 		padding: 1em;
 		border-radius: 0.5em;
@@ -138,43 +138,43 @@
 	/* Good logos */
 	td.News     > :first-child > img[title="Fedora"],
 	td.NewsLogo > :first-child > img[title="Fedora"],
-	td.News1                     img[title="Fedora"],
+	td.News1    > center         img[title="Fedora"],
 	td.News     > :first-child > img[title="Garuda Linux"],
 	td.NewsLogo > :first-child > img[title="Garuda Linux"],
-	td.News1                     img[title="Garuda Linux"],
+	td.News1    > center         img[title="Garuda Linux"],
 	td.News     > :first-child > img[title="GeckoLinux"],
 	td.NewsLogo > :first-child > img[title="GeckoLinux"],
-	td.News1                     img[title="GeckoLinux"],
+	td.News1    > center         img[title="GeckoLinux"],
 	td.News     > :first-child > img[title="Kaisen Linux"],
 	td.NewsLogo > :first-child > img[title="Kaisen Linux"],
-	td.News1                     img[title="Kaisen Linux"],
+	td.News1    > center         img[title="Kaisen Linux"],
 	td.News     > :first-child > img[title="Mabox Linux"],
 	td.NewsLogo > :first-child > img[title="Mabox Linux"],
-	td.News1                     img[title="Mabox Linux"],
+	td.News1    > center         img[title="Mabox Linux"],
 	td.News     > :first-child > img[title="OpenMediaVault"],
 	td.NewsLogo > :first-child > img[title="OpenMediaVault"],
-	td.News1                     img[title="OpenMediaVault"],
+	td.News1    > center         img[title="OpenMediaVault"],
 	td.News     > :first-child > img[title="OPNsense"],
 	td.NewsLogo > :first-child > img[title="OPNsense"],
-	td.News1                     img[title="OPNsense"],
+	td.News1    > center         img[title="OPNsense"],
 	td.News     > :first-child > img[title="openSUSE"],
 	td.NewsLogo > :first-child > img[title="openSUSE"],
-	td.News1                     img[title="openSUSE"],
+	td.News1    > center         img[title="openSUSE"],
 	td.News     > :first-child > img[title="Parrot"],
 	td.NewsLogo > :first-child > img[title="Parrot"],
-	td.News1                     img[title="Parrot"],
+	td.News1    > center         img[title="Parrot"],
 	td.News     > :first-child > img[title="Redcore Linux"],
 	td.NewsLogo > :first-child > img[title="Redcore Linux"],
-	td.News1                     img[title="Redcore Linux"],
+	td.News1    > center         img[title="Redcore Linux"],
 	td.News     > :first-child > img[title="Rhino Linux"],
 	td.NewsLogo > :first-child > img[title="Rhino Linux"],
-	td.News1                     img[title="Rhino Linux"],
+	td.News1    > center         img[title="Rhino Linux"],
 	td.News     > :first-child > img[title="TrueNAS"],
 	td.NewsLogo > :first-child > img[title="TrueNAS"],
-	td.News1                     img[title="TrueNAS"],
+	td.News1    > center         img[title="TrueNAS"],
 	td.News     > :first-child > img[title="UBports"],
 	td.NewsLogo > :first-child > img[title="UBports"],
-	td.News1                     img[title="UBports"]
+	td.News1    > center         img[title="UBports"]
 	{
 		background-color: transparent;
 		filter: unset;
@@ -183,13 +183,13 @@
 	/* Dark logos */
 	td.News     > :first-child > img[title="pfSense"],
 	td.NewsLogo > :first-child > img[title="pfSense"],
-	td.News1                     img[title="pfSense"],
+	td.News1    > center         img[title="pfSense"],
 	td.News     > :first-child > img[title="ravynOS"],
 	td.NewsLogo > :first-child > img[title="ravynOS"],
-	td.News1                     img[title="ravynOS"],
+	td.News1    > center         img[title="ravynOS"],
 	td.News     > :first-child > img[title="YunoHost"],
 	td.NewsLogo > :first-child > img[title="YunoHost"],
-	td.News1                     img[title="YunoHost"]
+	td.News1    > center         img[title="YunoHost"]
 	{
 		background-color: transparent;
 		filter: invert(100%) brightness(81.25%);	/* 13/16 */
