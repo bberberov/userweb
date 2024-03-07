@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitLab No Login
 @description    Userstyle for GitLab
-@version        0.0.2
+@version        0.0.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -18,37 +18,49 @@
 	domain("ohwr.org"),
 	domain("salsa.debian.org")
 {
-	.ui-light-gray body,
 	.ui-indigo     body,
+	.ui-light-gray body,
+	.ui-neutral    body,
+	.ui-indigo     .top-bar-fixed,
 	.ui-light-gray .top-bar-fixed,
-	.ui-indigo     .top-bar-fixed
+	.ui-neutral    .top-bar-fixed
 	{	background-color: #fec;	}
 
-	.ui-light-gray .super-sidebar,
 	.ui-indigo     .super-sidebar,
-	.ui-light-gray .cover-block,
+	.ui-light-gray .super-sidebar,
+	.ui-neutral    .super-sidebar,
 	.ui-indigo     .cover-block,
-	.ui-light-gray .file-holder,
+	.ui-light-gray .cover-block,
+	.ui-neutral    .cover-block,
 	.ui-indigo     .file-holder,
-	.ui-light-gray .nav-sidebar,
+	.ui-light-gray .file-holder,
+	.ui-neutral    .file-holder,
 	.ui-indigo     .nav-sidebar,
+	.ui-light-gray .nav-sidebar,
+	.ui-neutral    .nav-sidebar,
+	.ui-indigo     .toggle-sidebar-button, .close-nav-button,
 	.ui-light-gray .toggle-sidebar-button, .close-nav-button,
-	.ui-indigo     .toggle-sidebar-button, .close-nav-button
+	.ui-neutral    .toggle-sidebar-button, .close-nav-button
 	{	background-color: #edb;	}
 
+	.ui-indigo     .user-contrib-cell[data-level="0"],
 	.ui-light-gray .user-contrib-cell[data-level="0"],
-	.ui-indigo     .user-contrib-cell[data-level="0"]
+	.ui-neutral    .user-contrib-cell[data-level="0"]
 	{	fill: #edb;	}
+	.ui-indigo     .user-contrib-cell[data-level="1"],
 	.ui-light-gray .user-contrib-cell[data-level="1"],
-	.ui-indigo     .user-contrib-cell[data-level="1"]
+	.ui-neutral    .user-contrib-cell[data-level="1"]
 	{	fill: #cb9;	}
+	.ui-indigo     .user-contrib-cell[data-level="2"],
 	.ui-light-gray .user-contrib-cell[data-level="2"],
-	.ui-indigo     .user-contrib-cell[data-level="2"]
+	.ui-neutral    .user-contrib-cell[data-level="2"]
 	{	fill: #986;	}
+	.ui-indigo     .user-contrib-cell[data-level="3"],
 	.ui-light-gray .user-contrib-cell[data-level="3"],
-	.ui-indigo     .user-contrib-cell[data-level="3"]
+	.ui-neutral    .user-contrib-cell[data-level="3"]
 	{	fill: #543;	}
+	.ui-indigo     .user-contrib-cell[data-level="4"],
 	.ui-light-gray .user-contrib-cell[data-level="4"],
-	.ui-indigo     .user-contrib-cell[data-level="4"]
+	.ui-neutral    .user-contrib-cell[data-level="4"]
 	{	fill: #100;	}
 }
