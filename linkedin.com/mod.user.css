@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           LinkedIn Mod
 @description    Userstyle for LinkedIn
-@version        0.0.10
+@version        0.0.11
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -20,7 +20,9 @@
 	domain("www.linkedin.com")
 {
 /*** Feed item expansion ***/
-	.feed-shared-inline-show-more-text	{	max-height: unset;	}
+	.feed-shared-inline-show-more-text.feed-shared-inline-show-more-text--3-lines,
+	.feed-shared-inline-show-more-text
+	{	max-height: unset;	}
 	.feed-shared-inline-show-more-text .see-more	{	display: none;	}
 
 /*** Icons ***/
