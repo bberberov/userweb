@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ServeTheHome No Script
 // @description  No JavaScript userscript for ServeTheHome
-// @version      0.0.2
+// @version      0.0.3
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -14,10 +14,22 @@
 // @run-at       document-end
 // ==/UserScript==
 
-const elements = document.getElementsByClassName('td-thumb-css');
+const e_thumb_css   = document.getElementsByClassName('td-thumb-css');
+const e_entry-thumb = document.getElementsByClassName('entry-thumb');
 
-for (const element of elements)
+for (const element of e_thumb_css)
 {
-	element.style.backgroundImage='url(' + element.dataset.imgUrl + ')';
-	element.style.opacity='unset';
+	if ( 'img' != element.tagName )
+	{
+		element.style.backgroundImage = 'url(' + element.dataset.imgUrl + ')';
+		element.style.opacity = 'unset';
+	}
+
+}
+for (const element of e_entry)
+{
+	if ( 'img' == element.tagName )
+	{
+		element.src = element.dataset.imgUrl;
+	}
 }
