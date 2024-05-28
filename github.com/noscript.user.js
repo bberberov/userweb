@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub No Script
 // @description  No JavaScript userscript for GitHub
-// @version      0.0.1
+// @version      0.0.2
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -14,7 +14,7 @@
 // @run-at       document-idle
 // ==/UserScript==
 
-const e_include_fragment   = document.getElementsByTagName('include-fragment');
+const e_include_fragment = document.getElementsByTagName('include-fragment');
 
 for (const element of e_include_fragment)
 {
@@ -32,12 +32,12 @@ for (const element of e_include_fragment)
 						throw new Error('HTTP error!');
 					}
 
-					return response.text()
+					return response.text();
 				}
 			).then(
 				(text) => {
-					element.insertAdjacentHTML('afterend', text);
-					parent.remove(element)
+					parent.insertAdjacentHTML('beforeend', text);
+					// parent.remove(element);
 				}
 			);
 		}
