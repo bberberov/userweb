@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.7
+@version        0.1.8
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -27,7 +27,7 @@
 	domain("distrowatch.com")
 {
 	body {
-		background-color: /*[[page-bg-color]]*/;
+		background-color: /*[[page-bg-color]]*/ !important;
 		color: /*[[page-fg-color]]*/;
 	}
 
