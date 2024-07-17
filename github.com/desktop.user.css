@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.0.23
+@version        0.1.0
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -90,11 +90,11 @@
 
 /*** Main elements on page ***/
 
-		/* primer-<ID>.css */
-		.Header	{	padding: 0em;	}
-
 		/* global-<ID>.css */
-		.Header-old	{	padding: 0em !important;	}
+		.HeaderMktg	{
+			padding-bottom: 0em !important;
+			padding-top:    0em !important;
+		}
 
 		/* global-<ID>.css */
 		.AppHeader .AppHeader-globalBar	{
