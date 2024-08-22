@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DuckDuckGo HTML Mod
 @description    Userstyle for DuckDuckGo HTML
-@version        0.0.3
+@version        0.0.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -19,7 +19,7 @@
 {
 	html	{	font-size: /*[[font-size]]*/;	}
 
-	.header.header--html {
+	.header.header--html	{
 		padding-left:  1em;
 		padding-right: 1em;
 	}
@@ -34,9 +34,7 @@
 		margin: auto;
 		padding-left: unset;
 	}
-	.search--header	{
-		width: unset;
-	}
+	.search--header	{	width: unset;	}
 
 	.zci-wrapper	{	padding: 1em 0;	}
 	.zci	{
@@ -47,10 +45,27 @@
 	}
 
 	.serp__results	{
-		max-width: /*[[width]]*/;
+		max-width: unset;
 		margin: auto;
 		padding-left:  1em !important;
 		padding-right: 1em;
 	}
-	.results {	padding: 0;	}
+	.results	{
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.result	{	width: /*[[width]]*/;	}
+
+	.nav-link,
+	.feedback-btn
+	{
+		margin: 2em 5em;
+		margin-right: unset;
+		float: unset;
+	}
+	.nav-link	{	padding-left: unset;	}
+	.feedback-btn	{	padding-top: unset;	}
 }
