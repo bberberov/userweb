@@ -1,0 +1,51 @@
+/* ==UserStyle==
+@name           software.opensuse.org Desktop
+@description    Userstyle for software.opensuse.org
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/opensuse.org/software/desktop.user.css
+@preprocessor   uso
+
+@advanced range image-height "Image Height" [ 150,  150, 600,   50, 'px' ]
+@advanced range card-width   "Card Width"   [  20,   15,  30,    1, 'rem']
+@advanced range card-pad     "Card Padding" [ 0.5, 0.25, 1.5, 0.25, 'rem']
+@advanced range card-gap     "Card Gap"     [ 0.5, 0.25, 1.5, 0.25, 'rem']
+==/UserStyle== */
+
+@-moz-document
+	domain("software.opensuse.org")
+{
+	* {
+		scrollbar-color: unset;
+		scrollbar-width: unset;
+	}
+
+	.package-card .card-img-top	{	height: /*[[image-height]]*/;;	}
+
+	.card-body	{	padding: /*[[card-pad]]*/;	}
+
+	#search-result > .container-xl,
+	#search-result > .container-lg,
+	#search-result > .container-md,
+	#search-result > .container-sm,
+	#search-result > .container
+	{	max-width: unset;	}
+
+	#search-result-list	{
+		justify-content: center;
+		gap: /*[[card-gap]]*/;
+	}
+	#search-result-list > div	{
+		flex: 0 0 100%;
+		max-width: /*[[card-width]]*/;
+		padding-left: unset;
+		padding-right: unset;
+	}
+	#search-result-list > div > .card	{
+		margin-bottom: unset !important;
+	}
+}
