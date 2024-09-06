@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.8
+@version        0.1.9
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -166,6 +166,9 @@
 	td.News     > :first-child > img[title="Parrot"],
 	td.NewsLogo > :first-child > img[title="Parrot"],
 	td.News1    > center         img[title="Parrot"],
+	td.News     > :first-child > img[title="Q4OS"],
+	td.NewsLogo > :first-child > img[title="Q4OS"],
+	td.News1    > center         img[title="Q4OS"],
 	td.News     > :first-child > img[title="Redcore Linux"],
 	td.NewsLogo > :first-child > img[title="Redcore Linux"],
 	td.News1    > center         img[title="Redcore Linux"],
@@ -199,6 +202,9 @@
 	td.News     > :first-child > img[title="pfSense"],
 	td.NewsLogo > :first-child > img[title="pfSense"],
 	td.News1    > center         img[title="pfSense"],
+	td.News     > :first-child > img[title="PorteuX"],
+	td.NewsLogo > :first-child > img[title="PorteuX"],
+	td.News1    > center         img[title="PorteuX"],
 	td.News     > :first-child > img[title="ravynOS"],
 	td.NewsLogo > :first-child > img[title="ravynOS"],
 	td.News1    > center         img[title="ravynOS"],
@@ -327,6 +333,7 @@
 	td.TablesTitle > img[title="openSUSE"],
 	td.TablesTitle > img[title="OPNsense"],
 	td.TablesTitle > img[title="Parrot"],
+	td.TablesTitle > img[title="Q4OS"],
 	td.TablesTitle > img[title="Redcore Linux"],
 	td.TablesTitle > img[title="Rhino Linux"],
 	td.TablesTitle > img[title="Solus"],
@@ -344,6 +351,7 @@
 	td.TablesTitle > img[title="BunsenLabs Linux"],
 	td.TablesTitle > img[title="MX Linux"],
 	td.TablesTitle > img[title="pfSense"],
+	td.TablesTitle > img[title="PorteuX"],
 	td.TablesTitle > img[title="SDesk"],
 	td.TablesTitle > img[title="ravynOS"],
 	td.TablesTitle > img[title="YunoHost"]
@@ -442,6 +450,7 @@
 	img[align="left"][title="openSUSE"],
 	img[align="left"][title="OPNsense"],
 	img[align="left"][title="Parrot"],
+	img[align="left"][title="Q4OS"],
 	img[align="left"][title="Redcore Linux"],
 	img[align="left"][title="Rhino Linux"],
 	img[align="left"][title="Solus"],
@@ -470,6 +479,7 @@
 	img[align="left"][title="BunsenLabs Linux"],
 	img[align="left"][title="MX Linux"],
 	img[align="left"][title="pfSense"],
+	img[align="left"][title="PorteuX"],
 	img[align="left"][title="ravynOS"],
 	img[align="left"][title="SDesk"],
 	img[align="left"][title="YunoHost"]
