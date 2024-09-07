@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.12
+@version        0.1.13
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -445,8 +445,11 @@
 
 	/* Good logos - large */
 	img.iconsmall[title="AlmaLinux OS"],
+	img.iconsmall[title="Chromium OS"],
 	img.iconsmall[title="EndeavourOS"],
 	img.iconlarge[title="Fedora"],
+	img.iconsmall[title="Fedora"],
+	img.iconsmall[title="Funtoo"],
 	img.iconlarge[title="Garuda Linux"],
 	img.iconlarge[title="GeckoLinux"],
 	img.iconlarge[title="Gnoppix Linux"],
@@ -454,20 +457,25 @@
 	img.iconlarge[title="Kaisen Linux"],
 	img.iconsmall[title="Linux Mint"],
 	img.iconlarge[title="Mabox Linux"],
+	img.iconsmall[title="Manjaro Linux"],
 	img.iconlarge[title="OpenMediaVault"],
 	img.iconlarge[title="openSUSE"],
 	img.iconlarge[title="OPNsense"],
 	img.iconlarge[title="Parrot"],
 	img.iconlarge[title="Q4OS"],
+	img.iconsmall[title="Solus"],
+	img.iconsmall[title="Red Hat Enterprise Linux"],
 	img.iconlarge[title="Redcore Linux"],
 	img.iconlarge[title="Rhino Linux"],
 	img.iconlarge[title="Solus"],
 	img.iconlarge[title="TrueNAS"],
 	img.iconlarge[title="UBports"],
+	img.iconsmall[title="UBports"],
 	img.iconsmall[title="XeroLinux"],
 	img.iconlarge[title="Zorin OS"],
 
-	img.iconlarge[title="Linux"]
+	img.iconlarge[title="Linux"],
+	img.iconsmall[title="Linux"]
 	{
 		background-color: transparent;
 		filter: unset;
@@ -476,10 +484,12 @@
 	/* Dark logos */
 	img.iconlarge[title="BunsenLabs Linux"],
 	img.iconlarge[title="MX Linux"],
+	img.iconlarge[title="Nobara Project"],
 	img.iconlarge[title="pfSense"],
 	img.iconlarge[title="PorteuX"],
 	img.iconlarge[title="ravynOS"],
 	img.iconlarge[title="SDesk"],
+	img.iconlarge[title="SysLinuxOS"],
 	img.iconlarge[title="YunoHost"]
 	{
 		background-color: transparent;
