@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.10
+@version        0.1.11
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -432,57 +432,61 @@
 	{	background-color: /*[[card-bg-color]]*/;	}
 
 	/* Logos */
-	img[align="left"]	{
-		padding: 0.5em;
+	img.iconlarge,
+	img.iconsmall
+	{
 		border-radius: 0.25em;
 		background-color: #f6edc8;
 		filter: brightness(81.25%);	/* 13/16 */
 	}
 
-	/* Good logos - large */
-	img[align="left"][title="Fedora"],
-	img[align="left"][title="Garuda Linux"],
-	img[align="left"][title="GeckoLinux"],
-	img[align="left"][title="Gnoppix Linux"],
-	img[align="left"][title="Kaisen Linux"],
-	img[align="left"][title="Mabox Linux"],
-	img[align="left"][title="OpenMediaVault"],
-	img[align="left"][title="openSUSE"],
-	img[align="left"][title="OPNsense"],
-	img[align="left"][title="Parrot"],
-	img[align="left"][title="Q4OS"],
-	img[align="left"][title="Redcore Linux"],
-	img[align="left"][title="Rhino Linux"],
-	img[align="left"][title="Solus"],
-	img[align="left"][title="TrueNAS"],
-	img[align="left"][title="UBports"],
-	img[align="left"][title="Zorin OS"],
+	img.iconlarge	{	padding: 0.5em;	}
+	img.iconsmall	{	padding: 0.25em;	}
 
-	img[align="left"][title="Linux"]
+	/* Good logos - large */
+	img.iconlarge[title="Fedora"],
+	img.iconlarge[title="Garuda Linux"],
+	img.iconlarge[title="GeckoLinux"],
+	img.iconlarge[title="Gnoppix Linux"],
+	img.iconlarge[title="Kaisen Linux"],
+	img.iconlarge[title="Mabox Linux"],
+	img.iconlarge[title="OpenMediaVault"],
+	img.iconlarge[title="openSUSE"],
+	img.iconlarge[title="OPNsense"],
+	img.iconlarge[title="Parrot"],
+	img.iconlarge[title="Q4OS"],
+	img.iconlarge[title="Redcore Linux"],
+	img.iconlarge[title="Rhino Linux"],
+	img.iconlarge[title="Solus"],
+	img.iconlarge[title="TrueNAS"],
+	img.iconlarge[title="UBports"],
+	img.iconlarge[title="Zorin OS"],
+
+	img.iconlarge[title="Linux"]
 	{
 		background-color: transparent;
 		filter: unset;
 	}
 
 	/* Good logos - small */
-	img[align="left"][hspace="5"][title="AlmaLinux OS"],
-	img[align="left"][hspace="5"][title="EndeavourOS"],
-	img[align="left"][hspace="5"][title="HardenedBSD"],
-	img[align="left"][hspace="5"][title="Linux Mint"],
-	img[align="left"][hspace="5"][title="XeroLinux"]
+	img.iconsmall[title="AlmaLinux OS"],
+	img.iconsmall[title="EndeavourOS"],
+	img.iconsmall[title="HardenedBSD"],
+	img.iconsmall[title="Linux Mint"],
+	img.iconsmall[title="XeroLinux"]
 	{
 		background-color: transparent;
 		filter: unset;
 	}
 
 	/* Dark logos - large */
-	img[align="left"][title="BunsenLabs Linux"],
-	img[align="left"][title="MX Linux"],
-	img[align="left"][title="pfSense"],
-	img[align="left"][title="PorteuX"],
-	img[align="left"][title="ravynOS"],
-	img[align="left"][title="SDesk"],
-	img[align="left"][title="YunoHost"]
+	img.iconlarge[title="BunsenLabs Linux"],
+	img.iconlarge[title="MX Linux"],
+	img.iconlarge[title="pfSense"],
+	img.iconlarge[title="PorteuX"],
+	img.iconlarge[title="ravynOS"],
+	img.iconlarge[title="SDesk"],
+	img.iconlarge[title="YunoHost"]
 	{
 		background-color: transparent;
 		filter: invert(100%) brightness(81.25%);	/* 13/16 */
