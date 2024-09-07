@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name           build.opensuse.org Desktop
+@description    Userstyle for build.opensuse.org
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/opensuse.org/build/desktop.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	domain("build.opensuse.org")
+{
+	.scrollable-tabs	{	white-space: unset;	}
+}
