@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.11
+@version        0.1.12
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -444,11 +444,15 @@
 	img.iconsmall	{	padding: 0.25em;	}
 
 	/* Good logos - large */
+	img.iconsmall[title="AlmaLinux OS"],
+	img.iconsmall[title="EndeavourOS"],
 	img.iconlarge[title="Fedora"],
 	img.iconlarge[title="Garuda Linux"],
 	img.iconlarge[title="GeckoLinux"],
 	img.iconlarge[title="Gnoppix Linux"],
+	img.iconsmall[title="HardenedBSD"],
 	img.iconlarge[title="Kaisen Linux"],
+	img.iconsmall[title="Linux Mint"],
 	img.iconlarge[title="Mabox Linux"],
 	img.iconlarge[title="OpenMediaVault"],
 	img.iconlarge[title="openSUSE"],
@@ -460,6 +464,7 @@
 	img.iconlarge[title="Solus"],
 	img.iconlarge[title="TrueNAS"],
 	img.iconlarge[title="UBports"],
+	img.iconsmall[title="XeroLinux"],
 	img.iconlarge[title="Zorin OS"],
 
 	img.iconlarge[title="Linux"]
@@ -468,18 +473,7 @@
 		filter: unset;
 	}
 
-	/* Good logos - small */
-	img.iconsmall[title="AlmaLinux OS"],
-	img.iconsmall[title="EndeavourOS"],
-	img.iconsmall[title="HardenedBSD"],
-	img.iconsmall[title="Linux Mint"],
-	img.iconsmall[title="XeroLinux"]
-	{
-		background-color: transparent;
-		filter: unset;
-	}
-
-	/* Dark logos - large */
+	/* Dark logos */
 	img.iconlarge[title="BunsenLabs Linux"],
 	img.iconlarge[title="MX Linux"],
 	img.iconlarge[title="pfSense"],
