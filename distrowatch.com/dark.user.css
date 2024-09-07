@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.9
+@version        0.1.10
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -439,7 +439,7 @@
 		filter: brightness(81.25%);	/* 13/16 */
 	}
 
-	/* Good logos */
+	/* Good logos - large */
 	img[align="left"][title="Fedora"],
 	img[align="left"][title="Garuda Linux"],
 	img[align="left"][title="GeckoLinux"],
@@ -464,7 +464,7 @@
 		filter: unset;
 	}
 
-	/* Good logos - small only */
+	/* Good logos - small */
 	img[align="left"][hspace="5"][title="AlmaLinux OS"],
 	img[align="left"][hspace="5"][title="EndeavourOS"],
 	img[align="left"][hspace="5"][title="HardenedBSD"],
@@ -475,7 +475,7 @@
 		filter: unset;
 	}
 
-	/* Dark logos */
+	/* Dark logos - large */
 	img[align="left"][title="BunsenLabs Linux"],
 	img[align="left"][title="MX Linux"],
 	img[align="left"][title="pfSense"],
