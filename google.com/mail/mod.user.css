@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           GMail Mod
+@description    Userstyle for GMail
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/google.com/mail/mod.user.css
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://mail.google.com/mail/")
+{
+	.bx0	{
+		color: red;
+		font-weight: bold;
+	}
+}
