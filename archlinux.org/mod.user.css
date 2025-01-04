@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name           Arch Linux Mod
+@description    Userstyle for Arch Linux
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/archlinux.org/mod.user.css
+@preprocessor   uso
+
+@advanced range font-scale    "Font Scaling" [ 1, 0.75, 1.5, 0.0625, 'em' ]
+@advanced range pkg-tbl-pad   "Package Details Spacing"  [ 0.25, 0.125, 0.5, 0.0625, 'em' ]
+@advanced range pkg-deps-col  "\"Dependencies\" Columns" [ 2, 1, 4, 1, '' ]
+@advanced range pkg-reqs-col  "\"Required By\" Columns"  [ 2, 1, 4, 1, '' ]
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://archlinux.org/packages/")
+{
+	#content	{	font-size: /*[[font-scale]]*/;	}
+	#pkgdetails #pkginfo th	{	padding: 0px 0px /*[[pkg-tbl-pad]]*/ 0px;	}
+	#pkgdetails #pkginfo td	{	padding: 0px 0px /*[[pkg-tbl-pad]]*/ 1.5em;	}
+	#pkgdetails #detailslinks ul	{	font-size: unset;	}
+	#pkgdetails #detailslinks ul li	{	padding: 0.25em 0em;	}
+	#pkgdetails #detailslinks ul a	{	padding: 0.25em 0.5em;	}
+	#pkgdepslist	{	column-count: /*[[pkg-deps-col]]*/	}
+	#pkgreqslist	{	column-count: /*[[pkg-reqs-col]]*/	}
+}
