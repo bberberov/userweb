@@ -1,4 +1,4 @@
-// Copyright © 2022, 2023 Boian Berberov
+// Copyright © 2022, 2023, 2025 Boian Berberov
 // Licensed under the EUPL-1.2 only.
 //
 // License text: https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
@@ -7,7 +7,7 @@
 // ==UserScript==
 // @name         StackExchange Dark
 // @description  Userscript for StackExchange
-// @version      0.0.5
+// @version      0.1.0
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -31,6 +31,7 @@ document.body.classList.add('theme-dark');
 
 if (
 	   document.documentURI.startsWith('https://codereview.stackexchange.com/')
+	|| document.documentURI.startsWith('https://emacs.stackexchange.com/')
 	|| document.documentURI.startsWith('https://graphicdesign.stackexchange.com/')
 	|| document.documentURI.startsWith('https://unix.stackexchange.com/')
 	|| document.documentURI.startsWith('https://askubuntu.com/')
