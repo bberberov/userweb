@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.14
+@version        0.2.0
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -26,6 +26,10 @@
 @-moz-document
 	domain("distrowatch.com")
 {
+	:root {
+		color-scheme: dark;
+	}
+
 	body {
 		background-color: /*[[page-bg-color]]*/ !important;
 		color: /*[[page-fg-color]]*/;
@@ -46,8 +50,7 @@
 	}
 
 	body > table:first-child img[title^="DistroWatch"]	{
-		background-color: #f6edc8 !important;
-		filter: brightness(81.25%);	/* 13/16 */
+		filter: invert(100%);
 	}
 
 	span	{	color: /*[[green-color]]*/;	}
@@ -193,6 +196,13 @@
 	}
 
 	/* Dark logos */
+	td.News     > :first-child > img[title="DistroWatch Weekly"],
+	td.NewsLogo > :first-child > img[title="DistroWatch Weekly"],
+	td.News1    > center         img[title="DistroWatch Weekly"]
+	{
+		background-color: transparent;
+		filter: invert(100%)
+	}
 	td.News     > :first-child > img[title="BunsenLabs Linux"],
 	td.NewsLogo > :first-child > img[title="BunsenLabs Linux"],
 	td.News1    > center         img[title="BunsenLabs Linux"],
@@ -240,21 +250,16 @@
 	td.Logo	{	border-color: /*[[border-color]]*/;	}
 	td.Info	{	border-color: /*[[border-color]]*/ !important;	}
 
-	input	{
-		background-color: /*[[card-bg-color]]*/;
-		color: /*[[link-color]]*/;
+	input {
+		background-color: revert;
+		color: revert;
 	}
-	input[type="text"]	{	color: /*[[page-fg-color]]*/;	}
+	input[type="submit"]	{	color: /*[[link-color]]*/;	}
 
-	select	{
-		background-color: /*[[card-bg-color]]*/;
-		border-color: /*[[border-color]]*/;
+	select {
+		background-color: revert;
+		border: revert;
 		color: /*[[link-color]]*/;
-	}
-
-	textarea	{
-		background-color: /*[[card-bg-color]]*/;
-		color: /*[[page-fg-color]]*/;
 	}
 
 	a	{	color: /*[[link-color]]*/;	}
