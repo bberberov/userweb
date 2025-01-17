@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         GitHub Dark - At start
+// @name         GitHub Dark - At start - Deprecated
 // @description  Sets the dark mode on GitHub sites, at start of page load
-// @version      0.0.4
+// @version      0.0.5
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
 // @supportURL   https://github.com/bberberov/userweb/issues
-// @downloadURL  https://raw.githubusercontent.com/bberberov/userweb/core/github.com/dark-start.user.js
+// @downloadURL  https://raw.githubusercontent.com/bberberov/userweb/core/github.com/dark.user.js
 //
 // @match        https://*.github.com/*
 // @noframes

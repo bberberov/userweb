@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         GitHub Dark - At end
+// @name         GitHub Dark - At end - Deprecated
 // @description  Sets the dark mode on GitHub sites, at end of page load
-// @version      0.0.1
+// @version      0.0.2
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
 // @supportURL   https://github.com/bberberov/userweb/issues
-// @downloadURL  https://raw.githubusercontent.com/bberberov/userweb/core/github.com/dark-end.user.js
+// @downloadURL  https://raw.githubusercontent.com/bberberov/userweb/core/github.com/dark.user.js
 //
 // @match        https://*.github.com/*
 // @noframes
