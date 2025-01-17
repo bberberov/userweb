@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.1.13
+@version        0.1.14
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -199,6 +199,9 @@
 	td.News     > :first-child > img[title="MX Linux"],
 	td.NewsLogo > :first-child > img[title="MX Linux"],
 	td.News1    > center         img[title="MX Linux"],
+	td.News     > :first-child > img[title="Nobara Project"],
+	td.NewsLogo > :first-child > img[title="Nobara Project"],
+	td.News1    > center         img[title="Nobara Project"],
 	td.News     > :first-child > img[title="pfSense"],
 	td.NewsLogo > :first-child > img[title="pfSense"],
 	td.News1    > center         img[title="pfSense"],
@@ -350,6 +353,7 @@
 	/* Dark logos */
 	td.TablesTitle > img[title="BunsenLabs Linux"],
 	td.TablesTitle > img[title="MX Linux"],
+	td.TablesTitle > img[title="Nobara Project"],
 	td.TablesTitle > img[title="pfSense"],
 	td.TablesTitle > img[title="PorteuX"],
 	td.TablesTitle > img[title="SDesk"],
