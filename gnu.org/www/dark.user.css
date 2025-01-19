@@ -1,0 +1,178 @@
+/* ==UserStyle==
+@name           GNU Dark
+@description    Userstyle for GNU
+@version        0.0.2
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/gnu.org/www/dark.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://www.gnu.org/")
+{
+
+	/**  PAGE LAYOUT  **/
+
+	html,
+	body
+	{	color: #ddc;	}
+
+	html { background-color: #111; }
+
+	body {
+		background-color: #222;
+		border-color: #444;
+		box-shadow: revert;
+	}
+
+	/** BASIC ELEMENTS **/
+
+	h1,
+	h2,
+	h3,
+	h4
+	{	color: #ddc;	}
+	h5,
+	h6,
+	dt
+	{	color: #ddc;	}
+
+	hr {
+		background-color: #ddc;
+		border-color: #ddc;
+	}
+
+	td,
+	th
+	{	background-color: #222;	}	/* In case overflow extends outside <body>. */
+
+	img {
+		line-height: 2.5em;
+		color: #666;	/* for the alt attribute. */
+	}
+
+	a[href] { color: #08f; }
+	a[href]:visited { color: #4AF; }
+	a[href]:active,
+	a[href]:hover
+	{	color: #4AF;	}
+	h1 a[href]:visited,
+	h2 a[href]:visited,
+	h3 a[href]:visited,
+	h4 a[href]:visited
+	{	color: #08F;	}
+	h1 a[href]:hover,
+	h2 a[href]:hover,
+	h3 a[href]:hover,
+	h4 a[href]:hover
+	{	color: #4AF;	}
+
+	abbr,
+	acronym
+	{	border-color: #000;	}
+}
+
+@-moz-document
+regexp("^https://www\\.gnu\\.org/software/[a-zA-Z0-9_]+/$")
+{
+	code	{
+		background-color: #444;
+		color: #ddc;
+	}
+	kbd	{
+		background-color: #000;
+		color: #ddc;
+	}
+}
+
+@-moz-document
+	regexp("^https://www\\.gnu\\.org/software/[a-zA-Z0-9_]+/manual/.*")
+{
+
+	/** UNUSED from reset.css **/
+
+	legend	{	color: #000;	}
+
+	/** SIMPLE CLASSES **/
+
+	/** FOR WIDE SCREENS **/
+
+	                    /** DEFINITIONS FOR TEXINFO MANUALS **/
+
+	/** MENUS & NAVIGATION **/
+
+	.node a:hover,
+	.header a:hover
+	{	background: #444;	}
+
+	/** IMAGES & DATA TABLES **/
+
+	table[border="1"],
+	.multitable
+	{	border-color: #95b0d8;	}	/* blue */
+	.multitable th
+	{	border-color: #95b0d8;	}
+
+	/** CONTAINERS **/
+
+	/** EXAMPLES, DISPLAYS, etc. **/
+
+	/* Backgrounds should more or less correspond to what the <pre> is used for,
+	   but this varies a lot across manuals. */
+	pre[class^="example"],
+	pre[class^="lisp"]
+	{	background: #111;	}
+	pre[class^="display"]
+	{	background: #020;	}
+
+	/* When 'cartouche' contains only one <pre> (most cases), it simply adds
+	   a border to the example and darkens the background. */
+	.cartouche > tbody > tr > td > div[class*="example"] > pre[class*="example"],
+	.cartouche > tbody > tr > td > div[class*="example"] > pre[class*="lisp"],
+	.cartouche > tbody > tr > td > div[class*="example"] > pre.verbatim,
+	.cartouche > tbody > tr > td > div[class*="lisp"]    > pre[class*="lisp"],
+	.cartouche > tbody > tr > td > pre[class*="example"],
+	.cartouche > tbody > tr > td > pre[class*="lisp"]
+	{
+		background-color: #f2efe4;	/* light tan */
+		border-color: #d4cbb6;	/* tan */
+	}
+
+	/* Combinations of divs and tables */
+
+	/* All combinations are possible, including with basic tables.
+	   This takes care of a few corner cases: */
+	td > pre[class*="example"] {
+		background: 0;   /* autogen */
+	}
+
+	/* CARTOUCHE on <ul> */
+
+	/* Currently used by automake. */
+	.cartouche ul	{	border-color: #95b0d8;	}
+
+	/** QUOTATIONS **/
+
+	                             /** SPECIAL CASES **/
+
+	/* Cartouches */
+	a[id^="index-sidebar-"] + .cartouche	{	border-color: #95b0d8;	}	/* blue */
+	a[id^="index-sidebar-"] + .cartouche > tbody > tr > td pre[class*="example"]	{	background: #f9f6ed;	}
+
+	/* Ascii tables */
+	#Variable-Typing   .verbatim,      /* Section 6.3.2.1 */
+	#Bitwise-Functions .verbatim
+	{
+		/* Section 9.1.7 */
+		background-color: #111;
+		border-color: #000;
+	}
+
+	.header	{	color: #999;	}
+
+}
+

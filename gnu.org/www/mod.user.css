@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           GNU Mod
+@description    Userstyle for GNU
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/gnu.org/www/mod.user.css
+@preprocessor   uso
+
+@advanced range font-scale "Font Scaling" [ 1, 0.75, 1.5, 0.0625, 'em' ]
+==/UserStyle== */
+
+@-moz-document
+	regexp("^https://www\\.gnu\\.org/software/[a-zA-Z0-9_]+/manual/.*")
+{
+	body {
+		font-size: /*[[font-scale]]*/;
+	}
+}
