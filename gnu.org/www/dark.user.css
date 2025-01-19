@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GNU Dark
 @description    Userstyle for GNU
-@version        0.0.3
+@version        0.0.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -77,7 +77,7 @@
 }
 
 @-moz-document
-	regexp("^https://www\\.gnu\\.org/software/[a-zA-Z0-9_]+/[^/]*$")
+	regexp("^https://www\.gnu\.org/software/[a-zA-Z0-9_]+/[^/]*$")
 {
 	code	{
 		background-color: #444;
@@ -90,7 +90,7 @@
 }
 
 @-moz-document
-	regexp("^https://www\\.gnu\\.org/software/[a-zA-Z0-9_]+/manual/.*")
+	regexp("^https://www\.gnu\.org/software/[a-zA-Z0-9_]+/manual/.*")
 {
 
 	/** UNUSED from reset.css **/
