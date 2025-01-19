@@ -7,16 +7,16 @@
 // ==UserScript==
 // @name         GitLab Dark
 // @description  Sets the dark mode on GitLab sites
-// @version      0.0.1
+// @version      0.0.2
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
 // @supportURL   https://github.com/bberberov/userweb/issues
 // @downloadURL  https://raw.githubusercontent.com/bberberov/userweb/core/gitlab.com/dark.user.js
 //
-// @match       https://framagit.org/*
-// @match       https://gitlab.*/*
-// @match       https://invent.kde.org/*
+// @match        https://framagit.org/*
+// @match        https://gitlab.*/*
+// @match        https://invent.kde.org/*
 // @noframes
 // @grant        none
 // @run-at       document-start

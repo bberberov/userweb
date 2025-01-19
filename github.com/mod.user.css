@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Mod
 @description    Userstyle for GitHub
-@version        0.1.0
+@version        0.1.1
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -13,7 +13,6 @@
 @advanced range blob-tab-size  "Blob View – Tab Size"    [   4,   2,   8,   1, ''  ]
 @advanced range blob-line-h    "Blob View – Line Height" [ 1.6, 1.0,   3, 0.1, ''  ]
 @advanced range blob-font-size "Blob View – Font Size"   [   9,   6,  24,   1, 'pt']
-
 ==/UserStyle== */
 
 @-moz-document
