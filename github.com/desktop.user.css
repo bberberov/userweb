@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.1.4
+@version        0.1.5
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -17,6 +17,9 @@
 	domain("github.com")
 {
 	@media screen	{
+		/* BUG html overflows */
+		html	{	overflow: hidden	}
+
 		.application-main .mt-1,
 		.application-main .mb-mt-1
 		{	margin-top: 2px !important;	}
@@ -82,11 +85,6 @@
 	url-prefix("https://github.com/")
 {
 	@media screen	{
-
-/*** FIXME: Issues in original stylesheets ***/
-		/* BUG: Causes unnecesary overflow and scroll */
-		.markdown-body .anchor {	position: unset;	}
-
 /*** Main elements on page ***/
 
 		/* global-<ID>.css */
