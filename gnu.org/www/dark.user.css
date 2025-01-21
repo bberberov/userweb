@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GNU Dark
 @description    Userstyle for GNU
-@version        0.0.4
+@version        0.0.5
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -90,6 +90,7 @@
 }
 
 @-moz-document
+	regexp("^https://www\.gnu\.org/savannah-checkouts/gnu/[a-zA-Z0-9_]+/manual/.*"),
 	regexp("^https://www\.gnu\.org/software/[a-zA-Z0-9_]+/manual/.*")
 {
 
