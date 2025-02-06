@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.2.0
+@version        0.2.1
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -187,6 +187,9 @@
 	td.News     > :first-child > img[title="UBports"],
 	td.NewsLogo > :first-child > img[title="UBports"],
 	td.News1    > center         img[title="UBports"],
+	td.News     > :first-child > img[title="Univention Corporate Server"],
+	td.NewsLogo > :first-child > img[title="Univention Corporate Server"],
+	td.News1    > center         img[title="Univention Corporate Server"],
 	td.News     > :first-child > img[title="Zorin OS"],
 	td.NewsLogo > :first-child > img[title="Zorin OS"],
 	td.News1    > center         img[title="Zorin OS"]
@@ -209,6 +212,9 @@
 	td.News     > :first-child > img[title="MX Linux"],
 	td.NewsLogo > :first-child > img[title="MX Linux"],
 	td.News1    > center         img[title="MX Linux"],
+	td.News     > :first-child > img[title="Nitrux"],
+	td.NewsLogo > :first-child > img[title="Nitrux"],
+	td.News1    > center         img[title="Nitrux"],
 	td.News     > :first-child > img[title="Nobara Project"],
 	td.NewsLogo > :first-child > img[title="Nobara Project"],
 	td.News1    > center         img[title="Nobara Project"],
@@ -467,10 +473,13 @@
 	img.iconsmall[title="Linux Mint"],
 	img.iconlarge[title="Mabox Linux"],
 	img.iconsmall[title="Manjaro Linux"],
+	img.iconsmall[title="NixOS"],
 	img.iconlarge[title="OpenMediaVault"],
 	img.iconlarge[title="openSUSE"],
 	img.iconlarge[title="OPNsense"],
 	img.iconlarge[title="Parrot"],
+	img.iconlarge[title="Pop!_OS"],
+	img.iconsmall[title="postmarketOS"],
 	img.iconlarge[title="Q4OS"],
 	img.iconsmall[title="Solus"],
 	img.iconsmall[title="Red Hat Enterprise Linux"],
