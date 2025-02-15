@@ -209,6 +209,9 @@
 	td.News     > :first-child > img[title="BunsenLabs Linux"],
 	td.NewsLogo > :first-child > img[title="BunsenLabs Linux"],
 	td.News1    > center         img[title="BunsenLabs Linux"],
+	td.News     > :first-child > img[title="Chimera Linux"],
+	td.NewsLogo > :first-child > img[title="Chimera Linux"],
+	td.News1    > center         img[title="Chimera Linux"],
 	td.News     > :first-child > img[title="MX Linux"],
 	td.NewsLogo > :first-child > img[title="MX Linux"],
 	td.News1    > center         img[title="MX Linux"],
@@ -363,6 +366,7 @@
 
 	/* Dark logos */
 	td.TablesTitle > img[title="BunsenLabs Linux"],
+	td.TablesTitle > img[title="Chimera Linux"],
 	td.TablesTitle > img[title="MX Linux"],
 	td.TablesTitle > img[title="Nobara Project"],
 	td.TablesTitle > img[title="pfSense"],
@@ -487,11 +491,13 @@
 	img.iconlarge[title="Rhino Linux"],
 	img.iconlarge[title="Solus"],
 	img.iconlarge[title="TrueNAS"],
+	img.iconsmall[title="TrueNAS"],
 	img.iconlarge[title="UBports"],
 	img.iconsmall[title="UBports"],
 	img.iconsmall[title="XeroLinux"],
 	img.iconlarge[title="Zorin OS"],
 
+	img.iconsmall[title="GTK"],
 	img.iconlarge[title="Linux"],
 	img.iconsmall[title="Linux"]
 	{
@@ -507,6 +513,7 @@
 	img.iconlarge[title="PorteuX"],
 	img.iconlarge[title="ravynOS"],
 	img.iconlarge[title="SDesk"],
+	img.iconlarge[title="Serpent OS"],
 	img.iconlarge[title="SysLinuxOS"],
 	img.iconlarge[title="YunoHost"]
 	{
