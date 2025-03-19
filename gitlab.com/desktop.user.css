@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitLab Desktop
 @description    Userstyle for GitLab
-@version        0.0.3
+@version        0.0.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -18,9 +18,11 @@
 @-moz-document
 	url-prefix("https://gitlab."),
 	domain("framagit.org"),
+	domain("git.jami.net"),
 	domain("invent.kde.org"),
 	domain("ohwr.org"),
-	domain("salsa.debian.org")
+	domain("salsa.debian.org"),
+	domain("source.puri.sm")
 {
 	/* application-<ID>.css */
 	.logged-out-marketing-header	{	--header-height: 40px;	}
