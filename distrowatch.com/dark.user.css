@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.2.2
+@version        0.2.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -470,6 +470,7 @@
 	img.iconsmall[title="Fedora"],
 	img.iconsmall[title="Funtoo"],
 	img.iconlarge[title="Garuda Linux"],
+	img.iconsmall[title="Garuda Linux"],
 	img.iconlarge[title="GeckoLinux"],
 	img.iconlarge[title="Gnoppix Linux"],
 	img.iconsmall[title="HardenedBSD"],
@@ -477,6 +478,7 @@
 	img.iconsmall[title="Linux Mint"],
 	img.iconlarge[title="Mabox Linux"],
 	img.iconsmall[title="Manjaro Linux"],
+	img.iconsmall[title="Murena"],
 	img.iconsmall[title="NixOS"],
 	img.iconlarge[title="OpenMediaVault"],
 	img.iconlarge[title="openSUSE"],
@@ -507,6 +509,7 @@
 
 	/* Dark logos */
 	img.iconlarge[title="BunsenLabs Linux"],
+	img.iconsmall[title="Chimera Linux"],
 	img.iconlarge[title="MX Linux"],
 	img.iconlarge[title="Nobara Project"],
 	img.iconlarge[title="pfSense"],
