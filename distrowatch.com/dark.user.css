@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.2.4
+@version        0.2.5
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -142,6 +142,9 @@
 	td.News     > :first-child > img[title="Fedora"],
 	td.NewsLogo > :first-child > img[title="Fedora"],
 	td.News1    > center         img[title="Fedora"],
+	td.News     > :first-child > img[title="Feren OS"],
+	td.NewsLogo > :first-child > img[title="Feren OS"],
+	td.News1    > center         img[title="Feren OS"],
 	td.News     > :first-child > img[title="Garuda Linux"],
 	td.NewsLogo > :first-child > img[title="Garuda Linux"],
 	td.News1    > center         img[title="Garuda Linux"],
