@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.2.5
+@version        0.2.6
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -139,6 +139,9 @@
 	}
 
 	/* Good logos */
+	td.News     > :first-child > img[title="Elive"],
+	td.NewsLogo > :first-child > img[title="Elive"],
+	td.News1    > center         img[title="Elive"],
 	td.News     > :first-child > img[title="Fedora"],
 	td.NewsLogo > :first-child > img[title="Fedora"],
 	td.News1    > center         img[title="Fedora"],
@@ -157,6 +160,9 @@
 	td.News     > :first-child > img[title="Kaisen Linux"],
 	td.NewsLogo > :first-child > img[title="Kaisen Linux"],
 	td.News1    > center         img[title="Kaisen Linux"],
+	td.News     > :first-child > img[title="Lubuntu"],
+	td.NewsLogo > :first-child > img[title="Lubuntu"],
+	td.News1    > center         img[title="Lubuntu"],
 	td.News     > :first-child > img[title="Mabox Linux"],
 	td.NewsLogo > :first-child > img[title="Mabox Linux"],
 	td.News1    > center         img[title="Mabox Linux"],
@@ -193,6 +199,9 @@
 	td.News     > :first-child > img[title="UBports"],
 	td.NewsLogo > :first-child > img[title="UBports"],
 	td.News1    > center         img[title="UBports"],
+	td.News     > :first-child > img[title="Ubuntu Cinnamon"],
+	td.NewsLogo > :first-child > img[title="Ubuntu Cinnamon"],
+	td.News1    > center         img[title="Ubuntu Cinnamon"],
 	td.News     > :first-child > img[title="Univention Corporate Server"],
 	td.NewsLogo > :first-child > img[title="Univention Corporate Server"],
 	td.News1    > center         img[title="Univention Corporate Server"],
