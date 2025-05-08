@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.2.6
+@version        0.3.0
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -178,6 +178,9 @@
 	td.News     > :first-child > img[title="Parrot"],
 	td.NewsLogo > :first-child > img[title="Parrot"],
 	td.News1    > center         img[title="Parrot"],
+	td.News     > :first-child > img[title="Plamo Linux"],
+	td.NewsLogo > :first-child > img[title="Plamo Linux"],
+	td.News1    > center         img[title="Plamo Linux"],
 	td.News     > :first-child > img[title="Q4OS"],
 	td.NewsLogo > :first-child > img[title="Q4OS"],
 	td.News1    > center         img[title="Q4OS"],
@@ -245,15 +248,30 @@
 	td.News     > :first-child > img[title="ravynOS"],
 	td.NewsLogo > :first-child > img[title="ravynOS"],
 	td.News1    > center         img[title="ravynOS"],
-	td.News     > :first-child > img[title="SDesk"],
-	td.NewsLogo > :first-child > img[title="SDesk"],
-	td.News1    > center         img[title="SDesk"],
 	td.News     > :first-child > img[title="YunoHost"],
 	td.NewsLogo > :first-child > img[title="YunoHost"],
 	td.News1    > center         img[title="YunoHost"]
 	{
 		background-color: transparent;
 		filter: invert(100%) brightness(81.25%);	/* 13/16 */
+	}
+
+	/* Dark name only */
+	td.News     > :first-child > img[title="AlmaLinux OS"],
+	td.NewsLogo > :first-child > img[title="AlmaLinux OS"],
+	td.News1    > center         img[title="AlmaLinux OS"],
+	td.News     > :first-child > img[title="AnduinOS"],
+	td.NewsLogo > :first-child > img[title="AnduinOS"],
+	td.News1    > center         img[title="AnduinOS"],
+	td.News     > :first-child > img[title="Raspberry Pi OS"],
+	td.NewsLogo > :first-child > img[title="Raspberry Pi OS"],
+	td.News1    > center         img[title="Raspberry Pi OS"],
+	td.News     > :first-child > img[title="SDesk"],
+	td.NewsLogo > :first-child > img[title="SDesk"],
+	td.News1    > center         img[title="SDesk"]
+	{
+		background: linear-gradient(transparent 65%, #f6edc8);
+		filter: unset;
 	}
 
 	td.List	{
