@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Git Dark
 @description    Userstyle for Google Git (semi-automated)
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -123,6 +123,50 @@
 	.Diff-insert {
 		color: #080;
 	}
+	.doc a:link {
+		color: #245dc1;
+	}
+	.doc a:visited {
+		color: #7759ae;
+	}
+	.doc a.h:link,.doc a.h:visited {
+		color: #444;
+	}
+	.doc h1:hover a.h span:before,.doc h2:hover a.h span:before,.doc h3:hover a.h span:before,.doc h4:hover a.h span:before,.doc h5:hover a.h span:before,.doc h6:hover a.h span:before {
+		color: #aaa;
+	}
+	.doc h1:hover a:visited.h span:before,.doc h2:hover a:visited.h span:before,.doc h3:hover a:visited.h span:before,.doc h4:hover a:visited.h span:before,.doc h5:hover a:visited.h span:before,.doc h6:hover a:visited.h span:before {
+		color: #aaa;
+	}
+	.doc strong {
+		color: inherit;
+	}
+	.doc blockquote {
+		background-color: #fffde7;
+	}
+	.doc pre {
+		background-color: #222; /* Dark */
+	}
+	.doc code {
+		background-color: #222; /* Dark */
+	}
+	.doc th {
+		background-color: #222; /* Dark */
+	}
+	.toc-aux {
+		background-color: #222; /* Dark */
+	}
+	.note {
+		background-color: #fffbe4;
+		border-color: #f8f6e6;
+	}
+	.promo {
+		background-color: #f6f9ff;
+		border-color: #eff2f9;
+	}
+	.aside {
+		background-color: #222; /* Dark */
+		border-color: #f2f2f2;
 
 	/* Custom */
 	a	{
