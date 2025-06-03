@@ -1,0 +1,145 @@
+/* ==UserStyle==
+@name           F-Droid Desktop
+@description    Userstyle for F-Droid
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/f-droid.org/desktop.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://f-droid.org/")
+{
+	.site-header {
+		background-color: #1976d2;
+		padding: 0em 1em;
+		display: flex;
+		align-items: end;
+		gap: 1em;
+	}
+
+	.site-title img {
+		margin: 0em;
+		height: unset;
+	}
+
+	.site-nav	{	flex-grow: 1;	}
+}
+
+@-moz-document
+	regexp("https://f-droid.org/packages/"),
+	regexp("https://f-droid.org/../packages/"),
+	regexp("https://f-droid.org/..-../packages/"),
+	regexp("https://f-droid.org/..-..../packages/")
+{
+	#package-list	{	columns: 2;	}
+	#package-list > a	{	display: inline-flex;	}
+
+	.post-content > p	{
+		margin: 0em 0em 1em 0em;
+		border-bottom: 1px solid;
+	}
+
+	.main-content	{
+		padding: 1em;
+		flex-direction: column-reverse;
+	}
+
+	.main-content.with-sidebar .article-area,
+	.main-content.with-sidebar .sidebar
+	{	width: unset;	}
+
+	.main-content.with-sidebar .sidebar	{
+		padding: 0em;
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		gap: 1em;
+	}
+
+	.sidebar-widget	{
+		margin-bottom: 0em;
+		flex-grow: 1;
+	}
+	.sidebar-widget:not(:last-of-type)	{
+		padding-bottom: 0em;
+		border-bottom: none;
+	}
+	.sidebar-widget .post-list li	{
+		padding-bottom: 0em;
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		gap: 1em;
+	}
+}
+
+@-moz-document
+	regexp("https://f-droid.org/packages/..*"),
+	regexp("https://f-droid.org/../packages/..*"),
+	regexp("https://f-droid.org/..-../packages/..*"),
+	regexp("https://f-droid.org/..-..../packages/..*")
+{
+	.main-content {
+		padding: 1em;
+		flex-direction: column-reverse;
+	}
+
+	.main-content.with-sidebar .article-area,
+	.main-content.with-sidebar .sidebar
+	{	width: unset;	}
+
+	.main-content.with-sidebar .sidebar {
+		padding: 0em;
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 1em;
+	}
+
+	.package .package-whats-new,
+	.package .package-description {
+		columns: 2;
+	}
+
+    .package .screenshot img {
+		pointer-events: auto;
+	}
+
+	.package-versions-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+	}
+
+	.package .package-version {
+		margin: 0;
+		width: calc(50% - 0.5em);
+		box-sizing: border-box;
+	}
+
+	.package .package-version .suggested-badge {
+		float: right;
+		margin: 0 0 0 0.5em;
+	}
+
+	.sidebar-widget {
+		border-bottom: none;
+		display: flex;
+		align-items: center;
+		margin-bottom: 0;
+		gap: 1em;
+	}
+
+	.sidebar-widget:not(:last-of-type) {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.sidebar-widget h3 {
+		margin-bottom: 0;
+	}
+}

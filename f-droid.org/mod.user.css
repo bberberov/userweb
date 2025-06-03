@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           F-Droid Mod
+@description    Userstyle for F-Droid
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/f-droid.org/mod.user.css
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://f-droid.org/"),
+	url-prefix("https://search.f-droid.org/")
+{
+    .package .screenshot img	{	pointer-events: auto;	}
+}
