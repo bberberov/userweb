@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           F-Droid Dark
 @description    Userstyle for F-Droid (semi-automated)
-@version        0.0.2
+@version        0.0.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -352,7 +352,8 @@
 
 	/* Custom */
 	input[type="search"],
-	input.search-input
+	input.search-input,
+	.package .package-version-anti-features-list .anti-feature-link .anti-feature-icon
 	{	filter: invert(81.25%);	}	/* 13/16 */
 
 	img	{	filter: brightness(81.25%);	}	/* 13/16 */
