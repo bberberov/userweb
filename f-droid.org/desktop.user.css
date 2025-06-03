@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           F-Droid Desktop
 @description    Userstyle for F-Droid
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -133,6 +133,12 @@
 		margin-bottom: 0;
 		gap: 1em;
 	}
+
+	/* Workaround for 404 page */
+	.sidebar-widget.language + div + div,
+	.sidebar-widget.language + div + div + div,
+	.sidebar-widget.language + div + div + div + div
+	{	display: none;	}
 
 	.sidebar-widget:not(:last-of-type) {
 		padding-bottom: 0;
