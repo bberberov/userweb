@@ -7,7 +7,7 @@
 // ==UserScript==
 // @name         StackExchange Dark
 // @description  Userscript for StackExchange
-// @version      0.1.0
+// @version      0.1.1
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -33,6 +33,7 @@ if (
 	   document.documentURI.startsWith('https://codereview.stackexchange.com/')
 	|| document.documentURI.startsWith('https://emacs.stackexchange.com/')
 	|| document.documentURI.startsWith('https://graphicdesign.stackexchange.com/')
+	|| document.documentURI.startsWith('https://math.stackexchange.com/')
 	|| document.documentURI.startsWith('https://unix.stackexchange.com/')
 	|| document.documentURI.startsWith('https://askubuntu.com/')
 )
