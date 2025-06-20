@@ -1,0 +1,72 @@
+/* ==UserStyle==
+@name           RFC Editor Desktop
+@description    Userstyle for RFC Editor
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/rfc-editor.org/desktop.user.css
+
+@advanced range font-sz  "Font Size"          [ 11,   8, 16, 1,     'pt' ]
+@advanced range line-h   "Line Spacing"       [ 1.25, 1,  2, 0.125, ''   ]
+@advanced range h-mar    "Horizontal Margin"  [ 0.5,  0,  8, 0.25,  'em' ]
+@advanced range v-mar    "Vertical Margin"    [ 0.5,  0,  8, 0.25,  'em' ]
+@advanced range h-pad    "Horizontal Padding" [ 3,    0,  8, 0.25,  'em' ]
+@advanced range v-pad    "Vertical Padding"   [ 1,    0,  8, 0.25,  'em' ]
+==/UserStyle== */
+
+@-moz-document
+	url-prefix("https://www.rfc-editor.org/rfc/rfc")
+{
+	body {
+		background-color: #333;
+		font-size: /*[[font-sz]]*/;
+		line-height: /*[[line-h]]*/;
+	}
+	pre  {
+		background-color: #eed;
+	}
+}
+
+@-moz-document
+	regexp("https://www\.rfc-editor\.org/rfc/rfc[0-9]+\.html")
+{
+	body {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		margin: 0 /*[[h-mar]]*/;
+	}
+
+	span.docinfo {
+		margin:  0 /*[[h-mar]]*/;
+		padding: 0 /*[[h-pad]]*/;
+		height: /*[[line-h]]*/em;
+		align-self: flex-start;
+	}
+
+	span.docinfo + pre,
+	pre.newpage
+	{
+		padding: /*[[v-pad]]*/ /*[[h-pad]]*/;
+		margin:  /*[[v-mar]]*/ /*[[h-mar]]*/;
+	}
+	span.docinfo + pre {	padding-top: calc( 4 * /*[[line-h]]*/em + /*[[v-pad]]*/ );	}
+
+	span.docinfo + br,
+	hr.noprint
+	{	display: none;	}
+}
+
+@-moz-document
+	regexp("https://www\.rfc-editor\.org/rfc/rfc[0-9]+\.txt")
+{
+	pre {
+		margin: auto;
+		width: 90ex;
+		padding: /*[[v-pad]]*/ /*[[h-pad]]*/;
+	}
+}
