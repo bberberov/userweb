@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.5
+@version        0.3.6
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -374,7 +374,7 @@
 	td.News1    > center         img[title="Ubuntu Studio"],
 	td.News     > :first-child > img[title="Vanilla OS"],
 	td.NewsLogo > :first-child > img[title="Vanilla OS"],
-	td.News1    > center         img[title="Vanilla OS"],
+	td.News1    > center         img[title="Vanilla OS"]
 	{
 		background: linear-gradient(transparent 65%, #f6edc8);
 		filter: unset;
