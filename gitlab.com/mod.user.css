@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitLab Mod
 @description    Userstyle for GitLab
-@version        0.0.15
+@version        0.0.16
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -30,6 +30,16 @@
 
 /*** BUG ***/
 	.md table:not(.code) tbody	{	background-color: transparent;	}
+
+	.gl-breadcrumb-item-sm	{	font-size: 1rem;	}
+
+/*** BUG ***/
+	.content-wrapper .container-fluid,
+	.content-wrapper .container-sm,
+	.content-wrapper .container-md,
+	.content-wrapper .container-lg,
+	.content-wrapper .container-xl
+	{	max-width: 1296px;	}
 
 /*** File View ***/
 
