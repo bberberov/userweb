@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Utilities
 @description    Generic utility userstyle
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -10,7 +10,9 @@
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/utilities.user.css
 @preprocessor   stylus
 
-@var checkbox  no-anim  "No animations"  1
+@var checkbox  no-anim  "No animations"      1
+@var checkbox  scrollb  "Normal scrollbars"  1
+
 ==/UserStyle== */
 
 if no-anim == 1 {
@@ -20,5 +22,12 @@ if no-anim == 1 {
 	{
 		animation:  unset !important;
 		transition: unset !important;
+	}
+}
+
+if scrollb == 1 {
+	:root	{
+		scrollbar-width: auto;
+		scrollbar-color: auto;
 	}
 }
