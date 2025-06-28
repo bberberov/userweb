@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Mod
 @description    Userstyle for GitHub
-@version        0.1.2
+@version        0.1.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -18,6 +18,8 @@
 @-moz-document
 	domain("github.com")
 {
+	/* BEGIN Reduce animation */
+
 	/* global-<ID>.css */
 	.Skeleton	{
 		animation-duration: 4s;
@@ -35,6 +37,8 @@
 		animation-timing-function: steps(4, start);
 	}
 
+	/* END   Reduce animation */
+
 	/* element */
 	#wiki-tab,
 	#security-tab,
@@ -49,7 +53,7 @@
 
 	.avatar.circle	{	border-radius: 0 !important;	}
 
-	.Progress	{	height: 0.75em;	}
+	.Progress	{	height: 1em;	}
 
 	/* primer-<ID>.css */
 	.markdown-body .highlight	{
@@ -57,7 +61,26 @@
 		tab-size:      /*[[blob-tab-size]]*/;
 	}
 
-/*** Blob View ***/
+	/* BEGIN Icon colors */
+
+	/* primer-<ID>.css */
+	.UnderlineNav .Counter
+	{	color: var(--display-blue-fgColor);	}
+
+	#repo-network-counter,
+	#gist-fork-button .Counter
+	{	color: var(--display-red-fgColor);	}
+
+	#repo-stars-counter-star,
+	#gist-star-button .Counter
+	{	color: var(--button-star-iconColor);	}
+
+	.octicon-law
+	{	color: var(--display-olive-fgColor);	}
+
+	/* END   Icon colors */
+
+	/* BEGIN Blob View */
 
 	/* github-<ID>.css */
 	.blob-wrapper > .tab-size,
@@ -78,25 +101,26 @@
 	.blob-num,
 	.blob-code-inner
 	{	font-size: /*[[blob-font-size]]*/;	}
+
+	/* END   Blob View */
 }
 
 @-moz-document
 	url-prefix("https://github.com/")
 {
-/*** Signup banner removal ***/
+	/* NOTE - Signup banner removal - NOTE */
 
 	/* site-<ID>.css */
 	.signup-prompt-bg,
 	.signup-prompt
 	{	display: none;	}
 
-
-/*** User Profile ***/
+	/* NOTE - User Profile - NOTE */
 
 	/* profile-<ID>.css */
 	.user-status-circle-badge-container	{	margin-bottom: 2px;	}
 
-/*** .repository-content ***/
+	/* BEGIN .repository-content */
 
 	/* github-<ID>.css */
 	.commit-tease .avatar	{	margin-top: 1px;	}
@@ -114,18 +138,52 @@
 		border-bottom: 1px solid var(--color-border-muted);
 	}
 
+	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-star,
+	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-star + strong
+	{	color: var(--button-star-iconColor);	}
+
+	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-eye,
+	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-eye + strong
+	{	color: var(--display-blue-fgColor);	}
+
+	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-repo-forked,
+	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-repo-forked + strong
+	{	color: var(--display-red-fgColor);	}
+
 	.repository-content > div .Layout-sidebar > .BorderGrid > :first-child	{	order: -2;	}
+	.repository-content > div .Layout-sidebar > .BorderGrid > :first-child .mt-2
+	{
+		display: inline-block;
+		width: calc( var(--Layout-sidebar-width) / 2 - 2px );
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
 	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child	{	order: -1;	}
-	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child .d-inline
+	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child ul
+	{
+		column-count: 2;
+		column-rule: dotted;
+	}
+	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child li
 	{	display: list-item !important;	}
 	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child .d-inline-flex	{
 		display: flex !important;
 		margin-right: 0 !important;
+		font-size: var(--body-font-size) !important;
+	}
+	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child .d-inline-flex > :first-child	{
+		height: calc(  1.5  * var(--body-font-size) );
+		width:  calc(  1.5  * var(--body-font-size) );
+		margin: calc( -0.25 * var(--body-font-size) );
 	}
 	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child .d-inline-flex > :last-child	{
 		flex-grow: 1;
 		text-align: right;
 	}
+
+	/* END   .repository-content */
 
 	/* primer-<ID>.css */
 	.Box-row	{	border-top: none;	}
@@ -134,7 +192,7 @@
 @-moz-document
 	url-prefix("https://gist.github.com/")
 {
-/*** Banner removal ***/
+	/* NOTE - Banner removal - NOTE */
 
 	/* gist-<ID>.css */
 	.gist-banner	{	display: none;	}
