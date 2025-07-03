@@ -1,21 +1,25 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.1.7
+@version        0.2.1
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
 @homepageURL    https://github.com/bberberov/userweb
 @supportURL     https://github.com/bberberov/userweb/issues
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/github.com/desktop.user.css
-@preprocessor   uso
+@preprocessor   stylus
 
-@advanced range files-width "File List – Width" [60, 30, 70, 5, '%']
+@var range  files-width "File List – Width"   [60, 30, 70, 5, '%']
+@var select p-layout    "Project Page Layout" {
+	"Vertical (Normal)"       : "vert",
+	"Vertical README first"   : "vert-readme",
+	"Horizontal"              : "horiz",
+	"Horizontal README first" : "horiz-readme"
+}
 ==/UserStyle== */
 
-@-moz-document
-	domain("github.com")
-{
+@-moz-document domain("github.com") {
 	@media screen	{
 		/* BEGIN margin and padding */
 		.application-main .mt-1,
@@ -87,9 +91,7 @@
 	}
 }
 
-@-moz-document
-	url-prefix("https://github.com/")
-{
+@-moz-document url-prefix("https://github.com/") {
 	@media screen	{
 		/* BUG html overflows */
 		html	{	overflow: hidden	}
@@ -205,6 +207,47 @@
 			padding: 0;
 		}
 
+		if p-layout == "vert-readme"
+		{
+			[class^=OverviewRepoFiles-module__Box_1--]	{	order: -1	}
+		}
+
+		if p-layout == "horiz" || p-layout == "horiz-readme"
+		{
+			.react-repos-overview-margin	{	margin-right: unset;	}
+
+			[class^=OverviewContent-module__Box_11--]	{	flex-direction: row;	}
+
+			.repository-content > div .Layout > .Layout-sidebar	{	overflow-y: scroll;	}
+
+			body.logged-out .repository-content > div .Layout > .Layout-sidebar
+			{	height: calc( 100vh - 26px - 40px - 38px );	}
+			body.logged-in  .repository-content > div .Layout > .Layout-sidebar
+			{	height: calc( 100vh - 26px - 80px - 38px );	}
+
+			body.logged-out .application-main [class^=OverviewContent-module__Box_11--]
+			{	height: calc( 100vh - 26px - 40px - 38px - 48px );	}
+			body.logged-in  .application-main [class^=OverviewContent-module__Box_11--]
+			{	height: calc( 100vh - 26px - 80px - 38px - 48px );	}
+			body.logged-in #notification-shelf + .application-main [class^=OverviewContent-module__Box_11--]
+			{	height:  calc( 100vh - 26px - 80px - var(--base-sticky-header-height) - 38px - 48px ) }
+
+			[class^=OverviewRepoFiles-module__Box_1--],
+			[class^=OverviewContent-module__Box_11--] > [data-hpc=true]
+			{	width: 50%;	}
+
+			[class^=OverviewRepoFiles-module__Box_3] > nav
+			{	overflow-x: scroll;	}
+
+			[class^=OverviewContent-module__Box_11--] > [data-hpc=true]
+			{	overflow-y: scroll;	}
+		}
+
+		if p-layout == "horiz-readme"
+		{
+			[class^=OverviewRepoFiles-module__Box_1--]	{	order: -1	}
+		}
+
 		/* code-<ID>.css */
 		.react-directory-row,
 		.react-directory-filename-column
@@ -242,9 +285,7 @@
 	}
 }
 
-@-moz-document
-	url-prefix("https://gist.github.com/")
-{
+@-moz-document url-prefix("https://gist.github.com/") {
 	@media screen	{
 		/* NOTE - Main elements on page - NOTE */
 
