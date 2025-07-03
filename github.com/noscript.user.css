@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           GitHub NoScript
+@description    Userstyle for GitHub
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/github.com/noscript.user.css
+@preprocessor   uso
+
+==/UserStyle== */
+
+@-moz-document
+	domain("github.com")
+{
+	themed-picture	{	visibility: visible;	}
+}
