@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Debian Bugs Mod
 @description    Userstyle for Debian Bugs
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -17,4 +17,14 @@
 	domain("bugs.debian.org")
 {
 	html	{	font-size: /*[[font-size]]*/;	}
+	body	{
+		/* NOTE Reset */
+		font: normal normal normal 1em/normal sans-serif;
+
+		max-width: 60em;
+		margin: auto;
+	}
+
+	/* NOTE Show by default */
+	.infmessage	{	display: block;	}
 }
