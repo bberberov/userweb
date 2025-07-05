@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           Debian Bugs Mod
+@description    Userstyle for Debian Bugs
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/debian.org/bugs/mod.user.css
+@preprocessor   uso
+
+@advanced range font-size "Font Size" [11,  6, 24, 1, 'pt']
+==/UserStyle== */
+
+@-moz-document
+	domain("bugs.debian.org")
+{
+	html	{	font-size: /*[[font-size]]*/;	}
+}
