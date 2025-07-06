@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub NoScript
 @description    Userstyle for GitHub
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -16,4 +16,9 @@
 	domain("github.com")
 {
 	themed-picture	{	visibility: visible;	}
+
+	@layer primer-css-base	{
+		include-fragment[loading='lazy'] > div[data-show-on-forbidden-error][hidden]
+		{	display: block !important;	}
+	}
 }
