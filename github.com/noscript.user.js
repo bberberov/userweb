@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub No Script
 // @description  No JavaScript userscript for GitHub
-// @version      0.0.2
+// @version      0.0.3
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -42,4 +42,11 @@ for (const element of e_include_fragment)
 			);
 		}
 	}
+}
+
+const e_relative_time = document.getElementsByTagName('relative-time');
+
+for (const element of e_relative_time)
+{
+	element.setAttribute( 'title', element.getAttribute('datetime').replace('T', '\n').replace('Z', ' UTC') );
 }
