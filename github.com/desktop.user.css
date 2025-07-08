@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.2.1
+@version        0.2.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -129,6 +129,17 @@
 			padding-right: 0px !important;
 		}
 
+		body.logged-in #repository-container-header > .container-xl	{
+			max-width: unset;
+		}
+
+		body.logged-in #repository-container-header > :first-child > :first-child	{
+			display: flex;
+			flex-direction: row !important;
+			align-items: center;
+			gap: 1em;
+		}
+
 		#repository-container-header .UnderlineNav	{
 			display: flex;
 			flex: 1 0 auto;
@@ -139,6 +150,8 @@
 		#repository-container-header .UnderlineNav-item .octicon	{	display: none !important;	}
 		#repository-container-header .UnderlineNav-item .Counter	{	margin-left: 3px;	}
 		#repository-container-header .UnderlineNav-item.selected::after	{	bottom: calc(50% - 1.25em);	}
+
+		body.logged-in .AppHeader-localBar .UnderlineNav	{	justify-content: end;	}
 
 		.pagehead-actions .btn-sm	{	padding: 3px 4px;	}
 		.pagehead-actions .btn-sm .octicon	{	margin-right: 3px !important;	}
