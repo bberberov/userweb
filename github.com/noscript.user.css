@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub NoScript
 @description    Userstyle for GitHub
-@version        0.0.2
+@version        0.0.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -21,4 +21,110 @@
 		include-fragment[loading='lazy'] > div[data-show-on-forbidden-error][hidden]
 		{	display: block !important;	}
 	}
+
+	/* BEGIN CSS Modules backports :( */
+
+	[class^="OverviewContent-module__Box_1--"]	{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	[class^="OverviewContent-module__Box_2--"]	{
+		display: flex;
+		flex-direction: row;
+		gap: var(--stack-gap-condensed);
+	}
+
+	[class^="OverviewContent-module__Box_5--"]	{
+		display: none;
+	}
+
+	[class^="OverviewContent-module__Box_6--"]	{
+		padding-left: var(--base-size-8);
+	}
+
+	[class^="OverviewContent-module__Box_6--"],
+	[class^="OverviewContent-module__Box_7--"]	{
+		display: flex;
+		gap: var(--stack-gap-condensed);
+	}
+
+	[class^="OverviewContent-module__Box_9--"],
+	[class^="OverviewContent-module__Box_10--"]	{
+		display: none;
+	}
+
+	[class^="OverviewContent-module__Box_11--"]	{
+		display: flex; /* was inline, WTF */
+	}
+
+	[class^="Table-module__Box--"]	{
+		border: var(--borderWidth-thin) solid;
+		border-collapse: initial;
+		border-color: var(--borderColor-default);
+		border-radius: var(--borderRadius-medium);
+		border-spacing: 0;
+		overflow: hidden;
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	[class^="DirectoryContent-module__OverviewHeaderRow--"]	{
+		display: none;
+	}
+
+	[class^="LatestCommit-module__Box--"]	{
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: var(--stack-gap-condensed);
+		justify-content: space-between;
+		min-width: 273px;
+		padding: var(--base-size-8);
+	}
+
+	[class^="DirectoryContent-module__Box_3--"]	{
+		color: var(--fgColor-muted);
+		font-size: var(--text-body-size-small);
+		height: 40px;
+	}
+
+	[class^="OverviewRepoFiles-module__Box_1--"]	{
+		display: flex;
+		flex-grow: 1;
+		gap: var(--stack-gap-normal);
+	}
+
+	[class^="OverviewRepoFiles-module__Box_2--"]	{
+		border: var(--borderWidth-thin) solid;
+		border-color: var(--borderColor-default);
+		border-radius: var(--borderRadius-medium);
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+
+		max-width: 100%;
+	}
+
+	[class^="OverviewRepoFiles-module__Box_3--"]	{
+		align-items: center;
+		background-color: var(--bgColor-default);
+		border-bottom: var(--borderWidth-thin) solid;
+		border-bottom-color: var(--borderColor-default);
+		border-top-left-radius: var(--borderRadius-medium);
+		border-top-right-radius: var(--borderRadius-medium);
+		display: flex;
+		padding-right: var(--base-size-8);
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+
+	[class^="OverviewRepoFiles-module__Box_3--"] + div	{
+		overflow: auto;
+		padding: var(--base-size-32);
+	}
+
+	/* END   CSS Modules backports :( */
 }
