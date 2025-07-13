@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.2.2
+@version        0.2.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -59,6 +59,9 @@
 		.application-main .pt-3	{	padding-top:    4px !important;	}
 		.application-main .pb-3	{	padding-bottom: 4px !important;	}
 
+		.application-main .pt-4	{	padding-top:    6px !important;	}
+		.application-main .pb-4	{	padding-bottom: 6px !important;	}
+
 		.application-main .py-1,
 		.application-main .p-1
 		{
@@ -76,6 +79,12 @@
 		{
 			padding-top:    4px !important;
 			padding-bottom: 4px !important;
+		}
+		.application-main .py-4,
+		.application-main .p-4
+		{
+			padding-top:    6px !important;
+			padding-bottom: 6px !important;
 		}
 		/* END   margin and padding */
 
