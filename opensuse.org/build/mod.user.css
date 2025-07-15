@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           build.opensuse.org Mod
 @description    Userstyle for build.opensuse.org
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -15,4 +15,24 @@
 	domain("build.opensuse.org")
 {
 	.build-state-unresolvable	{	color: #c0c !important;	}
+}
+
+@-moz-document
+	url("https://build.opensuse.org/monitor")
+{
+	#content > .card > .card-body
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	form.float-sm-end	{
+		flex-wrap: nowrap;
+		align-items: baseline;
+		align-self: center;
+	}
+
+	#content > .card > .card-body > h2:last-of-type	{	order: -3;	}
+	#content > .card > .card-body > h2:last-of-type + div	{	order: -2;	}
+	#graphs	{	order: -1;	}
 }
