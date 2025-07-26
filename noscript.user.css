@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NoScript
 @description    Generic no-JavaScript userstyle
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -24,6 +24,7 @@ body             > .spinner-wrapper,
 body.no-js       > #preload,
 body.tribe-no-js > #page-preloader,
 body::after,
+html.no-js > body > #loader-wrapper,
 html.no-js > body > #loading,
 html.no-js > body[data-ajax-transitions="true"] > #ajax-loading-screen
 {	display: none;	}
