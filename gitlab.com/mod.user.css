@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitLab Mod
 @description    Userstyle for GitLab
-@version        0.0.16
+@version        0.1.0
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -30,6 +30,7 @@
 
 /*** BUG ***/
 	.md table:not(.code) tbody	{	background-color: transparent;	}
+	.md p > code {	word-break: break-word;	}
 
 	.gl-breadcrumb-item-sm	{	font-size: 1rem;	}
 
