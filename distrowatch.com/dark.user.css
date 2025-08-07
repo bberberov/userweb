@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.8
+@version        0.3.9
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -190,9 +190,6 @@
 	td.News     > :first-child > img[title="openSUSE"],
 	td.NewsLogo > :first-child > img[title="openSUSE"],
 	td.News1    > center         img[title="openSUSE"],
-	td.News     > :first-child > img[title="OPNsense"],
-	td.NewsLogo > :first-child > img[title="OPNsense"],
-	td.News1    > center         img[title="OPNsense"],
 	td.News     > :first-child > img[title="Parrot"],
 	td.NewsLogo > :first-child > img[title="Parrot"],
 	td.News1    > center         img[title="Parrot"],
@@ -333,12 +330,18 @@
 	td.News     > :first-child > img[title="Escuelas Linux"],
 	td.NewsLogo > :first-child > img[title="Escuelas Linux"],
 	td.News1    > center         img[title="Escuelas Linux"],
+	td.News     > :first-child > img[title="HeliumOS"],
+	td.NewsLogo > :first-child > img[title="HeliumOS"],
+	td.News1    > center         img[title="HeliumOS"],
 	td.News     > :first-child > img[title="KDE neon"],
 	td.NewsLogo > :first-child > img[title="KDE neon"],
 	td.News1    > center         img[title="KDE neon"],
 	td.News     > :first-child > img[title="Linux Mint"],
 	td.NewsLogo > :first-child > img[title="Linux Mint"],
 	td.News1    > center         img[title="Linux Mint"],
+	td.News     > :first-child > img[title="Liya"],
+	td.NewsLogo > :first-child > img[title="Liya"],
+	td.News1    > center         img[title="Liya"],
 	td.News     > :first-child > img[title="Manjaro Linux"],
 	td.NewsLogo > :first-child > img[title="Manjaro Linux"],
 	td.News1    > center         img[title="Manjaro Linux"],
@@ -351,6 +354,9 @@
 	td.News     > :first-child > img[title="NethServer"],
 	td.NewsLogo > :first-child > img[title="NethServer"],
 	td.News1    > center         img[title="NethServer"],
+	td.News     > :first-child > img[title="OPNsense"],
+	td.NewsLogo > :first-child > img[title="OPNsense"],
+	td.News1    > center         img[title="OPNsense"],
 	td.News     > :first-child > img[title="Oracle Linux"],
 	td.NewsLogo > :first-child > img[title="Oracle Linux"],
 	td.News1    > center         img[title="Oracle Linux"],
@@ -371,13 +377,16 @@
 	td.News1    > center         img[title="Red Hat Enterprise Linux"],
 	td.News     > :first-child > img[title="RELIANOID"],
 	td.NewsLogo > :first-child > img[title="RELIANOID"],
-	td.News1    > center         img[title="v"],
+	td.News1    > center         img[title="RELIANOID"],
 	td.News     > :first-child > img[title="Rocky Linux"],
 	td.NewsLogo > :first-child > img[title="Rocky Linux"],
 	td.News1    > center         img[title="Rocky Linux"],
 	td.News     > :first-child > img[title="SDesk"],
 	td.NewsLogo > :first-child > img[title="SDesk"],
 	td.News1    > center         img[title="SDesk"],
+	td.News     > :first-child > img[title="SME Server"],
+	td.NewsLogo > :first-child > img[title="SME Server"],
+	td.News1    > center         img[title="SME Server"],
 	td.News     > :first-child > img[title="Ubuntu Studio"],
 	td.NewsLogo > :first-child > img[title="Ubuntu Studio"],
 	td.News1    > center         img[title="Ubuntu Studio"],
