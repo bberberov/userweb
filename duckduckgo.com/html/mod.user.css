@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DuckDuckGo HTML Mod
 @description    Userstyle for DuckDuckGo HTML
-@version        0.0.5
+@version        0.0.6
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -11,7 +11,7 @@
 @preprocessor   uso
 
 @advanced range font-size "Font Size" [11,  6, 24, 1, 'pt']
-@advanced range width "Width"     [40, 30, 60, 1, 'em']
+@advanced range width     "Width"     [40, 28, 64, 1, 'em']
 ==/UserStyle== */
 
 @-moz-document
