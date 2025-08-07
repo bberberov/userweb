@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Mod
 @description    Userstyle for Arch Linux
-@version        0.0.2
+@version        0.0.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -11,17 +11,31 @@
 @preprocessor   uso
 
 @advanced range font-scale    "Font Scaling" [ 1, 0.75, 1.5, 0.0625, 'em' ]
+
 @advanced range pkg-tbl-pad   "Package Details Spacing"  [ 0.25, 0.125, 0.5, 0.0625, 'em' ]
+
 @advanced range pkg-deps-col  "\"Dependencies\" Columns" [ 2, 1, 4, 1, '' ]
 @advanced range pkg-reqs-col  "\"Required By\" Columns"  [ 2, 1, 4, 1, '' ]
 @advanced range pkg-file-col  "File List Columns"        [ 2, 1, 4, 1, '' ]
 ==/UserStyle== */
 
 @-moz-document
+	url("https://archlinux.org/"),
+	url("https://archlinux.org/packages"),
+	url("https://aur.archlinux.org/"),
+	url("https://aur.archlinux.org/packages"),
 	url-prefix("https://archlinux.org/packages/"),
 	url-prefix("https://aur.archlinux.org/packages/")
 {
 	#content	{	font-size: /*[[font-scale]]*/;	}
+}
+
+@-moz-document
+	url("https://archlinux.org/packages"),
+	url("https://aur.archlinux.org/packages"),
+	url-prefix("https://archlinux.org/packages/"),
+	url-prefix("https://aur.archlinux.org/packages/")
+{
 	#pkgdetails #pkginfo th	{	padding: 0px 0px /*[[pkg-tbl-pad]]*/ 0px;	}
 	#pkgdetails #pkginfo td	{	padding: 0px 0px /*[[pkg-tbl-pad]]*/ 1.5em;	}
 	#pkgdetails #detailslinks ul	{	font-size: unset;	}
