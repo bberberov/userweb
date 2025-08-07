@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Mod
 @description    Userstyle for DistroWatch
-@version        0.0.9
+@version        0.1.0
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -42,6 +42,7 @@
 
 	th.phr1	{	text-align: right;	}
 
+	td.phr3 {	text-wrap: nowrap;	}
 	td.phr3	img	{	margin-left: 0.125em;	}
 
 	td.News     > :first-child > img,
@@ -91,20 +92,70 @@
 }
 
 @-moz-document
-	url-prefix("https://distrowatch.com/table.php")
+	url("https://distrowatch.com/")
 {
-	h2 + table + br + table	{	border-collapse: collapse;	}
+	td	{	margin: 0;	}
 
-	h2 + table + br + table td,
-	h2 + table + br + table th
-	{
-		padding: 0.125em 0.25em;
-		font-size: /*[[pkg-font-size]]*/;
+	table.Logo             	{	display: block;	}
+	table.Logo > tbody     	{	display: block;	}
+	table.Logo > tbody > tr	{	display: flex;	}
+
+	table.Logo > tbody > tr > td:nth-of-type(1) {
+		order: 3;
+		width: 24% !important;
+		display: flex;
+		flex-direction: column;
+	}
+	table.Logo > tbody > tr > td:nth-of-type(2) {
+		order: 2;
+		width: 60% !important;
+	}
+	table.Logo > tbody > tr > td:nth-of-type(3) {
+		order: 1;
+		width: 16% !important;
+		display: flex;
+		flex-direction: column;
 	}
 
-	td.TablesTitle > img	{	margin: 2em 3em 1em 3em;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(1)	{	order: 101;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(2)	{	order: 2;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(3)	{	order: 3;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(4)	{	order: 104;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(5)	{	order: 105;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(6)	{	order: 106;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(7)	{	order: 8;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(8)	{	order: 4;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(9)	{	order: 5;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(10)	{	order: 6;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(11)	{	order: 1;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(12)	{	order: 7;	}
+	table.Logo > tbody > tr > td:nth-of-type(1) > table:nth-of-type(13)	{	order: 13;	}
+
+	table.Logo > tbody > tr > td:nth-of-type(3) > table:nth-of-type(1)	{	order: 101;	}
+}
+
+@-moz-document
+	url-prefix("https://distrowatch.com/table.php")
+{
+	td.TablesTitle	{	padding: 1em;	}
+
+	td.TablesTitle img	{	margin: 0em;	}
+
+	td.TablesTitle a > img	{	margin: 0em 0em 1em 1em;	}
 
 	td.TablesTitle > h1,
 	td.TablesTitle > h2
-	{	text-align: unset;	}
+	{
+		display: inline;
+		margin: 0.5em;
+		text-align: unset;
+	}
+
+	td.TablesTitle > ul	{	margin-left: 9em;	}
+
+	td.TablesTitle > h1 + br,
+	td.TablesTitle > h2 + br,
+	td.TablesTitle > hr,
+	td.TablesTitle > br:last-child
+	{	display: none;	}
 }
