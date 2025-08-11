@@ -1,4 +1,4 @@
-# Copyright © 2023 Boian Berberov
+# Copyright © 2023, 2025 Boian Berberov
 # Licensed under the EUPL-1.2 only.
 #
 # License text: https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
@@ -25,4 +25,4 @@ s|color: #444;|color: #aa9; /* Dark */|
 s|background-color: #f5f5f5;|background-color: #333; /* Dark */|
 
 # Input
-$a\input[type="search"]\t{\n\tfilter: invert(75%);\n}
+$a\input[type="search"],\ninput.search-input,\n.package .package-version-anti-features-list .anti-feature-link .anti-feature-icon\n{\tfilter: invert(81.25%);\t}\t/* 13/16 */\n\nimg\t{\tfilter: brightness(81.25%);\t}\t/* 13/16 */\n

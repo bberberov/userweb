@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           F-Droid Dark
 @description    Userstyle for F-Droid (semi-automated)
-@version        0.0.3
+@version        0.0.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -45,7 +45,7 @@
 	}
 
 	/** Remove default list styles from UL elements. */
-	.site-header, .main-content {
+	.main-content, .site-header {
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 	}
 
@@ -128,6 +128,22 @@
 	}
 
 	/**
+	* News
+	*/
+
+	/** Image gallery - used by both Posts and Packages. */
+	.gallery img {
+		box-shadow: 3px 3px 6px #aaa;
+	}
+
+	/**
+	* Post
+	*/
+	.post .post-content img {
+		box-shadow: 3px 3px 6px #aaa;
+	}
+
+	/**
 	* Package
 	*/
 	.package .package-whats-new {
@@ -175,6 +191,11 @@
 		/*font-family: HelveticaNeue-Medium, serif;*/
 		color: #bba; /* Dark */
 	}
+
+	.tutorial .steps .step img:not(.irregular) {
+		box-shadow: #aaa 0 2px 5px;
+	}
+
 	.tutorial .tutorial-paginator {
 		background-color: #f9f9f9;
 	}
@@ -193,6 +214,7 @@
 	/* Blocks of code */
 	pre.highlight {
 		background-color: #333; /* Dark */
+		box-shadow: 0 2px 3px #ccc;
 	}
 	pre.highlight .c {
 		color: #998;
