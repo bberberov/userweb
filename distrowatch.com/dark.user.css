@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.11
+@version        0.3.12
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -446,7 +446,8 @@
 }
 
 @-moz-document
-	url("https://distrowatch.com/")
+	url("https://distrowatch.com/"),
+	url-prefix("https://distrowatch.com/index.php")
 {
 	.ImageBorder	{	border: 1px solid black;	}
 

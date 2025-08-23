@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Mod
 @description    Userstyle for DistroWatch
-@version        0.1.0
+@version        0.1.1
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -92,7 +92,8 @@
 }
 
 @-moz-document
-	url("https://distrowatch.com/")
+	url("https://distrowatch.com/"),
+	url-prefix("https://distrowatch.com/index.php")
 {
 	td	{	margin: 0;	}
 
