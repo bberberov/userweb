@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.10
+@version        0.3.11
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -351,6 +351,9 @@
 	td.News     > :first-child > img[title="Manjaro Linux"],
 	td.NewsLogo > :first-child > img[title="Manjaro Linux"],
 	td.News1    > center         img[title="Manjaro Linux"],
+	td.News     > :first-child > img[title="MiniOS"],
+	td.NewsLogo > :first-child > img[title="MiniOS"],
+	td.News1    > center         img[title="MiniOS"],
 	td.News     > :first-child > img[title="Murena"],
 	td.NewsLogo > :first-child > img[title="Murena"],
 	td.News1    > center         img[title="Murena"],
@@ -573,14 +576,17 @@
 	td.TablesTitle > img[title="Artix Linux"],
 	td.TablesTitle > img[title="AV Linux"],
 	td.TablesTitle > img[title="AxOS"],
+	td.TablesTitle > img[title="Besgnulinux"],
 	td.TablesTitle > img[title="blendOS"],
 	td.TablesTitle > img[title="CachyOS"],
 	td.TablesTitle > img[title="Emmabuntüs"],
 	td.TablesTitle > img[title="EndeavourOS"],
 	td.TablesTitle > img[title="Escuelas Linux"],
 	td.TablesTitle > img[title="KDE neon"],
+	td.TablesTitle > img[title="LibreELEC"],
 	td.TablesTitle > img[title="Linux Mint"],
 	td.TablesTitle > img[title="Manjaro Linux"],
+	td.TablesTitle > img[title="MiniOS"],
 	td.TablesTitle > img[title="Murena"],
 	td.TablesTitle > img[title="NixOS"],
 	td.TablesTitle > img[title="Oracle Linux"],
@@ -592,7 +598,8 @@
 	td.TablesTitle > img[title="Rocky Linux"],
 	td.TablesTitle > img[title="SDesk"],
 	td.TablesTitle > img[title="Ubuntu Studio"],
-	td.TablesTitle > img[title="Vanilla OS"]
+	td.TablesTitle > img[title="Vanilla OS"],
+	td.TablesTitle > img[title="Zephix"]
 	{
 		background: linear-gradient(transparent 65%, #f6edc8);
 		filter: unset;
