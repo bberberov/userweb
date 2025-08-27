@@ -1,0 +1,77 @@
+/* ==UserStyle==
+@name           DuckDuckGo HTML Dark
+@description    Userstyle for DuckDuckGo HTML
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/duckduckgo.com/html/dark.user.css
+==/UserStyle== */
+
+@-moz-document
+	domain("html.duckduckgo.com")
+{
+	body,
+	input,
+	select,
+	textarea
+	{
+		background-color: #111;
+		color: #eed;
+	}
+
+	.search--header
+	{	background-color: #333;	}
+
+	.search,
+	.search--adv
+	{
+		border-color: #555;
+		box-shadow: none;
+	}
+
+	.frm__select,
+	.frm__select:hover
+	{
+		border-color: #555;
+		background-color: #333;
+		color: #eed;
+	}
+
+	.frm__select::after	{	filter: invert(100%);	}
+
+	.result:hover	{	background-color: #222;	}
+
+	.result__icon
+	{	width: 18px;	}
+
+	.result__icon .result__icon__img,
+	.result__icon .result__icon img
+	{
+		background-color: #ccc;
+		padding: 1px;
+	}
+
+	.result__a,
+	.result__a:hover
+	{	color: #36f;	}
+
+	.result__url,
+	.result__url:active,
+	.result__url:visited:focus
+	{	color: #3c3;	}
+
+	.result__url:hover
+	{	color: #6f6;	}
+
+	.result .result__snippet,
+	.result .result__snippet:hover,
+	.result .result__snippet:active
+	{	color: #eed;	}
+
+	.result__snippet b,
+	.result__snippet strong
+	{	color: #f66;	}
+}
