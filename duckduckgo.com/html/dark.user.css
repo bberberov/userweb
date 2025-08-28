@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DuckDuckGo HTML Dark
 @description    Userstyle for DuckDuckGo HTML
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -54,6 +54,7 @@
 		padding: 1px;
 	}
 
+	.msg--spelling a,
 	.result__a,
 	.result__a:hover
 	{	color: #36f;	}
@@ -66,6 +67,7 @@
 	.result__url:hover
 	{	color: #6f6;	}
 
+	.msg--spelling,
 	.result .result__snippet,
 	.result .result__snippet:hover,
 	.result .result__snippet:active
