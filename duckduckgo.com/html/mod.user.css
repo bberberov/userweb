@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DuckDuckGo HTML Mod
 @description    Userstyle for DuckDuckGo HTML
-@version        0.0.6
+@version        0.0.7
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -71,4 +71,8 @@
 	}
 
 	.result	{	width: /*[[width]]*/;	}
+
+	.result__a:focus,
+	.result__url:focus
+	{	outline: dotted;	}
 }
