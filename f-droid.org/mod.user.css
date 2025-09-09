@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           F-Droid Mod
 @description    Userstyle for F-Droid
-@version        0.0.1
+@version        0.0.2
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -15,5 +15,5 @@
 	url-prefix("https://f-droid.org/"),
 	url-prefix("https://search.f-droid.org/")
 {
-    .package .screenshot img	{	pointer-events: auto;	}
+	.package .screenshot img	{	pointer-events: auto;	}
 }

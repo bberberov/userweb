@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           F-Droid Desktop
 @description    Userstyle for F-Droid
-@version        0.0.2
+@version        0.0.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -14,7 +14,7 @@
 @-moz-document
 	url-prefix("https://f-droid.org/")
 {
-	.site-header {
+	.site-header	{
 		background-color: #1976d2;
 		padding: 0em 1em;
 		display: flex;
@@ -22,7 +22,7 @@
 		gap: 1em;
 	}
 
-	.site-title img {
+	.site-title img	{
 		margin: 0em;
 		height: unset;
 	}
@@ -84,7 +84,7 @@
 	regexp("https://f-droid.org/..-../packages/..*"),
 	regexp("https://f-droid.org/..-..../packages/..*")
 {
-	.main-content {
+	.main-content	{
 		padding: 1em;
 		flex-direction: column-reverse;
 	}
@@ -93,7 +93,7 @@
 	.main-content.with-sidebar .sidebar
 	{	width: unset;	}
 
-	.main-content.with-sidebar .sidebar {
+	.main-content.with-sidebar .sidebar	{
 		padding: 0em;
 		display: flex;
 		flex-direction: row-reverse;
@@ -101,32 +101,28 @@
 	}
 
 	.package .package-whats-new,
-	.package .package-description {
+	.package .package-description	{
 		columns: 2;
 	}
 
-    .package .screenshot img {
-		pointer-events: auto;
-	}
-
-	.package-versions-list {
+	.package-versions-list	{
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1em;
 	}
 
-	.package .package-version {
+	.package .package-version	{
 		margin: 0;
 		width: calc(50% - 0.5em);
 		box-sizing: border-box;
 	}
 
-	.package .package-version .suggested-badge {
+	.package .package-version .suggested-badge	{
 		float: right;
 		margin: 0 0 0 0.5em;
 	}
 
-	.sidebar-widget {
+	.sidebar-widget	{
 		border-bottom: none;
 		display: flex;
 		align-items: center;
@@ -140,12 +136,10 @@
 	.sidebar-widget.language + div + div + div + div
 	{	display: none;	}
 
-	.sidebar-widget:not(:last-of-type) {
+	.sidebar-widget:not(:last-of-type)	{
 		padding-bottom: 0;
 		border-bottom: none;
 	}
 
-	.sidebar-widget h3 {
-		margin-bottom: 0;
-	}
+	.sidebar-widget h3	{	margin-bottom: 0;	}
 }
