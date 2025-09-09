@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DuckDuckGo HTML Dark
 @description    Userstyle for DuckDuckGo HTML
-@version        0.0.3
+@version        0.0.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -78,4 +78,8 @@
 	.result__snippet b,
 	.result__snippet strong
 	{	color: #f66;	}
+
+	.result__body .no-results__message,
+	.result__body .no-results__message h1
+	{	color: #eed;	}
 }
