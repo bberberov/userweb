@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DuckDuckGo HTML Dark
 @description    Userstyle for DuckDuckGo HTML
-@version        0.0.4
+@version        0.0.5
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -42,6 +42,9 @@
 
 	.frm__select::after	{	filter: invert(100%);	}
 
+	.zci-wrapper	{	background-color: unset;	}
+	.zci__heading	{	color: unset;	}
+
 	.result:hover	{	background-color: #222;	}
 
 	.result__icon
@@ -54,6 +57,9 @@
 		padding: 1px;
 	}
 
+	.zci__result a,
+	.zci__result a:visited,
+	.zci__result a:hover,
 	.msg--spelling a,
 	.result__a,
 	.result__a:hover,
