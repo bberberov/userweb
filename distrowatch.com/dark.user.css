@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.14
+@version        0.3.15
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -145,6 +145,9 @@
 	td.News     > :first-child > img[title="Bluestar Linux"],
 	td.NewsLogo > :first-child > img[title="Bluestar Linux"],
 	td.News1    > center         img[title="Bluestar Linux"],
+	td.News     > :first-child > img[title="BSD Router Project"],
+	td.NewsLogo > :first-child > img[title="BSD Router Project"],
+	td.News1    > center         img[title="BSD Router Project"],
 	td.News     > :first-child > img[title="CentOS"],
 	td.NewsLogo > :first-child > img[title="CentOS"],
 	td.News1    > center         img[title="CentOS"],
@@ -160,6 +163,9 @@
 	td.News     > :first-child > img[title="FreedomBox"],
 	td.NewsLogo > :first-child > img[title="FreedomBox"],
 	td.News1    > center         img[title="FreedomBox"],
+	td.News     > :first-child > img[title="FydeOS"],
+	td.NewsLogo > :first-child > img[title="FydeOS"],
+	td.News1    > center         img[title="FydeOS"],
 	td.News     > :first-child > img[title="Garuda Linux"],
 	td.NewsLogo > :first-child > img[title="Garuda Linux"],
 	td.News1    > center         img[title="Garuda Linux"],
@@ -190,6 +196,9 @@
 	td.News     > :first-child > img[title="Mauna Linux"],
 	td.NewsLogo > :first-child > img[title="Mauna Linux"],
 	td.News1    > center         img[title="Mauna Linux"],
+	td.News     > :first-child > img[title="Omarchy"],
+	td.NewsLogo > :first-child > img[title="Omarchy"],
+	td.News1    > center         img[title="Omarchy"],
 	td.News     > :first-child > img[title="OpenMediaVault"],
 	td.NewsLogo > :first-child > img[title="OpenMediaVault"],
 	td.News1    > center         img[title="OpenMediaVault"],
@@ -199,9 +208,6 @@
 	td.News     > :first-child > img[title="Parrot"],
 	td.NewsLogo > :first-child > img[title="Parrot"],
 	td.News1    > center         img[title="Parrot"],
-	td.News     > :first-child > img[title="Pop!_OS"],
-	td.NewsLogo > :first-child > img[title="Pop!_OS"],
-	td.News1    > center         img[title="Pop!_OS"],
 	td.News     > :first-child > img[title="Plamo Linux"],
 	td.NewsLogo > :first-child > img[title="Plamo Linux"],
 	td.News1    > center         img[title="Plamo Linux"],
@@ -273,6 +279,9 @@
 	td.News     > :first-child > img[title="MX Linux"],
 	td.NewsLogo > :first-child > img[title="MX Linux"],
 	td.News1    > center         img[title="MX Linux"],
+	td.News     > :first-child > img[title="Neptune"],
+	td.NewsLogo > :first-child > img[title="Neptune"],
+	td.News1    > center         img[title="Neptune"],
 	td.News     > :first-child > img[title="Nitrux"],
 	td.NewsLogo > :first-child > img[title="Nitrux"],
 	td.News1    > center         img[title="Nitrux"],
@@ -288,6 +297,9 @@
 	td.News     > :first-child > img[title="ravynOS"],
 	td.NewsLogo > :first-child > img[title="ravynOS"],
 	td.News1    > center         img[title="ravynOS"],
+	td.News     > :first-child > img[title="SysLinuxOS"],
+	td.NewsLogo > :first-child > img[title="SysLinuxOS"],
+	td.News1    > center         img[title="SysLinuxOS"],
 	td.News     > :first-child > img[title="TUXEDO OS"],
 	td.NewsLogo > :first-child > img[title="TUXEDO OS"],
 	td.News1    > center         img[title="TUXEDO OS"],
@@ -345,12 +357,18 @@
 	td.News     > :first-child > img[title="Escuelas Linux"],
 	td.NewsLogo > :first-child > img[title="Escuelas Linux"],
 	td.News1    > center         img[title="Escuelas Linux"],
+	td.News     > :first-child > img[title="GNOME OS"],
+	td.NewsLogo > :first-child > img[title="GNOME OS"],
+	td.News1    > center         img[title="GNOME OS"],
 	td.News     > :first-child > img[title="HeliumOS"],
 	td.NewsLogo > :first-child > img[title="HeliumOS"],
 	td.News1    > center         img[title="HeliumOS"],
 	td.News     > :first-child > img[title="Kamuriki Linux"],
 	td.NewsLogo > :first-child > img[title="Kamuriki Linux"],
 	td.News1    > center         img[title="Kamuriki Linux"],
+	td.News     > :first-child > img[title="KDE Linux"],
+	td.NewsLogo > :first-child > img[title="KDE Linux"],
+	td.News1    > center         img[title="KDE Linux"],
 	td.News     > :first-child > img[title="KDE neon"],
 	td.NewsLogo > :first-child > img[title="KDE neon"],
 	td.News1    > center         img[title="KDE neon"],
@@ -387,6 +405,9 @@
 	td.News     > :first-child > img[title="Peppermint OS"],
 	td.NewsLogo > :first-child > img[title="Peppermint OS"],
 	td.News1    > center         img[title="Peppermint OS"],
+	td.News     > :first-child > img[title="Pop!_OS"],
+	td.NewsLogo > :first-child > img[title="Pop!_OS"],
+	td.News1    > center         img[title="Pop!_OS"],
 	td.News     > :first-child > img[title="postmarketOS"],
 	td.NewsLogo > :first-child > img[title="postmarketOS"],
 	td.News1    > center         img[title="postmarketOS"],
@@ -419,7 +440,10 @@
 	td.News1    > center         img[title="Vanilla OS"],
 	td.News     > :first-child > img[title="Zephix"],
 	td.NewsLogo > :first-child > img[title="Zephix"],
-	td.News1    > center         img[title="Zephix"]
+	td.News1    > center         img[title="Zephix"],
+	td.News     > :first-child > img[title="ZimaOS"],
+	td.NewsLogo > :first-child > img[title="ZimaOS"],
+	td.News1    > center         img[title="ZimaOS"]
 	{
 		background: linear-gradient(transparent 65%, #f6edc8);
 		filter: unset;
@@ -527,11 +551,13 @@
 	/* Good logos */
 	td.TablesTitle > img[title="Bazzite"],
 	td.TablesTitle > img[title="Bluestar Linux"],
+	td.TablesTitle > img[title="BSD Router Project"],
 	td.TablesTitle > img[title="CentOS"],
 	td.TablesTitle > img[title="Elive"],
 	td.TablesTitle > img[title="Fedora"],
 	td.TablesTitle > img[title="Feren OS"],
 	td.TablesTitle > img[title="FreedomBox"],
+	td.TablesTitle > img[title="FydeOS"],
 	td.TablesTitle > img[title="Garuda Linux"],
 	td.TablesTitle > img[title="GeckoLinux"],
 	td.TablesTitle > img[title="Gnoppix Linux"],
@@ -542,10 +568,10 @@
 	td.TablesTitle > img[title="Lubuntu"],
 	td.TablesTitle > img[title="Mabox Linux"],
 	td.TablesTitle > img[title="Mauna Linux"],
+	td.TablesTitle > img[title="Omarchy"],
 	td.TablesTitle > img[title="OpenMediaVault"],
 	td.TablesTitle > img[title="openSUSE"],
 	td.TablesTitle > img[title="Parrot"],
-	td.TablesTitle > img[title="Pop!_OS"],
 	td.TablesTitle > img[title="Plamo Linux"],
 	td.TablesTitle > img[title="Q4OS"],
 	td.TablesTitle > img[title="Redcore Linux"],
@@ -573,11 +599,13 @@
 	td.TablesTitle > img[title="DragonOS"],
 	td.TablesTitle > img[title="FunOS"],
 	td.TablesTitle > img[title="MX Linux"],
+	td.TablesTitle > img[title="Neptune"],
 	td.TablesTitle > img[title="Nitrux"],
 	td.TablesTitle > img[title="Nobara Project"],
 	td.TablesTitle > img[title="pfSense"],
 	td.TablesTitle > img[title="PorteuX"],
 	td.TablesTitle > img[title="ravynOS"],
+	td.TablesTitle > img[title="SysLinuxOS"],
 	td.TablesTitle > img[title="TUXEDO OS"],
 	td.TablesTitle > img[title="YunoHost"]
 	{
@@ -601,8 +629,10 @@
 	td.TablesTitle > img[title="Emmabuntüs"],
 	td.TablesTitle > img[title="EndeavourOS"],
 	td.TablesTitle > img[title="Escuelas Linux"],
+	td.TablesTitle > img[title="GNOME OS"],
 	td.TablesTitle > img[title="HeliumOS"],
 	td.TablesTitle > img[title="Kamuriki Linux"],
+	td.TablesTitle > img[title="KDE Linux"],
 	td.TablesTitle > img[title="KDE neon"],
 	td.TablesTitle > img[title="LibreELEC"],
 	td.TablesTitle > img[title="Linux Mint"],
@@ -615,6 +645,7 @@
 	td.TablesTitle > img[title="OPNsense"],
 	td.TablesTitle > img[title="Oracle Linux"],
 	td.TablesTitle > img[title="Peppermint OS"],
+	td.TablesTitle > img[title="Pop!_OS"],
 	td.TablesTitle > img[title="postmarketOS"],
 	td.TablesTitle > img[title="Raspberry Pi OS"],
 	td.TablesTitle > img[title="RebornOS"],
@@ -622,11 +653,11 @@
 	td.TablesTitle > img[title="RELIANOID"],
 	td.TablesTitle > img[title="Rocky Linux"],
 	td.TablesTitle > img[title="SDesk"],
-	td.TablesTitle > img[title="SDesk"],
 	td.TablesTitle > img[title="SME Server"],
 	td.TablesTitle > img[title="Ubuntu Studio"],
 	td.TablesTitle > img[title="Vanilla OS"],
-	td.TablesTitle > img[title="Zephix"]
+	td.TablesTitle > img[title="Zephix"],
+	td.TablesTitle > img[title="ZimaOS"]
 	{
 		background: linear-gradient(transparent 65%, #f6edc8);
 		filter: unset;
@@ -715,8 +746,14 @@
 	img.iconlarge	{	padding: 0.5em;	}
 	img.iconsmall	{	padding: 0.25em;	}
 
-	/* Good logos - large */
+	/* Good logos */
 	img.iconsmall[title="AlmaLinux OS"],
+	img.iconsmall[title="AerynOS"],
+	img.iconsmall[title="Artix"],
+	img.iconsmall[title="Bazzite"],
+	img.iconsmall[title="CachyOS"],
+	img.iconsmall[title="CalyxOS"],
+	img.iconsmall[title="Clear Linux"],
 	img.iconsmall[title="Chromium OS"],
 	img.iconsmall[title="EndeavourOS"],
 	img.iconlarge[title="Fedora"],
@@ -745,6 +782,7 @@
 	img.iconlarge[title="Redcore Linux"],
 	img.iconlarge[title="Rhino Linux"],
 	img.iconsmall[title="Rhino Linux"],
+	img.iconsmall[title="SDesk"],
 	img.iconlarge[title="Solus"],
 	img.iconlarge[title="TrueNAS"],
 	img.iconsmall[title="TrueNAS"],
@@ -754,6 +792,8 @@
 	img.iconlarge[title="Zorin OS"],
 
 	img.iconsmall[title="GTK"],
+	img.iconsmall[title="GNOME"],
+	img.iconsmall[title="KDE"],
 	img.iconlarge[title="Linux"],
 	img.iconsmall[title="Linux"]
 	{
@@ -769,14 +809,28 @@
 	img.iconlarge[title="pfSense"],
 	img.iconlarge[title="PorteuX"],
 	img.iconlarge[title="ravynOS"],
-	img.iconlarge[title="SDesk"],
 	img.iconlarge[title="Serpent OS"],
+	img.iconlarge[title="Shebang"],
 	img.iconlarge[title="SysLinuxOS"],
 	img.iconlarge[title="YunoHost"]
 	{
 		background-color: transparent;
 		filter: invert(100%) brightness(81.25%);	/* 13/16 */
 	}
+
+	/* Dark name only */
+	img.iconlarge[title="GNOME OS"],
+	img.iconlarge[title="KDE Linux"],
+	img.iconlarge[title="LastOSLinux"],
+	img.iconlarge[title="LibreELEC"],
+	img.iconlarge[title="RefreshOS"],
+	img.iconlarge[title="SDesk"],
+	img.iconlarge[title="Raspberry Pi"]
+	{
+		background: linear-gradient(transparent 65%, #f6edc8);
+		filter: unset;
+	}
+
 }
 
 @-moz-document
