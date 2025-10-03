@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Mod
 @description    Userstyle for DistroWatch
-@version        0.1.3
+@version        0.1.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -83,6 +83,29 @@
 	}
 
 	table[border]	{	border: none;	}
+
+	table.NavLogo
+	{
+		width: unset !important;
+		margin: auto;
+	}
+	table.NavLogo td	{	width: unset !important;	}
+	table.NavLogo td:first-child	{	max-width: 60em;	}
+	table.NavLogo td:last-child 	{	max-width: 20em;	}
+
+	td.News,
+	td.List
+	{
+		padding: 0.5em 1em;
+		line-height: /*[[line-height]]*/;
+	}
+
+	td.rTitle,
+	td.rStory
+	{
+		padding-left:  2em;
+		padding-right: 2em;
+	}
 
 	td.rStory	{
 		font-size: /*[[font-size]]*/;
