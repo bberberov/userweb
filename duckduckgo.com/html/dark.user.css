@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DuckDuckGo HTML Dark
 @description    Userstyle for DuckDuckGo HTML
-@version        0.0.5
+@version        0.0.6
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -33,7 +33,9 @@
 	}
 
 	.frm__select,
-	.frm__select:hover
+	.frm__select:hover,
+	input[type="submit"],
+	input[type="submit"]:hover
 	{
 		border-color: #555;
 		background-color: #333;
