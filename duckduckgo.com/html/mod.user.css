@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DuckDuckGo HTML Mod
 @description    Userstyle for DuckDuckGo HTML
-@version        0.0.7
+@version        0.0.8
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -10,8 +10,9 @@
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/duckduckgo.com/html/mod.user.css
 @preprocessor   uso
 
-@advanced range font-size "Font Size" [11,  6, 24, 1, 'pt']
-@advanced range width     "Width"     [40, 28, 64, 1, 'em']
+@advanced range font-size "Font Size"   [  11,   6, 24,    1, 'pt']
+@advanced range width     "Width"       [  40,  24, 64,    1, 'em']
+@advanced range line-h    "Line Height" [1.45, 1.2,  2, 0.05, ''  ]
 ==/UserStyle== */
 
 @-moz-document
@@ -20,11 +21,14 @@
 	html	{	font-size: /*[[font-size]]*/;	}
 
 	.header.header--html	{
+		padding: 0.5em 0px 0.5em;
 		display: flex;
 		justify-content: center;
 	}
 	.header__logo-wrap	{
 		position: unset;
+		margin-top: unset;
+		height: unset;
 	}
 	.header__form	{
 		display: flex;
@@ -33,6 +37,14 @@
 		width: unset;
 		padding-left: unset;
 	}
+
+	.search--header {
+		margin-bottom: unset;
+		height: unset;
+	}
+	.search--header .search__input,
+	.search--header .search__input--adv
+	{	height: 2em;	}
 
 	.frm__select {
 		height: 2.35 !important;
@@ -53,6 +65,8 @@
 		padding-right: 1em;
 	}
 	.results	{
+		margin-top: 0;
+		margin-bottom: 0;
 		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
@@ -63,16 +77,39 @@
 	.nav-link,
 	.feedback-btn
 	{
-		width: 100%;
 		margin: 1em 0em;
 		padding: 0em;
 		float: unset;
-		text-align: center
+		text-align: center;
+	}
+	.msg	{	width: 100%;	}
+	.nav-link
+	{
+		width: calc( /*[[width]]*/ / 2 );
+		align-self: center;
+	}
+	.feedback-btn
+	{
+		width: 100%;
+		align-self: center;
 	}
 
-	.result	{	width: /*[[width]]*/;	}
+	.btn--alt	{	min-width: 6em;	}
+
+	.result	{
+		margin-bottom: 0.5em;
+		width: /*[[width]]*/;
+	}
 
 	.result__a:focus,
 	.result__url:focus
 	{	outline: dotted;	}
+
+	.result__extras__url {
+		text-overflow: ellipsis;
+	}
+
+	.result__snippet {
+		line-height: /*[[line-h]]*/;
+	}
 }
