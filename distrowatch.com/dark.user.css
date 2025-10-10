@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.15
+@version        0.3.16
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -172,9 +172,9 @@
 	td.News     > :first-child > img[title="GeckoLinux"],
 	td.NewsLogo > :first-child > img[title="GeckoLinux"],
 	td.News1    > center         img[title="GeckoLinux"],
-	td.News     > :first-child > img[title="Gnoppix Linux"],
-	td.NewsLogo > :first-child > img[title="Gnoppix Linux"],
-	td.News1    > center         img[title="Gnoppix Linux"],
+	td.News     > :first-child > img[title="Gnoppix AI Linux"],
+	td.NewsLogo > :first-child > img[title="Gnoppix AI Linux"],
+	td.News1    > center         img[title="Gnoppix AI Linux"],
 	td.News     > :first-child > img[title="Kaisen Linux"],
 	td.NewsLogo > :first-child > img[title="Kaisen Linux"],
 	td.News1    > center         img[title="Kaisen Linux"],
@@ -330,6 +330,9 @@
 	td.News     > :first-child > img[title="Artix Linux"],
 	td.NewsLogo > :first-child > img[title="Artix Linux"],
 	td.News1    > center         img[title="Artix Linux"],
+	td.News     > :first-child > img[title="Asmi Linux"],
+	td.NewsLogo > :first-child > img[title="Asmi Linux"],
+	td.News1    > center         img[title="Asmi Linux"],
 	td.News     > :first-child > img[title="AV Linux"],
 	td.NewsLogo > :first-child > img[title="AV Linux"],
 	td.News1    > center         img[title="AV Linux"],
@@ -432,6 +435,9 @@
 	td.News     > :first-child > img[title="SME Server"],
 	td.NewsLogo > :first-child > img[title="SME Server"],
 	td.News1    > center         img[title="SME Server"],
+	td.News     > :first-child > img[title="T2 SDE"],
+	td.NewsLogo > :first-child > img[title="T2 SDE"],
+	td.News1    > center         img[title="T2 SDE"],
 	td.News     > :first-child > img[title="Ubuntu Studio"],
 	td.NewsLogo > :first-child > img[title="Ubuntu Studio"],
 	td.News1    > center         img[title="Ubuntu Studio"],
@@ -560,7 +566,7 @@
 	td.TablesTitle > img[title="FydeOS"],
 	td.TablesTitle > img[title="Garuda Linux"],
 	td.TablesTitle > img[title="GeckoLinux"],
-	td.TablesTitle > img[title="Gnoppix Linux"],
+	td.TablesTitle > img[title="Gnoppix AI Linux"],
 	td.TablesTitle > img[title="Kaisen Linux"],
 	td.TablesTitle > img[title="Linux Kodachi"],
 	td.TablesTitle > img[title="Linux Lite"],
@@ -620,6 +626,7 @@
 	td.TablesTitle > img[title="ArchBang Linux"],
 	td.TablesTitle > img[title="Archcraft"],
 	td.TablesTitle > img[title="Artix Linux"],
+	td.TablesTitle > img[title="Asmi Linux"],
 	td.TablesTitle > img[title="AV Linux"],
 	td.TablesTitle > img[title="AxOS"],
 	td.TablesTitle > img[title="Besgnulinux"],
@@ -654,6 +661,7 @@
 	td.TablesTitle > img[title="Rocky Linux"],
 	td.TablesTitle > img[title="SDesk"],
 	td.TablesTitle > img[title="SME Server"],
+	td.TablesTitle > img[title="T2 SDE"],
 	td.TablesTitle > img[title="Ubuntu Studio"],
 	td.TablesTitle > img[title="Vanilla OS"],
 	td.TablesTitle > img[title="Zephix"],
@@ -762,7 +770,7 @@
 	img.iconlarge[title="Garuda Linux"],
 	img.iconsmall[title="Garuda Linux"],
 	img.iconlarge[title="GeckoLinux"],
-	img.iconlarge[title="Gnoppix Linux"],
+	img.iconlarge[title="Gnoppix AI Linux"],
 	img.iconsmall[title="HardenedBSD"],
 	img.iconlarge[title="Kaisen Linux"],
 	img.iconsmall[title="Linux Mint"],
