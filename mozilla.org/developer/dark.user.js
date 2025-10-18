@@ -1,4 +1,4 @@
-// Copyright © 2023 Boian Berberov
+// Copyright © 2023, 2025 Boian Berberov
 // Licensed under the EUPL-1.2 only.
 //
 // License text: https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
@@ -7,7 +7,7 @@
 // ==UserScript==
 // @name         MDN Dark
 // @description  Userscript for MDN;  NOTE: You need to block cookies for it to work at this time
-// @version      0.0.1
+// @version      0.0.2
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
@@ -20,6 +20,7 @@
 // @run-at       document-start
 // ==/UserScript==
 
-document.documentElement.classList.remove("os-default");
-document.documentElement.classList.remove("light");
-document.documentElement.classList.add("dark");
+if ( document.documentElement.hasAttribute('data-theme') )
+{
+	document.documentElement.setAttribute("data-theme", "dark");
+}
