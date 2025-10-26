@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.16
+@version        0.3.17
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -366,6 +366,9 @@
 	td.News     > :first-child > img[title="HeliumOS"],
 	td.NewsLogo > :first-child > img[title="HeliumOS"],
 	td.News1    > center         img[title="HeliumOS"],
+	td.News     > :first-child > img[title="HydraPWK GNU/Linux"],
+	td.NewsLogo > :first-child > img[title="HydraPWK GNU/Linux"],
+	td.News1    > center         img[title="HydraPWK GNU/Linux"],
 	td.News     > :first-child > img[title="Kamuriki Linux"],
 	td.NewsLogo > :first-child > img[title="Kamuriki Linux"],
 	td.News1    > center         img[title="Kamuriki Linux"],
@@ -408,6 +411,9 @@
 	td.News     > :first-child > img[title="Peppermint OS"],
 	td.NewsLogo > :first-child > img[title="Peppermint OS"],
 	td.News1    > center         img[title="Peppermint OS"],
+	td.News     > :first-child > img[title="Planeta Tecno OS"],
+	td.NewsLogo > :first-child > img[title="Planeta Tecno OS"],
+	td.News1    > center         img[title="Planeta Tecno OS"],
 	td.News     > :first-child > img[title="Pop!_OS"],
 	td.NewsLogo > :first-child > img[title="Pop!_OS"],
 	td.News1    > center         img[title="Pop!_OS"],
@@ -441,9 +447,15 @@
 	td.News     > :first-child > img[title="Ubuntu Studio"],
 	td.NewsLogo > :first-child > img[title="Ubuntu Studio"],
 	td.News1    > center         img[title="Ubuntu Studio"],
+	td.News     > :first-child > img[title="Ultramarine Linux"],
+	td.NewsLogo > :first-child > img[title="Ultramarine Linux"],
+	td.News1    > center         img[title="Ultramarine Linux"],
 	td.News     > :first-child > img[title="Vanilla OS"],
 	td.NewsLogo > :first-child > img[title="Vanilla OS"],
 	td.News1    > center         img[title="Vanilla OS"],
+	td.News     > :first-child > img[title="Vinari OS"],
+	td.NewsLogo > :first-child > img[title="Vinari OS"],
+	td.News1    > center         img[title="Vinari OS"],
 	td.News     > :first-child > img[title="Zephix"],
 	td.NewsLogo > :first-child > img[title="Zephix"],
 	td.News1    > center         img[title="Zephix"],
@@ -638,6 +650,7 @@
 	td.TablesTitle > img[title="Escuelas Linux"],
 	td.TablesTitle > img[title="GNOME OS"],
 	td.TablesTitle > img[title="HeliumOS"],
+	td.TablesTitle > img[title="HydraPWK GNU/Linux"],
 	td.TablesTitle > img[title="Kamuriki Linux"],
 	td.TablesTitle > img[title="KDE Linux"],
 	td.TablesTitle > img[title="KDE neon"],
@@ -652,6 +665,7 @@
 	td.TablesTitle > img[title="OPNsense"],
 	td.TablesTitle > img[title="Oracle Linux"],
 	td.TablesTitle > img[title="Peppermint OS"],
+	td.TablesTitle > img[title="Planeta Tecno OS"],
 	td.TablesTitle > img[title="Pop!_OS"],
 	td.TablesTitle > img[title="postmarketOS"],
 	td.TablesTitle > img[title="Raspberry Pi OS"],
@@ -663,7 +677,9 @@
 	td.TablesTitle > img[title="SME Server"],
 	td.TablesTitle > img[title="T2 SDE"],
 	td.TablesTitle > img[title="Ubuntu Studio"],
+	td.TablesTitle > img[title="Ultramarine Linux"],
 	td.TablesTitle > img[title="Vanilla OS"],
+	td.TablesTitle > img[title="Vinari OS"],
 	td.TablesTitle > img[title="Zephix"],
 	td.TablesTitle > img[title="ZimaOS"]
 	{
