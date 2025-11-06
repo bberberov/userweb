@@ -1,7 +1,13 @@
+// Copyright © 2023, 2024 Boian Berberov
+// Licensed under the EUPL-1.2 only.
+//
+// License text: https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
+// SPDX-License-Identifier: EUPL-1.2
+//
 // ==UserScript==
 // @name         ServeTheHome No Script
 // @description  No JavaScript userscript for ServeTheHome
-// @version      0.0.5
+// @version      0.0.6
 // @author       Boian Berberov
 // @namespace    https://github.com/bberberov/userweb
 // @homepageURL  https://github.com/bberberov/userweb
