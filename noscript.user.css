@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           NoScript
 @description    Generic no-JavaScript userstyle
-@version        0.0.2
+@version        0.0.3
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -20,6 +20,8 @@ body
 body             > #page-loader,
 body             > #preloader,
 body             > .page-loader,
+body             > .page_wrapper > .preloader-container
+body             > .preloader
 body             > .spinner-wrapper,
 body.no-js       > #preload,
 body.tribe-no-js > #page-preloader,
@@ -33,3 +35,7 @@ html.no-js > body[data-ajax-transitions="true"] > #ajax-loading-screen
 .loading-overlay-showing > .loading-overlay,
 .lqd-preloader-wrap
 {	display: none;	}
+
+.motion-safe\:md\:opacity-0,
+.opacity-0
+{	opacity: unset;	}
