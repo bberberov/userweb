@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           build.opensuse.org Desktop
 @description    Userstyle for build.opensuse.org
-@version        0.0.4
+@version        0.1.0
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -23,35 +23,160 @@
 	.container-sm,
 	.container
 	{	max-width: unset;	}
+}
 
-	.DTFC_LeftWrapper,
-	.DTFC_RightWrapper
+@-moz-document
+	url-prefix("https://build.opensuse.org/project/monitor/")
+{
+	#project-monitor-table_wrapper > .dt-row	{
+		margin-left:  unset;
+		margin-right: unset;
+	}
+
+	#project-monitor-table_wrapper .DTFC_LeftWrapper,
+	#project-monitor-table_wrapper .DTFC_RightWrapper
 	{	display: none;	}
 
-	.DTFC_ScrollWrapper	{
+	#project-monitor-table_wrapper .DTFC_ScrollWrapper
+	{
 		height: unset !important;
-		margin: 0 -2px;
+		margin: 0 calc(var(--bs-gutter-x) * -0.5);
 	}
 
-	div.dataTables_scrollFootInner table.table-bordered tr > th:first-child,
-	div.dataTables_scrollHeadInner table.table-bordered tr > th:first-child
+	#project-monitor-table_wrapper .dataTables_scrollFootInner > table > thead > tr > th:first-child,
+	#project-monitor-table_wrapper .dataTables_scrollHeadInner > table > thead > tr > th:first-child
 	{	border-color: var(--bs-border-color) !important;	}
 
-	div.dataTables_scrollBody	{	border-left: unset !important;	}
+	#project-monitor-table_wrapper .dataTables_scrollBody	{	border-left: unset !important;	}
 
-	#project-monitor table > thead > tr > th,
-	#project-monitor table > thead > tr > td,
-	#project-monitor table > tbody > tr > th,
-	#project-monitor table > tbody > tr > td
+	#project-monitor-table_wrapper table > thead > tr > th,
+	#project-monitor-table_wrapper table > thead > tr > td,
+	#project-monitor-table_wrapper table > tbody > tr > th,
+	#project-monitor-table_wrapper table > tbody > tr > td
 	{
-		white-space: wrap !important;
+		white-space: normal !important;
 		word-wrap:  break-word !important;
 		word-break: break-word !important;
+		padding: 1px 2px;
+		line-height: 1;
+		vertical-align: middle;
 	}
 
-	#project-monitor table > thead > tr > th:first-child,
-	#project-monitor table > thead > tr > td:first-child,
-	#project-monitor table > tbody > tr > th:first-child,
-	#project-monitor table > tbody > tr > td:first-child
-	{	max-width: 5em;	}
+	#project-monitor-table_wrapper table > thead > tr > th,
+	#project-monitor-table_wrapper table > tbody > tr > th {
+		font-weight: normal;
+	}
+
+	/* First column */
+	#project-monitor-table_wrapper table > thead > tr > th:first-child,
+	#project-monitor-table_wrapper table > thead > tr > td:first-child,
+	#project-monitor-table_wrapper table > tbody > tr > th:first-child,
+	#project-monitor-table_wrapper table > tbody > tr > td:first-child
+	{	max-width: 9em;	}
+
+	/* BEGIN Sorting Header */
+
+	#project-monitor-table_wrapper table > thead > tr > th.sorting,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_asc,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_desc,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_asc_disabled,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_desc_disabled,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_asc,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_desc,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_asc_disabled,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_desc_disabled
+	{
+		vertical-align: top;
+		padding: 1px 1px 0.5em 1px;
+	}
+
+	#project-monitor-table_wrapper table > thead > tr > th.sorting::before,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_asc::before,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_desc::before,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_asc_disabled::before,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_desc_disabled::before,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting::before,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_asc::before,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_desc::before,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_asc_disabled::before,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_desc_disabled::before
+	{
+		position: absolute;
+		top: unset;
+		bottom: 0;
+		left: 0;
+		right: unset;
+		content: "▲";
+		writing-mode: horizontal-tb;
+	}
+
+	#project-monitor-table_wrapper table > thead > tr > th.sorting::after,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_asc::after,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_desc::after,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_asc_disabled::after,
+	#project-monitor-table_wrapper table > thead > tr > th.sorting_desc_disabled::after,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting::after,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_asc::after,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_desc::after,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_asc_disabled::after,
+	#project-monitor-table_wrapper table > thead > tr > td.sorting_desc_disabled::after
+	{
+		position: absolute;
+		top: unset;
+		bottom: 0;
+		left: unset;
+		right: 0;
+		content: "▼";
+		writing-mode: horizontal-tb;
+	}
+
+	/* END   Sorting Header */
+
+	#project-monitor-table_wrapper .build-state-scheduled-warning,
+	#project-monitor-table_wrapper .build-state-blocked,
+	#project-monitor-table_wrapper .build-state-signing,
+	#project-monitor-table_wrapper .build-state-finished,
+	#project-monitor-table_wrapper .build-state-scheduled,
+	#project-monitor-table_wrapper .build-state-building,
+	#project-monitor-table_wrapper .build-state-unresolvable,
+	#project-monitor-table_wrapper .build-state-broken,
+	#project-monitor-table_wrapper .build-state-failed,
+	#project-monitor-table_wrapper .build-state-succeeded
+	{
+		display: inline-block;
+		height: 1em;
+		width: 1.8em;
+		overflow: hidden;
+	}
+}
+
+@-moz-document
+	url("https://build.opensuse.org/monitor")
+{
+	div.col-6.col-sm-3.col-md-2.col-lg-1.p-1	{	width: 12em;	}
+
+	i.fa + span.d-block	{	display: inline !important;	}
+
+	.monitorboxrow	{	margin: 1rem 0rem 0rem 1rem !important;	}
+
+	.builderbox	{	width: 7rem;	}
+
+	.monitorpb	{
+		height: 1.1rem;
+		max-height: 1.1rem;
+		margin-top: 0.1rem !important;
+	}
+
+	.progress,
+	.progress-stacked
+	{
+		--bs-progress-bg: #555;
+		--bs-progress-height: 1rem;
+		--bs-progress-font-size: 0.75rem;
+	}
+
+	.progress-bar-striped	{	background-image: unset;	}
+
+	.progress-bar-striped:not([aria-valuenow])	{	display: none;	}
 }
