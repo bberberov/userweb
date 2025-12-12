@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.18
+@version        0.3.19
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -139,6 +139,9 @@
 	}
 
 	/* Good logos */
+	td.News     > :first-child > img[title="Aurora"],
+	td.NewsLogo > :first-child > img[title="Aurora"],
+	td.News1    > center         img[title="Aurora"],
 	td.News     > :first-child > img[title="Bazzite"],
 	td.NewsLogo > :first-child > img[title="Bazzite"],
 	td.News1    > center         img[title="Bazzite"],
@@ -300,9 +303,6 @@
 	td.News     > :first-child > img[title="pfSense"],
 	td.NewsLogo > :first-child > img[title="pfSense"],
 	td.News1    > center         img[title="pfSense"],
-	td.News     > :first-child > img[title="PorteuX"],
-	td.NewsLogo > :first-child > img[title="PorteuX"],
-	td.News1    > center         img[title="PorteuX"],
 	td.News     > :first-child > img[title="ravynOS"],
 	td.NewsLogo > :first-child > img[title="ravynOS"],
 	td.News1    > center         img[title="ravynOS"],
@@ -360,6 +360,9 @@
 	td.News     > :first-child > img[title="CachyOS"],
 	td.NewsLogo > :first-child > img[title="CachyOS"],
 	td.News1    > center         img[title="CachyOS"],
+	td.News     > :first-child > img[title="CuerdOS"],
+	td.NewsLogo > :first-child > img[title="CuerdOS"],
+	td.News1    > center         img[title="CuerdOS"],
 	td.News     > :first-child > img[title="Emmabuntüs"],
 	td.NewsLogo > :first-child > img[title="Emmabuntüs"],
 	td.News1    > center         img[title="Emmabuntüs"],
@@ -585,6 +588,7 @@
 	}
 
 	/* Good logos */
+	td.TablesTitle > img[title="Aurora"],
 	td.TablesTitle > img[title="Bazzite"],
 	td.TablesTitle > img[title="Bluestar Linux"],
 	td.TablesTitle > img[title="BSD Router Project"],
@@ -642,7 +646,6 @@
 	td.TablesTitle > img[title="Nitrux"],
 	td.TablesTitle > img[title="Nobara Project"],
 	td.TablesTitle > img[title="pfSense"],
-	td.TablesTitle > img[title="PorteuX"],
 	td.TablesTitle > img[title="ravynOS"],
 	td.TablesTitle > img[title="SysLinuxOS"],
 	td.TablesTitle > img[title="TUXEDO OS"],
@@ -666,6 +669,7 @@
 	td.TablesTitle > img[title="blendOS"],
 	td.TablesTitle > img[title="Br OS"],
 	td.TablesTitle > img[title="CachyOS"],
+	td.TablesTitle > img[title="CuerdOS"],
 	td.TablesTitle > img[title="Emmabuntüs"],
 	td.TablesTitle > img[title="EndeavourOS"],
 	td.TablesTitle > img[title="Escuelas Linux"],
