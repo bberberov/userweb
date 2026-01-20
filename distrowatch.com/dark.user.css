@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DistroWatch Dark
 @description    Userstyle for DistroWatch
-@version        0.3.20
+@version        0.3.21
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -306,6 +306,9 @@
 	td.News     > :first-child > img[title="Nobara Project"],
 	td.NewsLogo > :first-child > img[title="Nobara Project"],
 	td.News1    > center         img[title="Nobara Project"],
+	td.News     > :first-child > img[title="Peropesis"],
+	td.NewsLogo > :first-child > img[title="Peropesis"],
+	td.News1    > center         img[title="Peropesis"],
 	td.News     > :first-child > img[title="pfSense"],
 	td.NewsLogo > :first-child > img[title="pfSense"],
 	td.News1    > center         img[title="pfSense"],
@@ -321,6 +324,9 @@
 	td.News     > :first-child > img[title="TUXEDO OS"],
 	td.NewsLogo > :first-child > img[title="TUXEDO OS"],
 	td.News1    > center         img[title="TUXEDO OS"],
+	td.News     > :first-child > img[title="VailuxOS"],
+	td.NewsLogo > :first-child > img[title="VailuxOS"],
+	td.News1    > center         img[title="VailuxOS"],
 	td.News     > :first-child > img[title="YunoHost"],
 	td.NewsLogo > :first-child > img[title="YunoHost"],
 	td.News1    > center         img[title="YunoHost"]
@@ -339,9 +345,9 @@
 	td.News     > :first-child > img[title="AnduinOS"],
 	td.NewsLogo > :first-child > img[title="AnduinOS"],
 	td.News1    > center         img[title="AnduinOS"],
-	td.News     > :first-child > img[title="ArchBang Linux"],
-	td.NewsLogo > :first-child > img[title="ArchBang Linux"],
-	td.News1    > center         img[title="ArchBang Linux"],
+	td.News     > :first-child > img[title="ArchBANG Linux"],
+	td.NewsLogo > :first-child > img[title="ArchBANG Linux"],
+	td.News1    > center         img[title="ArchBANG Linux"],
 	td.News     > :first-child > img[title="Archcraft"],
 	td.NewsLogo > :first-child > img[title="Archcraft"],
 	td.News1    > center         img[title="Archcraft"],
@@ -480,6 +486,9 @@
 	td.News     > :first-child > img[title="T2 SDE"],
 	td.NewsLogo > :first-child > img[title="T2 SDE"],
 	td.News1    > center         img[title="T2 SDE"],
+	td.News     > :first-child > img[title="TROMjaro"],
+	td.NewsLogo > :first-child > img[title="TROMjaro"],
+	td.News1    > center         img[title="TROMjaro"],
 	td.News     > :first-child > img[title="Ubuntu Studio"],
 	td.NewsLogo > :first-child > img[title="Ubuntu Studio"],
 	td.News1    > center         img[title="Ubuntu Studio"],
@@ -665,11 +674,13 @@
 	td.TablesTitle > img[title="Neptune"],
 	td.TablesTitle > img[title="Nitrux"],
 	td.TablesTitle > img[title="Nobara Project"],
+	td.TablesTitle > img[title="Peropesis"],
 	td.TablesTitle > img[title="pfSense"],
 	td.TablesTitle > img[title="ravynOS"],
 	td.TablesTitle > img[title="Synex"],
 	td.TablesTitle > img[title="SysLinuxOS"],
 	td.TablesTitle > img[title="TUXEDO OS"],
+	td.TablesTitle > img[title="VailuxOS"],
 	td.TablesTitle > img[title="YunoHost"]
 	{
 		background-color: transparent;
@@ -680,7 +691,7 @@
 	td.TablesTitle > img[title="AerynOS"],
 	td.TablesTitle > img[title="AlmaLinux OS"],
 	td.TablesTitle > img[title="AnduinOS"],
-	td.TablesTitle > img[title="ArchBang Linux"],
+	td.TablesTitle > img[title="ArchBANG Linux"],
 	td.TablesTitle > img[title="Archcraft"],
 	td.TablesTitle > img[title="Artix Linux"],
 	td.TablesTitle > img[title="Asmi Linux"],
@@ -727,6 +738,7 @@
 	td.TablesTitle > img[title="SME Server"],
 	td.TablesTitle > img[title="Talos Linux"],
 	td.TablesTitle > img[title="T2 SDE"],
+	td.TablesTitle > img[title="TROMjaro"],
 	td.TablesTitle > img[title="Ubuntu Studio"],
 	td.TablesTitle > img[title="Ultramarine Linux"],
 	td.TablesTitle > img[title="umbrelOS"],
