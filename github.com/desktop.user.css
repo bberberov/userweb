@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.2.3
+@version        0.2.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -211,34 +211,34 @@
 
 		/*----------------------------------------*/
 
-		[class^=OverviewContent-module__Box--]	{
+		[class^=OverviewContent-module__Box__]	{
 			margin-top: 0;
 			margin-bottom: 0;
 		}
 
-		[class^=OverviewContent-module__Box_1--]	{
+		[class^=OverviewContent-module__Box_1__]	{
 			padding-top: var(--base-size-8);
 			padding-bottom: var(--base-size-8);
 		}
 
-		[class^=OverviewContent-module__Box_11--]	{
+		[class^=OverviewContent-module__Box_11__]	{
 			gap: var(--stack-gap-condensed);
 		}
 
-		[class^=LatestCommit-module__Box--]	{
+		[class^=LatestCommit-module__Box__]	{
 			padding: 0;
 		}
 
 		if p-layout == "vert-readme"
 		{
-			[class^=OverviewRepoFiles-module__Box_1--]	{	order: -1	}
+			[class^=OverviewRepoFiles-module__Box_1__]	{	order: -1	}
 		}
 
 		if p-layout == "horiz" || p-layout == "horiz-readme"
 		{
 			.react-repos-overview-margin	{	margin-right: unset;	}
 
-			[class^=OverviewContent-module__Box_11--]	{	flex-direction: row;	}
+			[class^=OverviewContent-module__Box_11__]	{	flex-direction: row;	}
 
 			.repository-content > div .Layout > .Layout-sidebar	{	overflow-y: scroll;	}
 
@@ -247,27 +247,27 @@
 			body.logged-in  .repository-content > div .Layout > .Layout-sidebar
 			{	height: calc( 100vh - 26px - 80px - 38px );	}
 
-			body.logged-out .application-main [class^=OverviewContent-module__Box_11--]
+			body.logged-out .application-main [class^=OverviewContent-module__Box_11__]
 			{	height: calc( 100vh - 26px - 40px - 38px - 48px );	}
-			body.logged-in  .application-main [class^=OverviewContent-module__Box_11--]
+			body.logged-in  .application-main [class^=OverviewContent-module__Box_11__]
 			{	height: calc( 100vh - 26px - 80px - 38px - 48px );	}
-			body.logged-in #notification-shelf + .application-main [class^=OverviewContent-module__Box_11--]
+			body.logged-in #notification-shelf + .application-main [class^=OverviewContent-module__Box_11__]
 			{	height:  calc( 100vh - 26px - 80px - var(--base-sticky-header-height) - 38px - 48px ) }
 
-			[class^=OverviewRepoFiles-module__Box_1--],
-			[class^=OverviewContent-module__Box_11--] > [data-hpc=true]
+			[class^=OverviewRepoFiles-module__Box_1__],
+			[class^=OverviewContent-module__Box_11__] > [data-hpc=true]
 			{	width: 50%;	}
 
-			[class^=OverviewRepoFiles-module__Box_3] > nav
+			[class^=OverviewRepoFiles-module__Box_3__] > nav
 			{	overflow-x: scroll;	}
 
-			[class^=OverviewContent-module__Box_11--] > [data-hpc=true]
+			[class^=OverviewContent-module__Box_11__] > [data-hpc=true]
 			{	overflow-y: scroll;	}
 		}
 
 		if p-layout == "horiz-readme"
 		{
-			[class^=OverviewRepoFiles-module__Box_1--]	{	order: -1	}
+			[class^=OverviewRepoFiles-module__Box_1__]	{	order: -1	}
 		}
 
 		/* code-<ID>.css */
