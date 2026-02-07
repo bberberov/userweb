@@ -1,14 +1,21 @@
 /* ==UserStyle==
 @name           NoScript
 @description    Generic no-JavaScript userstyle
-@version        0.0.3
+@version        0.0.4
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
 @homepageURL    https://github.com/bberberov/userweb
 @supportURL     https://github.com/bberberov/userweb/issues
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/noscript.user.css
+@preprocessor   stylus
+
+@var checkbox  opacity  "Dangerous opacity selectors"  0
 ==/UserStyle== */
+
+html.no-js > body	{
+	display: unset;
+}
 
 html,
 body
@@ -28,14 +35,44 @@ body.tribe-no-js > #page-preloader,
 body::after,
 html.no-js > body > #loader-wrapper,
 html.no-js > body > #loading,
-html.no-js > body[data-ajax-transitions="true"] > #ajax-loading-screen
+html.no-js > body[data-ajax-transitions="true"] > #ajax-loading-screen,
+body.preloading > .loading
 {	display: none;	}
 
+#data-loader,
 #page > .preloader,
+.__ns__pop2top > .loader,
 .loading-overlay-showing > .loading-overlay,
 .lqd-preloader-wrap
 {	display: none;	}
 
-.motion-safe\:md\:opacity-0,
-.opacity-0
-{	opacity: unset;	}
+if opacity == 1 {
+	body                         > .fadein,
+	body.no-js.thim-body-preload > :not(#preload),
+	.motion-safe\:md\:opacity-0,
+	.opacity-0
+	{	opacity: unset;	}
+
+	/* https://bricksbuilder.io/ */
+	.bricks-is-frontend .brx-animated[data-animation*="In"],
+	.bricks-is-frontend :not(.brx-animated)[data-interaction-hidden-on-load]
+	{	opacity: unset;	}
+
+	.animate,
+	.fade-in-up,
+	[data-animate="fade-down"]:not(.is-visible),
+	[data-animate="fade-up"]:not(.is-visible)
+	{
+		opacity: unset;
+		transform: unset;
+	}
+
+	[data-aos^="fade"],
+	div[style^="opacity"]
+	{	opacity: unset !important;	}
+
+	div[style^="opacity:0;transform:"]	{
+		opacity: unset !important;
+		transform: unset !important;
+	}
+}
