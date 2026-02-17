@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           Astronomy Picture of the Day Mod
+@description    Userstyle for Astronomy Picture of the Day
+@version        0.0.1
+@author         Boian Berberov (https://github.com/bberberov)
+@license        EUPL-1.2
+@namespace      https://github.com/bberberov/userweb
+@homepageURL    https://github.com/bberberov/userweb
+@supportURL     https://github.com/bberberov/userweb/issues
+@updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/nasa.gov/apod/mod.user.css
+==/UserStyle== */
+
+@-moz-document
+	url("https://apod.nasa.gov/apod/"),
+	url("https://apod.nasa.gov/apod/astropix.html"),
+	regexp("https://apod.nasa.gov/apod/ap[0-9]+.html")
+{
+	body	{
+		margin: auto;
+		padding: 0em 1em;
+		max-width: 80em;
+	}
+}
