@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Mod
 @description    Userstyle for GitHub
-@version        0.1.4
+@version        0.3.0
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -150,73 +150,119 @@
 
 	/* END   #user-repositories-list */
 
-	/* BEGIN .repository-content */
+	/* BEGIN */
 
 	/* github-<ID>.css */
 	.commit-tease .avatar	{	margin-top: 1px;	}
 
-	.repository-content > div .Layout-sidebar > .BorderGrid	{
+	[class^="prc-PageLayout-Pane-"] .BorderGrid	{
 		display: flex;
 		flex-direction: column;
 	}
 
-	.repository-content > div .Layout-sidebar > .BorderGrid > *,
-	.repository-content > div .Layout-sidebar > .BorderGrid > * > *
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > *,
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > * > *
 	{
 		display: block;
 		border: none;
 		border-bottom: 1px solid var(--color-border-muted);
 	}
 
-	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-star,
-	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-star + strong
+	[class^="prc-PageLayout-Pane-"] .BorderGrid .octicon-star,
+	[class^="prc-PageLayout-Pane-"] .BorderGrid .octicon-star + strong
 	{	color: var(--button-star-iconColor);	}
 
-	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-eye,
-	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-eye + strong
+	[class^="prc-PageLayout-Pane-"] .BorderGrid .octicon-eye,
+	[class^="prc-PageLayout-Pane-"] .BorderGrid .octicon-eye + strong
 	{	color: var(--display-blue-fgColor);	}
 
-	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-repo-forked,
-	.repository-content > div .Layout-sidebar > .BorderGrid .octicon-repo-forked + strong
+	[class^="prc-PageLayout-Pane-"] .BorderGrid .octicon-repo-forked,
+	[class^="prc-PageLayout-Pane-"] .BorderGrid .octicon-repo-forked + strong
 	{	color: var(--display-red-fgColor);	}
 
-	.repository-content > div .Layout-sidebar > .BorderGrid > :first-child	{	order: -2;	}
-	.repository-content > div .Layout-sidebar > .BorderGrid > :first-child .mt-2
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > :first-child	{	order: -2;	}
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > :first-child .mt-2
 	{
 		display: inline-block;
-		width: calc( var(--Layout-sidebar-width) / 2 - 2px );
+		width: calc( ( var(--pane-width) - 2 * var(--spacing-normal) ) / 2 - 2px );
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
 
-	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child	{	order: -1;	}
-	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child ul
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > :last-child	{	order: -1;	}
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > :last-child ul
 	{
 		column-count: 2;
 		column-rule: dotted;
 	}
-	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child li
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > :last-child li
 	{	display: list-item !important;	}
-	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child .d-inline-flex	{
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > :last-child .d-inline-flex	{
 		display: flex !important;
 		margin-right: 0 !important;
 		font-size: var(--body-font-size) !important;
 	}
-	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child .d-inline-flex > :first-child	{
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > :last-child .d-inline-flex > :first-child	{
 		height: calc(  1.5  * var(--body-font-size) );
 		width:  calc(  1.5  * var(--body-font-size) );
 		margin: calc( -0.25 * var(--body-font-size) );
 	}
-	.repository-content > div .Layout-sidebar > .BorderGrid > :last-child .d-inline-flex > :last-child	{
+	[class^="prc-PageLayout-Pane-"] .BorderGrid > :last-child .d-inline-flex > :last-child	{
 		flex-grow: 1;
 		text-align: right;
 	}
 
-	/* END   .repository-content */
+	/* END   */
 
-	/* primer-<ID>.css */
-	.Box-row	{	border-top: none;	}
+	/* BEGIN Issues */
+	[class^=ListItem-module__listItem__]
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	[class^=ListItem-module__listItem__] > [class^=Title-module__container__]
+	{ padding-top: 0px; }
+
+	[class^=ListItem-module__listItem__] > [class^=LeadingContent-module__container__]
+	{ order: -1 }
+
+	[class^=ListItem-module__listItem__] [class^=LeadingVisual-module__outer__]
+	{ margin-top: 0px !important; }
+
+	[class^=ListItem-module__listItem__] > [class^=MainContent-module__container__]
+	{ flex-grow: 0; }
+
+	[class^=ListItem-module__listItem__] [class^=MainContent-module__inner__]
+	{ padding-bottom: 0px; }
+
+	[class^=ListItem-module__listItem__] > [class^=MetadataContainer-module__container__]	{}
+	/* END   Issues */
+
+	/* BEGIN PR */
+	.Box-row[id^=issue_] > div > .flex-auto
+	{
+		display: flex;
+		gap: 1em;
+	}
+	.Box-row[id^=issue_] > div > .flex-auto > a
+	{
+		flex-grow: 1
+	}
+	.Box-row[id^=issue_] > div > .col-4
+	{
+		width: 10em;
+	}
+	/* END   PR */
+
+	.octicon.octicon-issue-opened {
+		color: var(--fgColor-open);
+	}
+	.octicon.octicon-milestone,
+	.milestone-link > * {
+		color: var(--display-blue-fgColor);
+	}
 }
 
 @-moz-document

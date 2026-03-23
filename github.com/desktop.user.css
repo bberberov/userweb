@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub Desktop
 @description    Desktop-specific userstyle for GitHub
-@version        0.2.4
+@version        0.3.0
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -10,13 +10,14 @@
 @updateURL      https://raw.githubusercontent.com/bberberov/userweb/core/github.com/desktop.user.css
 @preprocessor   stylus
 
-@var range  files-width "File List – Width"   [60, 30, 70, 5, '%']
-@var select p-layout    "Project Page Layout" {
+@var range    files-width "File List – Width"   [60, 30, 70, 5, '%']
+@var select   p-layout    "Project Page Layout" {
 	"Vertical (Normal)"       : "vert",
-	"Vertical README first"   : "vert-readme",
+	"Vertical (Scroll)"       : "scroll",
 	"Horizontal"              : "horiz",
-	"Horizontal README first" : "horiz-readme"
 }
+@var checkbox readme      "README first"        0
+
 ==/UserStyle== */
 
 @-moz-document domain("github.com") {
@@ -102,6 +103,10 @@
 
 @-moz-document url-prefix("https://github.com/") {
 	@media screen	{
+		:root	{
+			--underline-nav-h: 36px;
+		}
+
 		/* BUG html overflows */
 		html	{	overflow: hidden	}
 
@@ -119,12 +124,6 @@
 			padding-bottom: 0em !important;
 		}
 
-		.application-main	{	overflow-y: auto;	}
-		body.logged-out .application-main	{	height: calc( 100vh - 26px - 40px );	}
-		body.logged-in  .application-main	{	height: calc( 100vh - 26px - 80px );	}
-		body.logged-in #notification-shelf + .application-main
-		{	height:  calc( 100vh - 26px - 80px - var(--base-sticky-header-height) ) }
-
 		/* END   Main elements on page */
 
 		/* BEGIN #repository-container-header */
@@ -132,9 +131,12 @@
 		body.logged-out #repository-container-header	{
 			display: flex;
 			overflow-x: auto;
+			padding: unset !important;
 		}
 		body.logged-out #repository-container-header > :first-child	{
 			flex: 0 0 auto;
+			align-items: center;
+			margin-bottom: 0px !important;
 			padding-right: 0px !important;
 		}
 
@@ -142,6 +144,7 @@
 			max-width: unset;
 		}
 
+		body.logged-out #repository-container-header > :first-child > :first-child,
 		body.logged-in #repository-container-header > :first-child > :first-child	{
 			display: flex;
 			flex-direction: row !important;
@@ -154,7 +157,7 @@
 			flex: 1 0 auto;
 			flex-direction: row-reverse;
 			padding-left: 0px !important;
-			min-height: unset;
+			min-height: var(--underline-nav-h);
 		}
 		#repository-container-header .UnderlineNav-item .octicon	{	display: none !important;	}
 		#repository-container-header .UnderlineNav-item .Counter	{	margin-left: 3px;	}
@@ -168,52 +171,63 @@
 
 		/* END   #repository-container-header */
 
-		/* BEGIN .repository-content */
+		/* BEGIN */
 
-		.repository-content > div	{	max-width: unset;	}
+		[class^=prc-PageLayout-PageLayoutRoot--]
+		{	max-width: unset;	}
 
-		.repository-content > div .Layout	{
-			grid-template-columns: var(--Layout-sidebar-width) 1fr var(--Layout-sidebar-width);
-			grid-auto-rows: 100%;
+		[class^=SharedPageLayout-module__content__]	{	padding: unset;	}
+
+		[class^=prc-PageLayout-Content-]:where([data-width="large"])
+		{
+			padding: 0px var(--spacing) 0px 0px;
+			max-width: unset;
 		}
 
-		.repository-content > div .Layout > .Layout-main	{	grid-column: 2 / 4;	}
-		.repository-content > div .Layout > .Layout-sidebar	{	grid-column: 1 / 2;	}
-		.repository-content > div .Layout > .Layout-sidebar h2	{	display: none;	}
+		[class^=prc-PageLayout-PageLayoutContent-] > [class^=prc-PageLayout-PaneWrapper-]
+		{
+			padding: unset !important;
+			order: -1;
+		}
+		[class^=prc-PageLayout-PageLayoutContent-] > [class^=prc-PageLayout-PaneWrapper-] h2
+		{	display: none;	}
 
-		.repository-content .Details > div > .Box-row > div:last-child
+		.Details > div > .Box-row > div:last-child
 		{	width: 14em !important;	}
 
-		.repository-content > div[class=""],
-		.repository-content > #repo-meta-edit,
-		.repository-content > .repository-topics-container
+		> react-app	{	min-height: unset !important;	}
+
+		> div[class=""],
+		> #repo-meta-edit,
+		> .repository-topics-container
 		{
 			display: inline-block;
 			margin: 2px 0em !important;
 			width: auto;
 		}
-		.repository-content > #repo-meta-edit span,
-		.repository-content > .repository-topics-container span
+		> #repo-meta-edit span,
+		> .repository-topics-container span
 		{	margin: 0em !important;	}
 
-		.repository-content > #repo-meta-edit span.btn-sm	{
+		> #repo-meta-edit span.btn-sm	{
 			margin: 0em 0em 0em 1em !important;
 			padding: 0em 0.5em !important;
 		}
-		.repository-content > .repository-topics-container span.btn-link
+		> .repository-topics-container span.btn-link
 		{	margin: 0em 0em 0em 1em !important;	}
 
-		.repository-content > #repo-meta-edit[open],
-		.repository-content > .repository-topics-container[open]
+		> #repo-meta-edit[open],
+		> .repository-topics-container[open]
 		{	display: block;	}
 
-		/* END   .repository-content */
+		/* END   */
 
 		/*----------------------------------------*/
 
 		[class^=OverviewContent-module__Box__]	{
 			margin-top: 0;
 			margin-bottom: 0;
+			padding: unset !important;
 		}
 
 		[class^=OverviewContent-module__Box_1__]	{
@@ -229,43 +243,97 @@
 			padding: 0;
 		}
 
-		if p-layout == "vert-readme"
+		.repository-content > react-app,
+		.repository-content > turbo-frame > react-app,
+		{	min-height: unset !important;	}
+
+		body.logged-out .PageLayout,
+		body.logged-out .new-discussion-timeline,
+		body.logged-out .repository-content > .clearfix.container-xl,
+		body.logged-out .repository-content > .flex-md-items-stretch,
+		body.logged-out #wiki-wrapper
 		{
-			[class^=OverviewRepoFiles-module__Box_1__]	{	order: -1	}
+			height: calc( 100vh - 26px - 40px - var(--underline-nav-h) );
+			margin-top: 0px !important;
+			overflow-y: scroll;
+		}
+		body.logged-in .PageLayout,
+		body.logged-in .new-discussion-timeline,
+		body.logged-in .repository-content > .clearfix.container-xl,
+		body.logged-in .repository-content > .flex-md-items-stretch,
+		body.logged-in #wiki-wrapper
+		{
+			height: calc( 100vh - 26px - 80px - var(--underline-nav-h) );
+			margin-top: 0px !important;
+			overflow-y: scroll;
 		}
 
-		if p-layout == "horiz" || p-layout == "horiz-readme"
+		if p-layout == "vert"
+		{
+			.application-main	{	overflow-y: auto;	}
+			body.logged-out .application-main	{	height: calc( 100vh - 26px - 40px );	}
+			body.logged-in  .application-main	{	height: calc( 100vh - 26px - 80px );	}
+			body.logged-in #notification-shelf + .application-main
+			{	height:  calc( 100vh - 26px - 80px - var(--base-sticky-header-height) ) }
+		}
+
+		if p-layout == "scroll" || p-layout == "horiz"
+		{
+			body.page-profile .application-main > main,
+			[class^=prc-PageLayout-PageLayoutContent-] > [class^=prc-PageLayout-PaneWrapper-]
+			{	overflow-y: scroll;	}
+
+			body.logged-out.page-profile .application-main > main
+			{	height: calc( 100vh - 26px - 40px );	}
+			body.logged-out [class^=prc-PageLayout-PageLayoutContent-] > [class^=prc-PageLayout-PaneWrapper-]
+			{	height: calc( 100vh - 26px - 40px - var(--underline-nav-h) );	}
+			body.logged-in.page-profile .application-main > main
+			{	height: calc( 100vh - 26px - 80px );	}
+			body.logged-in  [class^=prc-PageLayout-PageLayoutContent-] > [class^=prc-PageLayout-PaneWrapper-]
+			{	height: calc( 100vh - 26px - 80px - var(--underline-nav-h) );	}
+		}
+
+		if p-layout == "scroll"
+		{
+			[class^=prc-PageLayout-PageLayoutContent-] > [class^=prc-PageLayout-ContentWrapper-]
+			{
+				overflow-y: scroll;
+				height: calc( 100vh - 26px - 40px - var(--underline-nav-h) );
+			}
+		}
+
+		if p-layout == "horiz"
 		{
 			.react-repos-overview-margin	{	margin-right: unset;	}
 
 			[class^=OverviewContent-module__Box_11__]	{	flex-direction: row;	}
 
-			.repository-content > div .Layout > .Layout-sidebar	{	overflow-y: scroll;	}
-
-			body.logged-out .repository-content > div .Layout > .Layout-sidebar
-			{	height: calc( 100vh - 26px - 40px - 38px );	}
-			body.logged-in  .repository-content > div .Layout > .Layout-sidebar
-			{	height: calc( 100vh - 26px - 80px - 38px );	}
-
 			body.logged-out .application-main [class^=OverviewContent-module__Box_11__]
-			{	height: calc( 100vh - 26px - 40px - 38px - 48px );	}
+			{	height: calc( 100vh - 26px - 40px - var(--underline-nav-h) - 48px );	}
+			body.logged-out .application-main [class^=Box-] + [class^=OverviewContent-module__Box_11__]
+			{	height: calc( 100vh - 26px - 40px - 70px - var(--underline-nav-h) - 48px ) }
+
 			body.logged-in  .application-main [class^=OverviewContent-module__Box_11__]
-			{	height: calc( 100vh - 26px - 80px - 38px - 48px );	}
+			{	height: calc( 100vh - 26px - 80px - var(--underline-nav-h) - 48px );	}
 			body.logged-in #notification-shelf + .application-main [class^=OverviewContent-module__Box_11__]
-			{	height:  calc( 100vh - 26px - 80px - var(--base-sticky-header-height) - 38px - 48px ) }
+			{	height: calc( 100vh - 26px - 80px - 70px - var(--underline-nav-h) - 48px ) }
 
 			[class^=OverviewRepoFiles-module__Box_1__],
 			[class^=OverviewContent-module__Box_11__] > [data-hpc=true]
-			{	width: 50%;	}
+			{
+				width: 50%;
+				display: block;
+				overflow-y: scroll;
+			}
+
+			[class^=OverviewRepoFiles-module__Box_3__]
+			{	position: unset ;	}
 
 			[class^=OverviewRepoFiles-module__Box_3__] > nav
 			{	overflow-x: scroll;	}
-
-			[class^=OverviewContent-module__Box_11__] > [data-hpc=true]
-			{	overflow-y: scroll;	}
 		}
 
-		if p-layout == "horiz-readme"
+		if readme == 1
 		{
 			[class^=OverviewRepoFiles-module__Box_1__]	{	order: -1	}
 		}
