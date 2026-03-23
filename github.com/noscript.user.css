@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GitHub NoScript
 @description    Userstyle for GitHub
-@version        0.0.5
+@version        0.0.6
 @author         Boian Berberov (https://github.com/bberberov)
 @license        EUPL-1.2
 @namespace      https://github.com/bberberov/userweb
@@ -132,7 +132,7 @@
 @-moz-document
 	domain("docs.github.com")
 {
-	.prc-ActionList-ActionListContent-sg9-x[aria-expanded="false"] + [class^="prc-ActionList-SubGroup-"] {
+	[class^="prc-ActionList-ActionListContent-"][aria-expanded="false"] + [class^="prc-ActionList-SubGroup-"] {
 		display: unset;
 	}
 }
